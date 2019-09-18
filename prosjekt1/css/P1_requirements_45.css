@@ -8,10 +8,10 @@
 	background-image: url("../img/toothbrush.jpg"); 
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: 60%;
 }
 
-*{
+*{ 
 
 }
 
@@ -25,7 +25,7 @@
 .question-box {
 	text-align: left;
 	margin: 35px;
-	padding: 30px;
+	padding: 40px;
 	background-color: rgba(255,255,255,0.7); 
 }
 

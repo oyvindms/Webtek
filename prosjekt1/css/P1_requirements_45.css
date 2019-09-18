@@ -1,15 +1,38 @@
 .body{
-	background-color: blue; 
-	width: 200px;
-	height: 500px
+	/*background-color: #d0e0eb;*/
+	width: auto;
+	margin-left: 200px; 
+	margin-right: 200px;
+	text-align: center;
+	background-color: #d0e0eb;
+	background-image: url("../img/toothbrush.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 
 *{
-	text-align: center; 
+
 }
 
 #title-box {
-	background-color: gray;
-	margin: auto;
+	display: block;
 	padding: 20px;
+	margin: 20px;
+	color: black;
+}
+
+.question-box {
+	text-align: left;
+	margin: 35px;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.7); 
+}
+
+#question-container {
+	margin-top: 20px;
+}
+
+.footer {
+	margin: 60px;
 }

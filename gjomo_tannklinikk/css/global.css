@@ -1,0 +1,39 @@
+@font-face{
+    font-family: bigJohnRegular;
+    src : url(font/BigJohnPRO-Regular.otf);
+    weight: 100;
+}
+
+body{
+    margin: 0;
+    font-family: bigJohnRegular;
+}
+
+.navbar{
+    width: 100%;
+    background-color: rgba(148,227,210,1.0);
+    height: 70px;
+    font-size: 15px;
+}
+
+.navbar a{
+    color: rgba(28,141,116,1.0);
+    float: right;
+    padding: 25px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: transparent;
+
+}
+
+.navbar a:hover{
+    color: rgba(28,141,116,0.7);
+}
+
+.navbar a.active{
+    border-bottom: 2px white solid;
+}
+
+.navbar #logo{
+    float: left
+}

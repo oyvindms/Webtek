@@ -37,3 +37,46 @@ body{
 .navbar #logo{
     float: left
 }
+
+/*footer*/
+
+.footer {
+	width: 100%;
+	background-color: rgba(148, 227, 210, 1.0);
+	height: 300px;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	padding-top: 80px;
+	color: rgba(28,141,116,1.0);
+	
+	
+
+
+}
+
+.footer-left {
+	height: 20px;
+	padding-left: 200px;
+	float: left;
+	width: 150px;
+}
+
+
+
+.footer-right {
+	height: 20px;
+	padding-right: 200px;
+	float: right;
+	width: 100px;
+}
+
+.footer-middle {
+	height: 20px;
+	witdh: 100px;
+	margin-left: auto;
+	margin-right: auto;		
+	
+	
+	
+}

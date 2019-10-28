@@ -9,6 +9,12 @@ body{
     font-family: bigJohnRegular;
 }
 
+.header{
+	font-size: 60px;
+	text-align: center;
+	color: #1C8D74;
+}
+
 .navbar{
     width: 100%;
     background-color: rgba(148,227,210,1.0);

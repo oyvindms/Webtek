@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href= "css/global.css">
-    <script src = ""></script>
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/FAQ_loader.js"></script>
     <title>FAQ</title>
 </head>
 <body>
     <header>
         <script src="js/reusableHTML.js"></script>
     </header>
-
+	
+	<div id="FAQ_search_div">
+		<form>
+			<input type="search" id="FAQ_search_bar" placeholder="Hva lurer du på?">
+		</form>
+	</div>
+	
+	<div id="FAQ_content">
+		<ul id="FAQ_list">
+		</ul>
+	</div>
+	
+	<script src="js/FAQ_loader.js"></script>
 </body>
 </html>

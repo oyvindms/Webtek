@@ -34,17 +34,15 @@ function buildFAQ(x){
 	}
 }
 
-
 function accordion(){
 	var acc = document.getElementsByClassName("question");
 	var panel = document.getElementsByClassName("answer");
 
 	for (var i = 0; i < acc.length; i++) {
 		acc[i].onclick = function() {
-			var setClasses = !this.classList.contains('active');
-			setClass(acc, 'active', 'remove');
-			setClass(panel, 'show', 'remove');
-
+			var setClasses = !this.classList.contains("active");
+			setClass(acc, "active", "remove");
+			setClass(panel, "show", "remove");
 			if (setClasses) {
 				this.classList.toggle("active");
 				this.nextElementSibling.classList.toggle("show");

@@ -4,17 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
-    <script src="js/FAQ_loader.js"></script>
     <title>FAQ</title>
+	<style>
+		#FAQ_search_div{
+			text-align: center;
+		}
+
+		#FAQ_search_bar{
+			width: 600px;
+			font-size: 16px;
+			padding: 12px 20px 12px 20px;
+			border: 1px solid #94E3D2;
+			border-radius: 10px;
+			margin-bottom: 12px;
+			background-color: #EAFFFB;
+			color: #1C8D74;
+			outline: none;
+		}
+		
+		#FAQ_list{
+			width: 600px;
+			margin: auto;
+			margin-top: 30px;
+			list-style-type: none;
+			padding-left: 0px;
+		}
+		
+		.question{
+			color: #1C8D74;
+			cursor: pointer;
+			padding-left: 10px;
+			padding-bottom: 13px;
+			width: 600px;
+			border: none;
+			outline: none;
+			font-size: 22px;
+			line-height: 0.5;
+			text-transform: uppercase;
+			border-bottom: 1px solid #76BAAB;
+/*			transition: 0.4s;*/
+			font-family: bigJohnRegular;
+		}
+		
+		.question:hover {
+			color: #76BAAB;
+		}
+		
+		p{
+			margin: 0;
+			margin-bottom: 5px;
+		}
+		
+		.answer{
+			font-size: 18px;
+			color: #1C8D74;
+			max-height: 0;
+  			overflow: hidden;
+  			transition: max-height 0.2s ease-out;
+		}
+		
+		.question:before{
+			content:"";
+			background: url("img/icons/PLUS.svg");
+			width: 25px;
+			height: 25px;
+			display: block;
+			position: relative;
+			bottom: -14px;
+		}
+
+		.active:before {
+			content:"";
+			background: url("img/icons/MINUS.svg");
+			width: 25px;
+			height: 25px;
+			display: block;
+			position: relative;
+			bottom: -14px;
+		}
+		
+		.active{
+			border: none;
+		}
+		
+	</style>
 </head>
 <body>
     <header>
         <script src="js/reusableHTML.js"></script>
     </header>
 	
+	<h1 class="header">FAQ</h1>
+	
 	<div id="FAQ_search_div">
 		<form>
-			<input type="search" id="FAQ_search_bar" placeholder="Hva lurer du på?">
+			<input type="search" id="FAQ_search_bar" placeholder="SØK" autocomplete="off">
 		</form>
 	</div>
 	

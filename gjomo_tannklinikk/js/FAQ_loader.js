@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	.then(data=>{
 		let parser = new DOMParser();
 		let xml = parser.parseFromString(data, "application/xml");
-		console.log(xml);
+//		console.log(xml);
 		buildFAQ(xml);
 		accordion();
 	});
@@ -16,6 +16,8 @@ function buildFAQ(x){
 	let list = document.getElementById('FAQ_list');
 	let FAQs = x.getElementsByTagName('FAQs');
 	for(let i=0; i<FAQs.length; i++){
+		let faq = document.createElement("div");
+		faq.classList.add("faqElement");
 		let question = document.createElement("button");
 		let p = document.createElement("p");
 		question.classList.add("question");
@@ -26,29 +28,50 @@ function buildFAQ(x){
 		p.textContent = questionVal;
 		answer.textContent = answerVal;
 		question.appendChild(p);
-		list.appendChild(question);
-		list.appendChild(answer);
+		faq.appendChild(question);
+		faq.appendChild(answer);
+		list.appendChild(faq);
 	}
 }
 
 
 function accordion(){
-	var questions = document.getElementsByClassName("question");
-	var i;
+	var acc = document.getElementsByClassName("question");
+	var panel = document.getElementsByClassName("answer");
 
-	for (i = 0; i < questions.length; i++) {
-		questions[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var answer = this.nextElementSibling;
-		if (answer.style.maxHeight) {
-			answer.style.maxHeight = null;
-			answer.style.padding = null;
-			answer.style.borderBottom = null;
-		} else {
-			answer.style.maxHeight = answer.scrollHeight + "px";
-			answer.style.padding = "10px 0px 40px 60px"
-			answer.style.borderBottom = "1px solid #76BAAB";
+	for (var i = 0; i < acc.length; i++) {
+		acc[i].onclick = function() {
+			var setClasses = !this.classList.contains('active');
+			setClass(acc, 'active', 'remove');
+			setClass(panel, 'show', 'remove');
+
+			if (setClasses) {
+				this.classList.toggle("active");
+				this.nextElementSibling.classList.toggle("show");
+			}
 		}
-		});
 	}
+}
+
+function setClass(els, className, fnName) {
+    for (var i = 0; i < els.length; i++) {
+        els[i].classList[fnName](className);
+    }
+}
+
+function filterSearch() {
+    var input, filter, ul, faq, p, i, txtValue;
+    input = document.getElementById("FAQ_search_bar");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("FAQ_list");
+    faq = ul.getElementsByClassName("faqElement");
+    for (i = 0; i < faq.length; i++) {
+        p = faq[i].getElementsByTagName("p")[0];
+        txtValue = p.textContent || p.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            faq[i].style.display = "";
+        } else {
+            faq[i].style.display = "none";
+        }
+    }
 }

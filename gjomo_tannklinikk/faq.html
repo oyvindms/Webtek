@@ -33,7 +33,7 @@
 		.question{
 			color: #1C8D74;
 			cursor: pointer;
-			padding-left: 10px;
+			padding-left: 40px;
 			padding-bottom: 13px;
 			width: 600px;
 			border: none;
@@ -42,8 +42,9 @@
 			line-height: 0.5;
 			text-transform: uppercase;
 			border-bottom: 1px solid #76BAAB;
-/*			transition: 0.4s;*/
+			transition: 0.4s;
 			font-family: bigJohnRegular;
+			text-align: left;
 		}
 		
 		.question:hover {
@@ -60,7 +61,15 @@
 			color: #1C8D74;
 			max-height: 0;
   			overflow: hidden;
-  			transition: max-height 0.2s ease-out;
+//			transition: 0.4s ease-in-out;
+    		opacity: 0;
+		}
+		
+		.show{
+			opacity: 1;
+    		max-height: 500px;
+			padding: 10px 0px 20px 60px;
+			border-bottom: 1px solid #76BAAB;
 		}
 		
 		.question:before{
@@ -70,7 +79,8 @@
 			height: 25px;
 			display: block;
 			position: relative;
-			bottom: -14px;
+			bottom: -17px;
+			left: -33px;
 		}
 
 		.active:before {
@@ -80,7 +90,7 @@
 			height: 25px;
 			display: block;
 			position: relative;
-			bottom: -14px;
+			bottom: -17px;
 		}
 		
 		.active{
@@ -98,7 +108,7 @@
 	
 	<div id="FAQ_search_div">
 		<form>
-			<input type="search" id="FAQ_search_bar" placeholder="SØK" autocomplete="off">
+			<input type="search" id="FAQ_search_bar" placeholder="SØK" onKeyUp="filterSearch()" autocomplete="off">
 		</form>
 	</div>
 	

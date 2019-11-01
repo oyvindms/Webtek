@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href= "css/global.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src = ""></script>
     <title>Hjem</title>
 </head>
 <body>
     <header>
-        <div w3-include-html = "navbar.html"></div>
-
-        <div class = "navbar">
-                <a id = "logo" href = "index.html">Gjømo-logo</a>
-                <a class ="active" href = "treatments.html">BEHANDLINGER</a>
-                <a href = "prices.html">PRISER</a>
-                <a href = "about.html">OM OSS</a>
-                <a href = "contact.html">KONTAKT</a>
-                <a href = "faq.html">FAQ</a>
-            </div>
+        <script src="js/reusableHTML.js"></script>
     </header>
-
 
     <script src = "js/testimonials.js"></script>
 
@@ -29,6 +20,50 @@
 
     </div>
 
-   
+	
+
+	<div class="three-column-footer">
+		
+		<footer class="footer">
+			
+			<div class="footer-left" style="float: left" >
+				<h3>Adresse</h3>
+				<p><i class="material-icons">room</i>Kolbjørn Hejes veg 2B</nobr></p>
+				
+				<p id="postnummer"> 7034 Trondheim</p>
+				
+			</div>
+			
+			<div class="footer-middle" style="margin: 0 auto" >
+				<h3>Kontakt oss</h3>
+				<p><i class="material-icons">smartphone</i>92 93 94 95</p>
+				<p><i class="material-icons" id="email-icon">email</i>kontakt@gjømo.no</p>
+				
+				
+			</div>
+			
+			<div class="footer-right" style="float: right">
+				<h3>Åpningstider</h3>
+				<h4>Man - fre</h4>
+				<p class="tid">08 : 00 - 16 : 00</p>
+				<h4>Lør</h4>
+				<p class="tid">10 : 00 - 15 : 00</p>
+				
+			
+			
+			</div>
+			
+			
+		
+		
+		
+		
+		
+		
+		</footer>
+	
+	
+	</div>
+
 </body>
 </html>

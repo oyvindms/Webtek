@@ -1,0 +1,62 @@
+form{
+	position: inherit;
+	color: #1C8D74;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+input {
+	font-size: 12px;
+	color: #1C8D74;
+}
+			
+input[type=text], input[type=email], input[type=tel]{
+	width: 270px;
+	height: 10px;
+	padding: 1px 2px;
+	margin: 6px 0 8px 0;
+	border: 2px solid #94E3D2;
+	border-radius: 6px;
+	padding: 10px 0 10px 10px;
+	background-color: #EAFFFB;
+}
+		
+select {
+	width: 283px;
+	height: 36px;
+	margin: 6px 0;
+	display: block;
+	color: #1C8D74;
+	padding: 10px 10px;
+	background-color: #EAFFFB;
+	-webkit-appearance: none;
+	border-radius: 6px;
+	border: 2px solid #94E3D2;
+	box-sizing: border-box,
+
+}
+		
+textarea {
+	width: 270px;
+	height: 114px;
+	margin-top: 4px;
+	border: 2px solid #94E3D2;
+	border-radius: 6px;
+	padding: 10px 0 0 10px;
+	color: #1C8D74;
+	background-color: #EAFFFB;
+	resize: none;
+}
+		
+input[type=submit]{
+	font-size: 13px;
+	width: 83px;
+	height: 40px;
+	background-color: #EAFFFB;
+	margin-top: 10px;
+	border: 2px solid #94E3D2;
+	border-radius: 6px;
+	float: right;
+}

@@ -51,6 +51,7 @@ body{
 	color: rgba(28,141,116,1.0);
 	
 	
+	
 
 
 }
@@ -59,7 +60,7 @@ body{
 	height: 20px;
 	padding-left: 200px;
 	float: left;
-	width: 150px;
+	width: 180px;
 }
 
 
@@ -78,5 +79,30 @@ body{
 	margin-right: auto;		
 	
 	
+	
+}
+
+.material-icons {
+	vertical-align: middle;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	margin-left: -5px;
+}
+#email-icon {
+	margin-left: -2px;
+}
+#postnummer {
+	margin-left: 30px;
+}
+
+
+.tid {
+	padding-bottom: 10px;
+}
+
+
+#footer {
+	position: sticky;
+	margin-bottom: 0;
 	
 }

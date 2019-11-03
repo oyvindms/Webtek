@@ -1,12 +1,28 @@
-
 form{
 	position: inherit;
 	color: #1C8D74;
 	font-family: arial;
 	font-weight: bold;
 	font-size: 12px;
+	padding: 2% 14% 14% 14%;
 }
 
+h1{
+	text-align: center;
+	padding-top: 5%;
+}
+
+.Etternavn, .Fornavn, .Mobil, .Epost{
+	display: inline-block;
+}
+
+.Melding{
+	width: 100%;
+}
+
+textarea{
+	width: 100%;
+}
 .button{
 	background: #1C8D74;
 	padding: 1em 2em;
@@ -124,5 +140,7 @@ input[type=submit]{
 	from{opacity: 0}
 	to{opacity: 1}
 }
+
+
 
 

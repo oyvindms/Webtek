@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	.then(data=>{
 		let parser = new DOMParser();
 		let xml = parser.parseFromString(data, "application/xml");
-//		console.log(xml);
+		console.log(xml);
 		buildFAQ(xml);
 		accordion();
 	});

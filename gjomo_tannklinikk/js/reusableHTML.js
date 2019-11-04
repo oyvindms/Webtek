@@ -3,9 +3,10 @@
 function loadNavbar(){
 
     var header = document.querySelector('header')
-   
-    var navDiv = document.createElement('div');
+
+    var navDiv = document.createElement('div')
     navDiv.setAttribute('class', 'navbar')
+    header.appendChild(navDiv)
 
     const logoLink = document.createElement('a');
     logoLink.setAttribute('href',"index.html");
@@ -38,19 +39,91 @@ function loadNavbar(){
     faqLink.innerText = "FAQ";
     navDiv.appendChild(faqLink);
 
-    header.appendChild(navDiv)
+    
 }
 
 /* This function dynamicly writes out the footer as html for all pages that laod the script. */
 function loadFooter(){
 
-}
+    /* Deciding location of footer and adding needed divs. */
+    var body = document.querySelector('body')
+   
+    var containers = document.createElement('div');
+    containers.setAttribute("id", "containers")
+    body.appendChild(containers)
 
+        var container1 = document.createElement('div');
+        container1.setAttribute("class", "footer_container first")
+        containers.appendChild(container1)
+            
+            var icon1 = document.createElement('img');
+            icon1.setAttribute("src", "img/icons/clock.svg")
+            icon1.setAttribute("alt", "open_hours")
+            icon1.setAttribute("class", "icon")
+            container1.appendChild(icon1)
+
+            var container1_text1 = document.createElement('div')
+            container1_text1.setAttribute("class", "footer_text")
+            container1_text1.innerText = "Man - Fre"
+            container1.appendChild(container1_text1)
+
+            var container1_text2 = document.createElement('div')
+            container1_text2.setAttribute("class", "footer_text")
+            container1_text2.innerText = "08:00 - 16:00"
+            container1.appendChild(container1_text2)
+            
+            var container1_text3 = document.createElement('div')
+            container1_text3.setAttribute("class", "footer_text")
+            container1_text3.innerText = "Lør"
+            container1.appendChild(container1_text3)
+
+            var container1_text4 = document.createElement('div')
+            container1_text4.setAttribute("class", "footer_text")
+            container1_text4.innerText = "10:00 - 15:00"
+            container1.appendChild(container1_text4)
+
+        var container2 = document.createElement('div');
+        container2.setAttribute("class", "footer_container second")
+        containers.appendChild(container2)
+
+            var icon2 = document.createElement('img');
+            icon2.setAttribute("src", "img/icons/contact.svg")
+            icon2.setAttribute("alt", "contact")
+            icon2.setAttribute("class", "icon")
+            container2.appendChild(icon2)
+
+            var container2_text1 = document.createElement('div')
+            container2_text1.setAttribute("class", "footer_text")
+            container2_text1.innerText = "92 93 94 95"
+            container2.appendChild(container2_text1)
+
+            var container2_text2 = document.createElement('div')
+            container2_text2.setAttribute("class", "footer_text")
+            container2_text2.innerText = "kontakt@gjomo.no"
+            container2.appendChild(container2_text2)
+
+        var container3 = document.createElement('div');
+        container3.setAttribute("class", "footer_container third")
+        containers.appendChild(container3)
+
+            var icon3 = document.createElement('img');
+            icon3.setAttribute("src", "img/icons/location.svg")
+            icon3.setAttribute("alt", "location")
+            icon3.setAttribute("class", "icon")
+            container3.appendChild(icon3)
+
+            var container3_text1 = document.createElement('div')
+            container3_text1.setAttribute("class", "footer_text")
+            container3_text1.innerText = "Kolbjørn Hejes vei 2B"
+            container3.appendChild(container3_text1)
+
+            var container3_text2 = document.createElement('div')
+            container3_text2.setAttribute("class", "footer_text")
+            container3_text2.innerText = "7034, Trondheim"
+            container3.appendChild(container3_text2)
+}
 
 /* This function dynamicly writes out the contact form/modal as html for all pages that laod the script. */
 function contactModal(){
 
 }
-
-loadNavbar()
-

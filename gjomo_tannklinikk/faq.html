@@ -13,7 +13,7 @@
 
 		#FAQ_search_bar{
 			width: 600px;
-			font-size: 16px;
+			font-size: 22px;
 			padding: 12px 20px 12px 20px;
 			border: 1px solid #94E3D2;
 			border-radius: 10px;
@@ -36,7 +36,7 @@
 			cursor: pointer;
 			padding-left: 40px;
 			padding-bottom: 13px;
-			width: 600px;
+			width: 100%;
 			border: none;
 			outline: none;
 			font-size: 22px;
@@ -97,6 +97,26 @@
 		
 		.active{
 			border: none;
+		}
+		
+		@media only screen and (max-width: 768px) {
+			#FAQ_search_bar{
+				width: 100%;
+				border-radius: 0px;
+			}
+			#FAQ_list{
+				width: 100%;
+				line-height: normal;
+			}
+			.question{
+				line-height: 1;
+			}
+			.question:before{
+				bottom:-21px;
+			}
+			.active:before{
+				bottom:-21px;
+			}
 		}
 		
 	</style>

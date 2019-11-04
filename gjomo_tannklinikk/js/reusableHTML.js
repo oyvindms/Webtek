@@ -8,11 +8,21 @@ function loadNavbar(){
     navDiv.setAttribute('class', 'navbar')
     header.appendChild(navDiv)
 
-    const logoLink = document.createElement('a');
-    logoLink.setAttribute('href',"index.html");
-    logoLink.setAttribute('id',"logo");
-    logoLink.innerText = "Logo";
-    navDiv.appendChild(logoLink);
+    var logoLink = document.createElement('a');
+    logoLink.setAttribute("href", "index.html")
+    logoLink.setAttribute('id',"logo")
+
+    var logo = document.createElement('img');
+    logo.setAttribute("src", "img/icons/logo.svg")
+    logo.setAttribute("alt", "Gjømo logo")
+    logo.setAttribute("id", "logo")
+    
+
+    logoLink.appendChild(logo)
+    navDiv.appendChild(logoLink)
+
+    console.log(logoLink)
+    console.log(logo)
     
     const treatmentsLink = document.createElement('a');
     treatmentsLink.setAttribute('href',"treatments.html");

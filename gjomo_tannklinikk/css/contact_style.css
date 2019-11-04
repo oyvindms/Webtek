@@ -10,12 +10,12 @@ form{
 input {
 	font-size: 12px;
 	color: #1C8D74;
+	outline: none;
 }
 			
 input[type=text], input[type=email], input[type=tel]{
 	width: 270px;
 	height: 10px;
-	padding: 1px 2px;
 	margin: 6px 0 8px 0;
 	border: 2px solid #94E3D2;
 	border-radius: 6px;
@@ -34,8 +34,8 @@ select {
 	-webkit-appearance: none;
 	border-radius: 6px;
 	border: 2px solid #94E3D2;
-	box-sizing: border-box,
-
+	box-sizing: border-box;
+	outline: none;
 }
 		
 textarea {
@@ -48,6 +48,7 @@ textarea {
 	color: #1C8D74;
 	background-color: #EAFFFB;
 	resize: none;
+	outline: none;
 }
 		
 input[type=submit]{

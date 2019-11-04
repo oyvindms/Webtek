@@ -8,11 +8,21 @@ function loadNavbar(){
     navDiv.setAttribute('class', 'navbar')
     header.appendChild(navDiv)
 
-    const logoLink = document.createElement('a');
-    logoLink.setAttribute('href',"index.html");
-    logoLink.setAttribute('id',"logo");
-    logoLink.innerText = "Logo";
-    navDiv.appendChild(logoLink);
+    var logoLink = document.createElement('a');
+    logoLink.setAttribute("href", "index.html")
+    logoLink.setAttribute('id',"logo")
+
+    var logo = document.createElement('img');
+    logo.setAttribute("src", "img/icons/logo.svg")
+    logo.setAttribute("alt", "Gjømo logo")
+    logo.setAttribute("id", "logo")
+    
+
+    logoLink.appendChild(logo)
+    navDiv.appendChild(logoLink)
+
+    console.log(logoLink)
+    console.log(logo)
     
     const treatmentsLink = document.createElement('a');
     treatmentsLink.setAttribute('href',"treatments.html");
@@ -56,31 +66,32 @@ function loadFooter(){
         container1.setAttribute("class", "footer_container first")
         containers.appendChild(container1)
             
-            var icon1 = document.createElement('img');
-            icon1.setAttribute("src", "img/icons/clock.svg")
-            icon1.setAttribute("alt", "open_hours")
-            icon1.setAttribute("class", "icon")
-            container1.appendChild(icon1)
+                var icon1 = document.createElement('img');
+                icon1.setAttribute("src", "img/icons/clock.svg")
+                icon1.setAttribute("alt", "open_hours")
+                icon1.setAttribute("class", "icon")
+                container1.appendChild(icon1)
 
-            var container1_text1 = document.createElement('div')
-            container1_text1.setAttribute("class", "footer_text")
-            container1_text1.innerText = "Man - Fre"
-            container1.appendChild(container1_text1)
+                var container1_text1 = document.createElement('div')
+                container1_text1.setAttribute("class", "footer_text")
+                container1_text1.innerText = "Man - Fre"
+                container1.appendChild(container1_text1)
 
-            var container1_text2 = document.createElement('div')
-            container1_text2.setAttribute("class", "footer_text")
-            container1_text2.innerText = "08:00 - 16:00"
-            container1.appendChild(container1_text2)
-            
-            var container1_text3 = document.createElement('div')
-            container1_text3.setAttribute("class", "footer_text")
-            container1_text3.innerText = "Lør"
-            container1.appendChild(container1_text3)
+                var container1_text2 = document.createElement('div')
+                container1_text2.setAttribute("class", "footer_text")
+                container1_text2.innerText = "08:00 - 16:00"
+                container1.appendChild(container1_text2)
+                
+                var container1_text3 = document.createElement('div')
+                container1_text3.setAttribute("class", "footer_text")
+                container1_text3.innerText = "Lør      " /* Same length as the "mon-fre" without uneccesary css.*/
+                container1_text3.setAttribute("id", "saturday")
+                container1.appendChild(container1_text3)
 
-            var container1_text4 = document.createElement('div')
-            container1_text4.setAttribute("class", "footer_text")
-            container1_text4.innerText = "10:00 - 15:00"
-            container1.appendChild(container1_text4)
+                var container1_text4 = document.createElement('div')
+                container1_text4.setAttribute("class", "footer_text")
+                container1_text4.innerText = "10:00 - 15:00"
+                container1.appendChild(container1_text4)
 
         var container2 = document.createElement('div');
         container2.setAttribute("class", "footer_container second")
@@ -105,7 +116,7 @@ function loadFooter(){
         var container3 = document.createElement('div');
         container3.setAttribute("class", "footer_container third")
         containers.appendChild(container3)
-
+    
             var icon3 = document.createElement('img');
             icon3.setAttribute("src", "img/icons/location.svg")
             icon3.setAttribute("alt", "location")

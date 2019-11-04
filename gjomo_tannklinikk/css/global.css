@@ -4,7 +4,6 @@
     weight: 100;
 }
 
-
 html {
 	height: 100%;
 	margin: 0;
@@ -56,7 +55,11 @@ body{
 }
 
 .navbar #logo{
-    float: left
+	padding-top: 10px;
+	padding-left: 10px;
+	float: left;
+	height: 50px;
+	
 }
 
 /*footer*/
@@ -87,4 +90,40 @@ body{
 	margin-bottom: 15px;
 	height: 25px;
 	width: 25px;
+}
+
+/* Treatments */
+
+.Txt{
+	width: 50%;
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: left;
+}
+
+#bb1, #bb2, #bb3, #bb4, #bb5, #bb6, #bb7{
+	padding: 1%;
+	width: 150%;
+}
+
+#bb1:hover, #bb2:hover, #bb3:hover, #bb4:hover, #bb5:hover, #bb6:hover, #bb7:hover{
+	color: grey;
+}
+
+hr{
+	border-top: 1px solid #CAEAE3;
+	width: 130%;
+}
+
+.line{
+	position: relative;
+	left: -20%;
+}
+
+.sidebar{
+	text-align: left;
+	list-style: none;
+	position: fixed;
+	top: 24%;
+	padding-left: 2%;
 }

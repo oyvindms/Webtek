@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	.then(data=>{
 		let parser = new DOMParser();
 		let xml = parser.parseFromString(data, "application/xml");
-//		console.log(xml);
+		console.log(xml);
 		buildFAQ(xml);
 		accordion();
 	});
@@ -58,14 +58,13 @@ function setClass(els, className, fnName) {
 }
 
 function filterSearch() {
-    var input, filter, ul, faq, p, i, txtValue;
-    input = document.getElementById("FAQ_search_bar");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("FAQ_list");
-    faq = ul.getElementsByClassName("faqElement");
-    for (i = 0; i < faq.length; i++) {
-        p = faq[i].getElementsByTagName("p")[0];
-        txtValue = p.textContent || p.innerText;
+    var input = document.getElementById("FAQ_search_bar");
+    var filter = input.value.toUpperCase();
+    var ul = document.getElementById("FAQ_list");
+    var faq = ul.getElementsByClassName("faqElement");
+    for (var i = 0; i < faq.length; i++) {
+        var p = faq[i].getElementsByTagName("p")[0];
+        var txtValue = p.textContent || p.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             faq[i].style.display = "";
         } else {

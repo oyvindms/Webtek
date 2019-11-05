@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href="css/global.css">
-    <link rel ="stylesheet" href="css/contact_style.css">
+	<link rel ="stylesheet" href="css/contact_style.css">
+	<script src="js/reusableHTML.js"></script>
     <title>Kontakt</title>
 	<style>
 		html, body {
@@ -18,25 +19,23 @@
 			position: relative;
 		}
 		
-		#container{
-			width: 100%;
+		#ctcContainer{
+			width: 70%;
 			height: 250px;
 			background-color: white;
-			position: absolute;
 			bottom: 0;
-			padding-right: 400px;
-			box-shadow: 0px 3px 10px gray;
+			float: right;
 		}
 		
-		.footer_container{
+		.ctcFooter_container{
 			position: relative;
-			margin: 50px 60px;
+			margin: 50px 3%;
 			float:right;
 			color: #1C8D74;
 		}
 		
-		.footer_container.first{
-			margin-right: 200px;
+		.ctcFooter_container.first{
+			margin-right: 10%;
 		}
 		
 		.contact_form{
@@ -47,7 +46,7 @@
 			line-height: 1.5;
 			font-size: 14px;
 			margin: auto;
-			margin-left: 90px;
+			margin-left: 5%;
 			padding-left: 25px;
 			padding-top: 30px;
 			border-radius: 15px 15px 0px 0px;
@@ -58,7 +57,7 @@
 			z-index: 1;
 		}
 		
-		.footer_text{
+		.ctcFooter_text{
 			font-size: 17px;
 			margin-bottom: 7px;
 		}
@@ -66,74 +65,212 @@
 		.icon{
 			margin-bottom: 15px;
 		}
+
+		#map {
+			position: relative;
+			width: 100%;
+			height: 500px;
+			border: none;
+			box-shadow: 0px 0px 4px gray;
+		}
+
+		form{
+			position: inherit;
+			color: #1C8D74;
+			font-family: arial;
+			font-weight: bold;
+			font-size: 12px;
+		}
+
+
+		input {
+			font-size: 12px;
+			color: #1C8D74;
+			outline: none;
+		}
+					
+		input[type=text], input[type=email], input[type=tel]{
+			width: 270px;
+			height: 10px;
+			margin: 6px 0 8px 0;
+			border: 2px solid #94E3D2;
+			border-radius: 6px;
+			padding: 10px 0 10px 10px;
+			background-color: #EAFFFB;
+		}
+				
+		select {
+			width: 283px;
+			height: 36px;
+			margin: 6px 0;
+			display: block;
+			color: #1C8D74;
+			padding: 10px 10px;
+			background-color: #EAFFFB;
+			-webkit-appearance: none;
+			border-radius: 6px;
+			border: 2px solid #94E3D2;
+			box-sizing: border-box;
+			outline: none;
+		}
+				
+		textarea {
+			width: 270px;
+			height: 114px;
+			margin-top: 4px;
+			border: 2px solid #94E3D2;
+			border-radius: 6px;
+			padding: 10px 0 0 10px;
+			color: #1C8D74;
+			background-color: #EAFFFB;
+			resize: none;
+			outline: none;
+		}
+				
+		input[type=submit]{
+			font-size: 13px;
+			width: 83px;
+			height: 40px;
+			background-color: #EAFFFB;
+			margin-top: 10px;
+			border: 2px solid #94E3D2;
+			border-radius: 6px;
+			float: right;
+		}
+
+		@media only screen and (max-width: 910px) {
+			.contact_form{
+			height: 40%;
+			width: 100%;
+			background-color: #80D3C1;
+			color: white;
+			line-height: 1.5;
+			font-size: 14px;
+			margin: auto;
+			padding-left: 25px;
+			padding-top: 30px;
+			border-radius: 0px 0px 0px 0px;
+			border: 3px solid #72CEBA;
+			position:static;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
+
+		#submit{
+			float: left;
+		}
+
+		#ctcContainer{
+			position: static;
+			width: 100%;
+			height: 150px;
+			background-color: white;
+			bottom: 0;
+		}
+
+		form{
+			position: relative;
+			color: #1C8D74;
+			font-family: arial;
+			font-weight: bold;
+			font-size: 12px;
+			margin: auto;
+			padding: auto;
+			display: inline-block
+		}
+
+		#formWrapper{
+			display: block;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			margin: auto;
+			position: relative;
+		}
+
+		.ctcFooter_container{
+			position: relative;
+			margin: 50px ;
+			color: #1C8D74;
+		}
+		
+		.ctcFooter_container.first{
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		}
 		
 		
 	</style>
 </head>
 <body>
-<div id="window">
-    <header>
-        <script src="js/reusableHTML.js"></script>
-    </header>
-	
-	<iframe src="https://snazzymaps.com/embed/195853" width="100%" height="400px" style="border:none;"></iframe>
-	
-	<div class="contact_form">
-		<form action="" method="post" autocomplete="off">
-			<span>
-				Fullt navn<br>
-				<input type="text" name="fulltNavn" value="Ola Nordmann" required>
-			</span>
-			<br>
-			<span>
-				Mobil<br>
-				<input type="tel" name="gsm" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" maxlength="11" value="97 95 63 69">
-			</span>
-			<br>
-			<span>
-				Epost<br>
-				<input type="email" name="epost" value="eksempel@gmail.com" required>
-			</span>
-			<br>
-			<span>
-			Hva gjelder din henvendelse?<br>
-			<select name="henvendelse">
-			<option value="time">Bestille time</option>
-			<option value="konsultasjon01">Konsultasjon</option>
-			<option value="konsultasjon02">Konsultasjon</option>
-			</select>
-			</span>
-			<span>
-			Melding<br>
-			<textarea cols="40" rows="10">Skriv din melding her...</textarea>
-			</span>
-			<br>
-			<span>
-				<input class="submit" type="submit" name="send" value="SEND">
-			</span>
-		</form>
-	</div>
-	
-	<div id="container">
-		<div class="footer_container first">
-			<img src="img/icons/clock.svg" alt="open_hours" class="icon" height="25px" width="25px">
-			<div class="footer_text">Man - Fre</div>
-			<div class="footer_text">08:00 - 16:00</div>
-			<div class="footer_text">Lør</div>
-			<div class="footer_text">10:00 - 15:00</div>
-		</div>
-		<div class="footer_container">
-			<img src="img/icons/contact.svg" alt="contact" class="icon" height="25px" width="25px">
-			<div class="footer_text">92 93 94 95</div>
-			<div class="footer_text">kontakt@gjomo.no</div>
-		</div>
-		<div class="footer_container">
-			<img src="img/icons/location.svg" alt="location" class="icon" height="25px" width="25px">
-			<div class="footer_text">Kolbjørn Hejes vei 2B</div>
-			<div class="footer_text">7034, Trondheim</div>
-		</div>
-	</div>
-</div>
 
+		<div id="window">
+			<header>
+				<script>loadNavbar()</script>
+			</header>
+			
+			<iframe id = "map" src="https://snazzymaps.com/embed/195853"></iframe>
+			
+			<div class="contact_form">
+				<div id = "formWrapper">
+					<form action="" method="post" autocomplete="off">
+						<span>
+							Fullt navn<br>
+							<input type="text" name="fulltNavn" placeholder="Navn Navnesen" required>
+						</span>
+						<br>
+						<span>
+							Mobil<br>
+							<input type="tel" name="gsm" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" maxlength="11" placeholder="92939495">
+						</span>
+						<br>
+						<span>
+							Epost<br>
+							<input type="email" name="epost" placeholder="eksempel@gmail.com" required>
+						</span>
+						<br>
+						<span>
+						Hva gjelder din henvendelse?<br>
+						<select name="henvendelse">
+						<option value="time">Bestille time</option>
+						<option value="konsultasjon01">Konsultasjon</option>
+						<option value="konsultasjon02">Konsultasjon</option>
+						</select>
+						</span>
+						<span>
+						Melding<br>
+						<textarea cols="40" rows="10" placeholder="Skriv din melding her..."></textarea>
+						</span>
+						<br>
+						<span>
+							<input id = "submit" class="submit" type="submit" name="send" value="SEND">
+						</span>
+					</form>
+				</div>
+			</div>
+			
+			<!-- Custom footer for this page -->
+			<div id="ctcContainer">
+				<div class="ctcFooter_container first">
+					<img src="img/icons/clock.svg" alt="open_hours" class="icon">
+					<div class="ctcFooter_text">Man - Fre</div>
+					<div class="ctcFooter_text">08:00 - 16:00</div>
+					<div class="ctcFooter_text">Lør</div>
+					<div class="ctcFooter_text">10:00 - 15:00</div>
+				</div>
+				<div class="ctcFooter_container">
+					<img src="img/icons/contact.svg" alt="contact" class="icon">
+					<div class="ctcFooter_text">92 93 94 95</div>
+					<div class="ctcFooter_text">kontakt@gjomo.no</div>
+				</div>
+				<div class="ctcFooter_container">
+					<img src="img/icons/location.svg" alt="location" class="icon">
+					<div class="ctcFooter_text">Kolbjørn Hejes vei 2B</div>
+					<div class="ctcFooter_text">7034, Trondheim</div>
+				</div>
+			</div>
+		</div>
 </body>
 </html>

@@ -13,7 +13,7 @@
 	
 	<testimonial>
 		<customer_name>Solveig</customer_name>
-		<quote>Praesent porttitor sem a hendrerit sagittis. Integer gravida pulvinar lacus, et convallis enim cursus eget. Vestibulum suscipit varius nunc vel.</quote>
+		<quote>Praesent porttitor sem a hendrerit sagittis. Integer gravida pulvinar lacus, et convallis enim cursus eget.</quote>
 	</testimonial>
 	
 	<testimonial>
@@ -23,6 +23,6 @@
 	
 	<testimonial>
 		<customer_name>Kurt</customer_name>
-		<quote>Proin venenatis ligula id est elementum, a egestas eros dictum. Vivamus ante magna, euismod at dapibus in, condimentum.</quote>
+		<quote>Proin venenatis ligula id est elementum, a egestas eros dictum. Vivamus ante magna, euismod.</quote>
 	</testimonial>
 </root>

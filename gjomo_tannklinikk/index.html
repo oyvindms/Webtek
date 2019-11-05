@@ -14,7 +14,7 @@
 			margin: auto;
 			margin-top: 200px;
 			width: 300px;
-			height: 200px;
+			height: 170px;
 			background-color: aqua;
 			color: white;
 		}
@@ -40,7 +40,8 @@
 		.t_n_init{
 			position: absolute;
 			bottom: 0px;
-			opacity: 1;
+			font-size: 18px;
+			opacity: 0;
 			width: 100%;
 			text-align: center;
 			transition: all 0.2s ease-in-out;
@@ -64,6 +65,10 @@
 			opacity: 0;
 		}
 		
+		div p{
+			margin-bottom: 0;
+		}
+		
 	</style>
 </head>
 <body>
@@ -74,12 +79,6 @@
 		
 		<div id="testimonials_container">
 			<img src="img/icons/quotes.svg" alt="quotes">
-			<div class="t_q_init slideIn">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta at eros vel congue. Duis lectus mi.</p>
-			</div>
-			<div class="t_n_init">
-				<p>- Harald</p>
-			</div>
 		</div>
 
 		<script src = "js/testimonials.js"></script>

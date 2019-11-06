@@ -134,7 +134,7 @@ function loadFooter(){
 }
 
 /* This function dynamicly writes out the contact form/modal as html for all pages that laod the script. */
-function loadModal{
+/* function loadModal{
 // Get modal element
 var modal = document.getElementById("myModal");
 // Get open modal button
@@ -325,8 +325,8 @@ function closeModal(){
 function outsideClick(e){
     if(e.target == modal){
     modal.style.display = "none";
-    }
-
+    } */
+ 
 
 
 

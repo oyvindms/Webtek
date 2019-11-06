@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href= "css/global.css">
+	<link rel = "stylesheet" href= "css/global.css">
+	<script src="js/reusableHTML.js"></script>
     <title>Priser</title>
 	<style>
 		
@@ -61,26 +62,26 @@
 </head>
 <body>
     <header>
-        <script src="js/reusableHTML.js"></script>
+        <script>loadNavbar()</script>
     </header>
 	
 	<h1 class="header">Priser</h1>
 	
-	<div id="Behandlinger">
-		
-		<!--<div>
-			<h3>Kategorinavn</h3>
-			<ul>
-				<li>
-					<span class="behandling_navn"></span>
-					<span style="float: right" class="behandling_pris"></span>
-				</li>
-			</ul>
-		
-		</div>-->
-		
-	</div>
-	
+		<div id="Behandlinger">
+			
+			<!--<div>
+				<h3>Kategorinavn</h3>
+				<ul>
+					<li>
+						<span class="behandling_navn"></span>
+						<span style="float: right" class="behandling_pris"></span>
+					</li>
+				</ul>
+			
+			</div>-->
+			
+		</div>
+	<script>loadFooter()</script>
 <script src="js/prices.js"> </script>	
 </body>
 </html>

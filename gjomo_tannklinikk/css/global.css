@@ -4,9 +4,17 @@
     weight: 100;
 }
 
+html, body{
+	height: 100%;
+	margin: 0;
+}
 body{
-    margin: 0;
     font-family: bigJohnRegular;
+}
+
+
+.content {
+	min-height: 100%;
 }
 
 .header{
@@ -46,60 +54,46 @@ body{
     border-bottom: 2px white solid;
 }
 
-.navbar #logo{
-    float: left
+.navbar #logoLink{
+	float: left;
+	margin-top: 25px;
+	margin-left: 10px;
+	padding: 0;
+}
+
+.navbar #gjomoLogo{
+	height: 50px;
+	margin-bottom: 25px;
 }
 
 /*footer*/
 
-.footer {
+#footer{
+	margin: 100px 0 0 0;
 	width: 100%;
-	background-color: rgba(148, 227, 210, 1.0);
-	height: 300px;
-	text-align: left;
-	display: flex;
-	justify-content: center;
-	padding-top: 80px;
-	color: rgba(28,141,116,1.0);
-	
-	
-	
-
-
+	height: 200px;
+	background-color: rgba(148,227,210,1.0);
+	bottom: 0;
 }
 
-.footer-left {
-	height: 20px;
-	padding-left: 200px;
-	float: left;
-	width: 180px;
-}
-
-
-
-.footer-right {
-	height: 20px;
-	padding-right: 200px;
+.footer_container{
+	padding-top: 30px;
 	float: right;
-	width: 100px;
+	width: 33.3%;
+	height: 100px;
+	text-align: center;
+	color: rgba(28,141,116,1.0);
 }
 
-.footer-middle {
-	height: 20px;
-	witdh: 100px;
-	margin-left: auto;
-	margin-right: auto;		
-	
-	
-	
+.footer_text{
+	font-size: 17px;
+	margin-bottom: 7px;
 }
 
-.material-icons {
-	vertical-align: middle;
-	padding-right: 10px;
-	padding-bottom: 3px;
-	margin-left: -5px;
+.footerIcon{
+	height: 25px;
 }
+
 #email-icon {
 	margin-left: -2px;
 }
@@ -107,14 +101,35 @@ body{
 	margin-left: 30px;
 }
 
-
 .tid {
 	padding-bottom: 10px;
 }
 
-
-#footer {
-	position: sticky;
-	margin-bottom: 0;
-	
+.bilde{
+	position: relative;
+	border-radius: 50%;
+	width: 60%;
 }
+
+#infoBedrift{
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.person{
+	width: 27%;
+	margin: auto;
+	padding-top: 10%;
+}
+
+#innhold{
+	display: flex;
+	flex-wrap: wrap;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+@media only screen and (max-width: 768px){
+	.person{
+		width: 60%;
+	}}

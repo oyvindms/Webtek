@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href= "css/global.css">
-    <script src="js/reusableHTML.js"></script>
     <title>Priser</title>
+	<style>
+		
+		body {
+			color: #1c8d74;
+
+		}
+		#Behandlinger {
+			width: 60%;
+			margin: auto;
+			
+		
+		}
+		h3 {
+			font-size: 30px;
+			margin-bottom: 15px;
+		}
+		
+	
+			ul.tjenester {
+			padding: 0;
+			line-height: 2;
+			margin-top: 0;
+			margin-bottom: 10%;
+		}
+		ul.tjenester li {
+			display: table;
+			font-size: 22px;
+		}
+		ul.tjenester li span {
+			display:     table-cell;
+		}
+		ul.tjenester li span:first-child {
+		  position: relative;
+			overflow: hidden;            /* Don't go underneath the price */
+		}
+		ul.tjenester li span:first-child:after { /* dashes */
+			content:        "";
+			position:       absolute;
+			bottom:         0.2em;       /* Set as you want */       
+			margin-left:    0.5em;       /* Keep same for the next span's left padding */
+			width:          100%;
+			border-bottom:  1px solid #000;
+		}
+		ul.tjenester li span + span {
+			text-align:     right;
+			width:          1%;          /* Trick it */
+			vertical-align: bottom;      /* Keep Price text bottom-aligned */
+			padding-left:   0.5em;
+			white-space:nowrap;
+		}
+
+	
+	</style>
 </head>
 <body>
     <div class = "content">
@@ -13,9 +65,24 @@
             <script>loadNavbar()</script>
         </header>
 
-        
-
-        <script>loadFooter()</script>
+        	<h1 class="header">Priser</h1>
+	
+	<div id="Behandlinger">
+		
+		<!--<div>
+			<h3>Kategorinavn</h3>
+			<ul>
+				<li>
+					<span class="behandling_navn"></span>
+					<span style="float: right" class="behandling_pris"></span>
+				</li>
+			</ul>
+		
+		</div>-->
+		
+	</div>
     </div>
+<script>loadFooter()</script>
+<script src="js/prices.js"> </script>	
 </body>
 </html>

@@ -48,8 +48,6 @@ function loadNavbar(){
     faqLink.setAttribute('href',"faq.html");
     faqLink.innerText = "FAQ";
     navDiv.appendChild(faqLink);
-
-    
 }
 
 /* This function dynamicly writes out the footer as html for all pages that laod the script. */
@@ -66,32 +64,32 @@ function loadFooter(){
         container1.setAttribute("class", "footer_container first")
         containers.appendChild(container1)
             
-                var icon1 = document.createElement('img');
-                icon1.setAttribute("src", "img/icons/clock.svg")
-                icon1.setAttribute("alt", "open_hours")
-                icon1.setAttribute("class", "icon")
-                container1.appendChild(icon1)
+            var icon1 = document.createElement('img');
+            icon1.setAttribute("src", "img/icons/clock.svg")
+            icon1.setAttribute("alt", "open_hours")
+            icon1.setAttribute("class", "icon")
+            container1.appendChild(icon1)
 
-                var container1_text1 = document.createElement('div')
-                container1_text1.setAttribute("class", "footer_text")
-                container1_text1.innerText = "Man - Fre"
-                container1.appendChild(container1_text1)
+            var container1_text1 = document.createElement('div')
+            container1_text1.setAttribute("class", "footer_text")
+            container1_text1.innerText = "Man - Fre"
+            container1.appendChild(container1_text1)
 
-                var container1_text2 = document.createElement('div')
-                container1_text2.setAttribute("class", "footer_text")
-                container1_text2.innerText = "08:00 - 16:00"
-                container1.appendChild(container1_text2)
-                
-                var container1_text3 = document.createElement('div')
-                container1_text3.setAttribute("class", "footer_text")
-                container1_text3.innerText = "Lør      " /* Same length as the "mon-fre" without uneccesary css.*/
-                container1_text3.setAttribute("id", "saturday")
-                container1.appendChild(container1_text3)
+            var container1_text2 = document.createElement('div')
+            container1_text2.setAttribute("class", "footer_text")
+            container1_text2.innerText = "08:00 - 16:00"
+            container1.appendChild(container1_text2)
+            
+            var container1_text3 = document.createElement('div')
+            container1_text3.setAttribute("class", "footer_text")
+            container1_text3.innerText = "Lør      " /* Same length as the "mon-fre" without uneccesary css.*/
+            container1_text3.setAttribute("id", "saturday")
+            container1.appendChild(container1_text3)
 
-                var container1_text4 = document.createElement('div')
-                container1_text4.setAttribute("class", "footer_text")
-                container1_text4.innerText = "10:00 - 15:00"
-                container1.appendChild(container1_text4)
+            var container1_text4 = document.createElement('div')
+            container1_text4.setAttribute("class", "footer_text")
+            container1_text4.innerText = "10:00 - 15:00"
+            container1.appendChild(container1_text4)
 
         var container2 = document.createElement('div');
         container2.setAttribute("class", "footer_container second")

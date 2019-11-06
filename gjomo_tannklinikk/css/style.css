@@ -20,9 +20,6 @@ h1{
 	width: 100%;
 }
 
-textarea{
-	width: 100%;
-}
 .button{
 	background: #1C8D74;
 	padding: 1em 2em;
@@ -113,7 +110,7 @@ select {
 }
 
 textarea {
-	width: 270px;
+	width: 100%;
 	height: 114px;
 	margin-top: 4px;
 	border: 2px solid #94E3D2;

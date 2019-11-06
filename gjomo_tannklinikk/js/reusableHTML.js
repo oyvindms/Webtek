@@ -152,27 +152,27 @@ window.addEventListener("click", outsideClick);
 
     var body = document.querySelector('body')
 
-    var btn = document.createElement('BUTTON');
-    btn.innerHTML = "<img src=\"img/checkmark_white.svg\">"; // Her kan jeg også endre på size til bildet
-    body.appendChild(btn);
+    var btn = document.createElement('BUTTON')
+    btn.innerHTML = "<img src=\"img/checkmark_white.svg\">" // Her kan jeg også endre på size til bildet
+    body.appendChild(btn)
 
-    var modDiv = document.createElement('div');
+    var modDiv = document.createElement('div')
     modDiv.setAttribute("id","myModal")
     modDiv.setAttribute("class", "modal")
-    btn.appendChild(modDiv);
+    btn.appendChild(modDiv)
 
-        var modCont = document.createElement('div');
+        var modCont = document.createElement('div')
         modCont.setAttribute("class", "modal-content")
-        modDiv.appendChild(modCont);
+        modDiv.appendChild(modCont)
 
-            var fieldSet = document.createElement('fieldSet');
-            fieldSet.style.border = 'none';
-            modCont.appendChild(fieldSet);
+            var fieldSet = document.createElement('fieldSet')
+            fieldSet.style.border = 'none'
+            modCont.appendChild(fieldSet)
 
-                    var closeButton = document.createElement('SPAN');
-                    closeButton.setAttribute("class", "closeBtn");
-                    closeButton.setAttribute("id", "closeBtn");
-                    fieldSet.appendChild(closeButton);
+                    var closeButton = document.createElement('SPAN')
+                    closeButton.setAttribute("class", "closeBtn")
+                    closeButton.setAttribute("id", "closeBtn")
+                    fieldSet.appendChild(closeButton)
 
                     var h = document.createElement('H1')
                     var t = document.createTextNode("KONTAKT OSS")
@@ -191,10 +191,10 @@ window.addEventListener("click", outsideClick);
                         name.appendChild(n)
                         fname.appendChild(name)
 
-                        var write = document.createElement('INPUT').required;
+                        var write = document.createElement('INPUT').required
                         write.setAttribute("type", "text")
                         write.setAttribute("id", "Fornavn")
-                        write.setAttribute("value", "Name")
+                        document.getElementById("Fornavn").placeholder = "Fornavn"
                         fname.appendChild(write)
                         //Mangler her onfocus 
                         // Missing <br>
@@ -208,9 +208,10 @@ window.addEventListener("click", outsideClick);
                         namelast.appendChild(nl)
                         ename.appendChild(namelast)
 
-                        var write2 = document.createElement('INPUT').required;
+                        var write2 = document.createElement('INPUT').required
                         write2.setAttribute("type", "text")
-                        write2.setAttribute("value", "Name")
+                        write2.setAttribute("id", "etternavn")
+                        document.getElementById("etternavn").placeholder = "Etternavn"
                         fname.appendChild(write2)
                         //Mangler her onfocus 
                         // Missing <br>
@@ -224,9 +225,10 @@ window.addEventListener("click", outsideClick);
                         tlf.appendChild(t)
                         phone.appendChild(tlf)
 
-                        var write3 = document.createElement('INPUT').required;
+                        var write3 = document.createElement('INPUT').required
                         write3.setAttribute("type", "tel")
-                        write3.setAttribute("value", "Number")
+                        write3.setAttribute("id", "Number")
+                        document.getElementById("Number").placeholder = "Nummer"
                         wite3.maxLength = 11
                         fname.appendChild(write3)
                         //Mangler her onfocus 
@@ -242,10 +244,10 @@ window.addEventListener("click", outsideClick);
                         epo.appendChild(e)
                         email.appendChild(epo)
 
-                        var write4 = document.createElement('INPUT').required;
+                        var write4 = document.createElement('INPUT').required
                         write4.setAttribute("type", "email")
-                        write4.setAttribute("value", "E-post")
-                        write4.setAttribute("name", "epost")
+                        write4.setAttribute("id", "epost")
+                        document.getElementById("epost").placeholder = "E-post"
                         fname.appendChild(write4)
                         //Mangler her onfocus 
                         // Missing <br>
@@ -288,9 +290,10 @@ window.addEventListener("click", outsideClick);
                         ta.appendChild(t)
                         txt.appendChild(ta)
 
-                        var write6 = document.createElement('textarea').required;
-                        write6.innerText = "Skriv din melding her..."
-                        fname.appendChild(write6)
+                        var write6 = document.createElement('textarea').required
+                        write6.setAttribute("id", "texten")
+                        document.getElementById("texten").placeholder = "Skriv din melding her..."
+                        txt.appendChild(write6)
                         //Mangler her onfocus 
                         // Missing <br>
 
@@ -298,7 +301,7 @@ window.addEventListener("click", outsideClick);
                     fname.setAttribute("for", "Submit")
                     frm.appendChild(sub)
 
-                        var write7 = document.createElement('INPUT').required;
+                        var write7 = document.createElement('INPUT').required
                         write4.setAttribute("type", "Submit")
                         write4.setAttribute("value", "Send")
                         write4.setAttribute("name", "submit")

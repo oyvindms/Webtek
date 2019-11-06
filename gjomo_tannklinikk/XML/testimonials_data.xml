@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<testimonial>
+		<customer_name>Harald</customer_name>
+		<quote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta at eros vel congue. Duis lectus mi.</quote>
+	</testimonial>
+	
+	<testimonial>
+		<customer_name>Turid</customer_name>
+		<quote>Nulla dapibus neque nibh, id maximus sem pulvinar auctor. Vivamus interdum blandit arcu vel iaculis. Curabitur eu.</quote>
+	</testimonial>
+	
+	<testimonial>
+		<customer_name>Solveig</customer_name>
+		<quote>Praesent porttitor sem a hendrerit sagittis. Integer gravida pulvinar lacus, et convallis enim cursus eget.</quote>
+	</testimonial>
+	
+	<testimonial>
+		<customer_name>Rune</customer_name>
+		<quote>Donec sed dictum libero. Etiam imperdiet vestibulum arcu. In gravida, odio sit amet.</quote>
+	</testimonial>
+	
+	<testimonial>
+		<customer_name>Kurt</customer_name>
+		<quote>Proin venenatis ligula id est elementum, a egestas eros dictum. Vivamus ante magna, euismod.</quote>
+	</testimonial>
+</root>

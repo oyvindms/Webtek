@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	
+	<Kategori type="GENERELLE TJENESTER">
+		<Tjeneste Pris="390">Konsultasjon</Tjeneste>
+		<Tjeneste Pris="670">Innkallingsundersøkelse</Tjeneste>
+		<Tjeneste Pris="870">Undersøkelse ny pasient</Tjeneste>
+		<Tjeneste Pris="1320">Undersøkelse av spesialist</Tjeneste>
+		<Tjeneste Pris="165">Anestesi (bedøvelse) per dose</Tjeneste>
+	</Kategori>
+	
+	<Kategori type="KONSERVERENDE BEHANDLING">
+		<Tjeneste Pris="400-900">Tannfylling 1 flate</Tjeneste>
+		<Tjeneste Pris="1370">Tannfylling 2 flater</Tjeneste>
+		<Tjeneste Pris="1930">Tannfylling 3 flater</Tjeneste>
+		<Tjeneste Pris="2200">Tannfylling 4 flater</Tjeneste>
+	</Kategori>
+	
+	<Kategori type="PULPA OG ROTBEHANDLING">
+		<Tjeneste Pris="3700">Rotbehandling én seanse (1 kanal)</Tjeneste>
+		<Tjeneste Pris="4670">Rotbehandling to seanser (2 kanal)</Tjeneste>
+		<Tjeneste Pris="5800">Rotbehandling tre seanser (3 kanal)</Tjeneste>
+		<Tjeneste Pris="6300">Rotbehandling fire seanser (4 kanal)</Tjeneste>
+	</Kategori>
+	
+
+</root>

@@ -153,6 +153,7 @@ window.addEventListener("click", outsideClick);
     var body = document.querySelector('body')
 
     var btn = document.createElement('BUTTON')
+    
     btn.innerHTML = "<img src=\"img/checkmark_white.svg\">" // Her kan jeg også endre på size til bildet
     body.appendChild(btn)
 

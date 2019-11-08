@@ -25,7 +25,7 @@ function buildSlider(x){
 		let quote = testimonials[i].childNodes[3].childNodes[0].nodeValue;
 		let name = testimonials[i].childNodes[1].childNodes[0].nodeValue;
 		p1.textContent = quote;
-		p2.textContent = name;
+		p2.textContent = "- " + name;
 		t_q_init.appendChild(p1);
 		t_n_init.appendChild(p2);
 		t_container.appendChild(t_q_init);
@@ -81,5 +81,5 @@ function Slider(){
 			slideIndex = 2;
 		}
 
-	setTimeout(Slider, 3000); // Change image every 5 seconds
+	setTimeout(Slider, 7000); // Change image every 5 seconds
 }

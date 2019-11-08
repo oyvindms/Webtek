@@ -221,6 +221,7 @@ function loadModal(){
                     fieldSet.appendChild(h)
 
                 var frm = document.createElement('form')
+                frm.setAttribute("class", "form1")
                 fieldSet.appendChild(frm)
 
                     var fname = document.createElement('div')

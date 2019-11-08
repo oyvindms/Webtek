@@ -112,6 +112,7 @@ form{
 h1{
 	text-align: center;
 	padding-top: 5%;
+	color: #fff;
 }
 
 .Etternavn, .Fornavn, .Mobil, .Epost{
@@ -130,6 +131,11 @@ h1{
 	height: 70px;
 	width: 70px;
 	border-radius: 50%;
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 5%;
+	float: right;
+	margin-right: 2%;
 }
 
 

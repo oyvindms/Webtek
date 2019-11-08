@@ -7,9 +7,10 @@ form{
 	padding: 2% 14% 14% 14%;
 }
 
-h1{
+h{
 	text-align: center;
 	padding-top: 5%;
+	color: #94E3D2;
 }
 
 .Etternavn, .Fornavn, .Mobil, .Epost{

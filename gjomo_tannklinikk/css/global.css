@@ -106,20 +106,32 @@ form{
 	font-family: arial;
 	font-weight: bold;
 	font-size: 12px;
-	padding: 2% 14% 14% 14%;
+	padding: 2% 20% 10% 20%;
 }
 
 h1{
 	text-align: center;
 	padding-top: 5%;
+	color: #fff;
 }
 
 .Etternavn, .Fornavn, .Mobil, .Epost{
 	display: inline-block;
+	margin-bottom: 2%;
+}
+
+.Etternavn, .Epost{
+	float: right;
+}
+
+
+.henhen{
+	margin-bottom: 3%;
 }
 
 .Melding{
 	width: 100%;
+	margin-bottom: 2%;
 }
 
 .button{

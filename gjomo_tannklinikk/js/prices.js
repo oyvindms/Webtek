@@ -9,50 +9,50 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		let parser = new DOMParser();
 		let xml = parser.parseFromString(data, "application/xml");
 		//console.log(xml);
-		buildKategoriList(xml)
+		buildCategoriList(xml)
 		
 	});
 })
 
 
-function buildKategoriList(x) {
+function buildCategoriList(x) {
 	
-	let Kategorier = x.getElementsByTagName("Kategori")
-	let prisOversikt = document.getElementById("Behandlinger")
+	let Categories = x.getElementsByTagName("Kategori")
+	let priceOverview = document.getElementById("Treatments")
 	
-	for(let i=0;i<Kategorier.length;i++){
+	for(let i=0;i<Categories.length;i++){
 		
 		let ul = document.createElement("ul")
-		ul.classList.add("tjenester")
-		let overskrift = document.createElement("h3")
-		let kategoriNavn = Kategorier[i].getAttribute("type")
-		overskrift.innerHTML = kategoriNavn
-		let tjenester = Kategorier[i].getElementsByTagName("Tjeneste")
+		ul.classList.add("services")
+		let treatmentHeader = document.createElement("h3")
+		let categoriName = Categories[i].getAttribute("type")
+		treatmentHeader.innerHTML = categoriName
+		let serviceList = Categories[i].getElementsByTagName("Tjeneste")
 		let div = document.createElement("div")
-		div.classList.add("kategoriContainer")
+		div.classList.add("categoriContainer")
 		
-		for (let i=0;i<tjenester.length;i++){
+		for (let i=0;i<serviceList.length;i++){
 			
 			
 			let li = document.createElement("li")
-			let pris = tjenester[i].getAttribute("Pris")
-			let tjeneste = tjenester[i].firstChild.nodeValue
-			let tjenesteSpan = document.createElement("span")
-			let prisSpan = document.createElement("span")
+			let price = serviceList[i].getAttribute("Pris")
+			let service = serviceList[i].firstChild.nodeValue
+			let serviceSpan = document.createElement("span")
+			let priceSpan = document.createElement("span")
 			
-			tjenesteSpan.textContent = tjeneste
-			tjenesteSpan.classList.add("tjenesteElement")
-			prisSpan.textContent = "kr " + pris
-			prisSpan.classList.add("prisElement")
+			serviceSpan.textContent = service
+			serviceSpan.classList.add("serviceElement")
+			priceSpan.textContent = "kr " + price
+			priceSpan.classList.add("priceElement")
 			
 			
-			li.appendChild(tjenesteSpan)
-			li.appendChild(prisSpan)
+			li.appendChild(serviceSpan)
+			li.appendChild(priceSpan)
 			
 			ul.appendChild(li)
-			div.appendChild(overskrift)
+			div.appendChild(treatmentHeader)
 			div.appendChild(ul)
-			prisOversikt.appendChild(div)
+			priceOverview.appendChild(div)
 			
 			
 		}

@@ -4,11 +4,20 @@
     weight: 100;
 }
 
-body{
-    margin: 0;
-    font-family: bigJohnRegular;
+html {
+	height: 100%;
+	margin: 0;
 }
 
+body{
+	height: 100%;
+	margin: 0;
+	font-family: bigJohnRegular;
+}
+
+.content{
+	min-height: 100%;
+}
 .header{
 	font-size: 60px;
 	font-weight: 100;
@@ -47,53 +56,86 @@ body{
 }
 
 .navbar #logo{
-    float: left
+	padding-top: 10px;
+	padding-left: 10px;
+	float: left;
+	height: 50px;
+	
 }
 
 /*footer*/
 
-.footer {
+.containers{
 	width: 100%;
-	background-color: rgba(148, 227, 210, 1.0);
-	height: 300px;
-	text-align: left;
-	display: flex;
-	justify-content: center;
-	padding-top: 80px;
-	color: rgba(28,141,116,1.0);
-	
-	
-	
-
-
+	height: 50px;
 }
 
+.footer_container{
+	height: 150px;
+	width: 33.33%;
+	margin: 0 auto;
+	padding-top: 5%;
+	padding-bottom: 2%;
+	text-align: center;
+	color: rgba(28,141,116,1.0);
+<<<<<<< HEAD
+	
+	
+	
+=======
+	float: right;
+	background-color: rgba(148,227,210,1.0);
+}
+>>>>>>> origin/master
+
+.footer_text{
+	font-size: 17px;
+	margin-bottom: 7px;
+}
+
+.icon{
+	margin-bottom: 15px;
+	height: 25px;
+	width: 25px;
+}
+
+<<<<<<< HEAD
 .footer-left {
 	height: 20px;
 	padding-left: 200px;
 	float: left;
 	width: 180px;
+=======
+/* Treatments */
+
+.Txt{
+	width: 50%;
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: left;
+>>>>>>> origin/master
 }
 
-
-
-.footer-right {
-	height: 20px;
-	padding-right: 200px;
-	float: right;
-	width: 100px;
+#bb1, #bb2, #bb3, #bb4, #bb5, #bb6, #bb7{
+	padding: 1%;
+	width: 150%;
 }
 
-.footer-middle {
-	height: 20px;
-	witdh: 100px;
-	margin-left: auto;
-	margin-right: auto;		
-	
-	
-	
+#bb1:hover, #bb2:hover, #bb3:hover, #bb4:hover, #bb5:hover, #bb6:hover, #bb7:hover{
+	color: grey;
 }
 
+hr{
+	border-top: 1px solid #CAEAE3;
+	width: 130%;
+}
+
+.line{
+	position: relative;
+	left: -20%;
+}
+
+<<<<<<< HEAD
 .material-icons {
 	vertical-align: middle;
 	padding-right: 10px;
@@ -117,4 +159,12 @@ body{
 	position: sticky;
 	margin-bottom: 0;
 	
+=======
+.sidebar{
+	text-align: left;
+	list-style: none;
+	position: fixed;
+	top: 24%;
+	padding-left: 2%;
+>>>>>>> origin/master
 }

@@ -81,5 +81,5 @@ function Slider(){
 			slideIndex = 2;
 		}
 
-	setTimeout(Slider, 1000); // Change image every 5 seconds
+	setTimeout(Slider, 3000); // Change image every 5 seconds
 }

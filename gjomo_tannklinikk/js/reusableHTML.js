@@ -10,20 +10,17 @@ function loadNavbar(){
 
     var logoLink = document.createElement('a');
     logoLink.setAttribute("href", "index.html")
-    logoLink.setAttribute('id',"logo")
+    logoLink.setAttribute('id',"logoLink")
 
     var logo = document.createElement('img');
     logo.setAttribute("src", "img/icons/logo.svg")
     logo.setAttribute("alt", "Gjømo logo")
-    logo.setAttribute("id", "logo")
+    logo.setAttribute("id", "gjomoLogo")
     
 
     logoLink.appendChild(logo)
     navDiv.appendChild(logoLink)
 
-    console.log(logoLink)
-    console.log(logo)
-    
     const treatmentsLink = document.createElement('a');
     treatmentsLink.setAttribute('href',"treatments.html");
     treatmentsLink.innerText = "BEHANDLINGER";
@@ -53,21 +50,22 @@ function loadNavbar(){
 /* This function dynamicly writes out the footer as html for all pages that laod the script. */
 function loadFooter(){
 
-    /* Deciding location of footer and adding needed divs. */
+    /* Deciding location of footer and adding needed divs. */   
+
     var body = document.querySelector('body')
-   
-    var containers = document.createElement('div');
-    containers.setAttribute("id", "containers")
-    body.appendChild(containers)
+
+    var footer = document.createElement('div');
+    footer.setAttribute("id", "footer")
+    body.appendChild(footer)
 
         var container1 = document.createElement('div');
         container1.setAttribute("class", "footer_container first")
-        containers.appendChild(container1)
+        footer.appendChild(container1)
             
             var icon1 = document.createElement('img');
             icon1.setAttribute("src", "img/icons/clock.svg")
             icon1.setAttribute("alt", "open_hours")
-            icon1.setAttribute("class", "icon")
+            icon1.setAttribute("class", "footerIcon")
             container1.appendChild(icon1)
 
             var container1_text1 = document.createElement('div')
@@ -93,12 +91,12 @@ function loadFooter(){
 
         var container2 = document.createElement('div');
         container2.setAttribute("class", "footer_container second")
-        containers.appendChild(container2)
+        footer.appendChild(container2)
 
             var icon2 = document.createElement('img');
             icon2.setAttribute("src", "img/icons/contact.svg")
             icon2.setAttribute("alt", "contact")
-            icon2.setAttribute("class", "icon")
+            icon2.setAttribute("class", "footerIcon")
             container2.appendChild(icon2)
 
             var container2_text1 = document.createElement('div')
@@ -113,12 +111,12 @@ function loadFooter(){
 
         var container3 = document.createElement('div');
         container3.setAttribute("class", "footer_container third")
-        containers.appendChild(container3)
+        footer.appendChild(container3)
     
             var icon3 = document.createElement('img');
             icon3.setAttribute("src", "img/icons/location.svg")
             icon3.setAttribute("alt", "location")
-            icon3.setAttribute("class", "icon")
+            icon3.setAttribute("class", "footerIcon")
             container3.appendChild(icon3)
 
             var container3_text1 = document.createElement('div')
@@ -132,8 +130,8 @@ function loadFooter(){
             container3.appendChild(container3_text2)
 }
 
-/* This function dynamicly writes out the contact form/modal as html for all pages that laod the script. */
-function loadModal{
+/* Modal js */
+/* 
 // Get modal element
 var modal = document.getElementById("myModal");
 // Get open modal button
@@ -142,25 +140,65 @@ var modalBtn = document.getElementById("modalBtn");
 var closeBtn = document.getElementById("closeBtn");
 
 // Listen for open click
-modalBtn.addEventListener("click", openModal);
+    modalBtn.addEventListener('click', openModal);
 
 // Listen for close click
-closeBtn.addEventListener("click", closeModal);
+    closeBtn.addEventListener("click", closeModal);
 
 // Listen for outside click
 window.addEventListener("click", outsideClick);
 
+//Function to open modal
+function openModal(){
+    
+	modal.style.display = "block";
+}
+ 
+//Function to close modal
+function closeModal(){
+	modal.style.display = "none";
+}
+
+//Function to close modal if outside click
+function outsideClick(e){
+	if(e.target == modal){
+	modal.style.display = "none";
+	}
+}
+
+var modalDiv = document.createElement('div')
+modalDiv.setAttribute("id", "modalDiv")
+
+
+
+modalDiv.innerText
+ 
+console.log(modalDiv)
+ */
+
+
+
+/* This function dynamicly writes out the contact form/modal as html for all pages that laod the script. */
+function loadModal(){
+
     var body = document.querySelector('body')
+    console.log("modal loaded")
 
     var btn = document.createElement('BUTTON')
-    
-    btn.innerHTML = "<img src=\"img/checkmark_white.svg\">" // Her kan jeg også endre på size til bildet
+
+    btn.setAttribute("id", "modalBtn")
+    btn.setAttribute("class", "button")
+    btn.addEventListener('click', openModal)
+
+    var modalIcon = document.createElement('img')
+    modalIcon.setAttribute("src", "img/checkmark_white.svg")
+    btn.appendChild(modalIcon)  
     body.appendChild(btn)
 
     var modDiv = document.createElement('div')
     modDiv.setAttribute("id","myModal")
     modDiv.setAttribute("class", "modal")
-    btn.appendChild(modDiv)
+    body.appendChild(modDiv)
 
         var modCont = document.createElement('div')
         modCont.setAttribute("class", "modal-content")
@@ -192,11 +230,14 @@ window.addEventListener("click", outsideClick);
                         name.appendChild(n)
                         fname.appendChild(name)
 
-                        var write = document.createElement('INPUT').required
+                        var write = document.createElement('INPUT')
+                        write.required = true
                         write.setAttribute("type", "text")
-                        write.setAttribute("id", "Fornavn")
-                        document.getElementById("Fornavn").placeholder = "Fornavn"
+                        write.setAttribute("id", "fornavn")
+                        write.setAttribute("placeholder", "fornavn")
                         fname.appendChild(write)
+
+                        console.log(write)
                         //Mangler her onfocus 
                         // Missing <br>
 
@@ -209,13 +250,17 @@ window.addEventListener("click", outsideClick);
                         namelast.appendChild(nl)
                         ename.appendChild(namelast)
 
-                        var write2 = document.createElement('INPUT').required
+                   
+
+                        var write2 = document.createElement('INPUT')
+                        write2.required = true
                         write2.setAttribute("type", "text")
                         write2.setAttribute("id", "etternavn")
-                        document.getElementById("etternavn").placeholder = "Etternavn"
+                        write2.setAttribute("placeholder", "Etternavn")
                         fname.appendChild(write2)
                         //Mangler her onfocus 
                         // Missing <br>
+
 
                     var phone = document.createElement('div')
                     fname.setAttribute("class", "Mobil")
@@ -226,11 +271,12 @@ window.addEventListener("click", outsideClick);
                         tlf.appendChild(t)
                         phone.appendChild(tlf)
 
-                        var write3 = document.createElement('INPUT').required
+                        var write3 = document.createElement('INPUT')
+                        write3.required = true
                         write3.setAttribute("type", "tel")
                         write3.setAttribute("id", "Number")
-                        document.getElementById("Number").placeholder = "Nummer"
-                        wite3.maxLength = 11
+                        write3.setAttribute("placeholder", "Nummer")
+                        write3.maxLength = 11
                         fname.appendChild(write3)
                         //Mangler her onfocus 
                         // Missing <br>
@@ -245,10 +291,11 @@ window.addEventListener("click", outsideClick);
                         epo.appendChild(e)
                         email.appendChild(epo)
 
-                        var write4 = document.createElement('INPUT').required
+                        var write4 = document.createElement('INPUT')
+                        write4.required = true
                         write4.setAttribute("type", "email")
                         write4.setAttribute("id", "epost")
-                        document.getElementById("epost").placeholder = "E-post"
+                        write4.setAttribute("placeholder", "E-post")
                         fname.appendChild(write4)
                         //Mangler her onfocus 
                         // Missing <br>
@@ -291,9 +338,10 @@ window.addEventListener("click", outsideClick);
                         ta.appendChild(t)
                         txt.appendChild(ta)
 
-                        var write6 = document.createElement('textarea').required
+                        var write6 = document.createElement('textarea')
+                        write6.required = true
                         write6.setAttribute("id", "texten")
-                        document.getElementById("texten").placeholder = "Skriv din melding her..."
+                        write6.setAttribute("placeholder", "Skriv din melding her...")
                         txt.appendChild(write6)
                         //Mangler her onfocus 
                         // Missing <br>
@@ -302,31 +350,65 @@ window.addEventListener("click", outsideClick);
                     fname.setAttribute("for", "Submit")
                     frm.appendChild(sub)
 
-                        var write7 = document.createElement('INPUT').required
-                        write4.setAttribute("type", "Submit")
-                        write4.setAttribute("value", "Send")
-                        write4.setAttribute("name", "submit")
+                        var write7 = document.createElement('INPUT')
+                        write7.setAttribute("type", "Submit")
+                        write7.setAttribute("value", "Send")
+                        write7.required = true
+                        write7.setAttribute("name", "submit")
                         fname.appendChild(write7)
                         // Missing <br>
+
+                        console.log(btn)
+
+
+                        // Get modal element
+  /*               var modal = document.getElementById("myModal");
+                console.log(modal) */
+
+                // Get open modal button
+                var modalBtn = document.getElementById("modalBtn");
+                // Get close button
+                var closeBtn = document.getElementById("closeBtn");
+
+        /*         // Listen for open click
+                modal.addEventListener("click", openModal); */
+
+                // Listen for close click
+                closeBtn.addEventListener("click", closeModal);
+
+                // Listen for outside click
+                window.addEventListener("click", outsideClick);
 }
+
+
+
 
 
 //Function to open modal
-function openModal(){
+function openModal(event){
+    var modal = document.getElementById("myModal");
+
     modal.style.display = "block";
+    console.log("Åpne modal kjører")
 }
  
 //Function to close modal
-function closeModal(){
+function closeModal(event){
+    var modal = document.getElementById("myModal");
+
     modal.style.display = "none";
+    console.log("Lukke modal kjører")
 }
 
 //Function to close modal if outside click
-function outsideClick(e){
-    if(e.target == modal){
+function outsideClick(event){
+    var modal = document.getElementById("myModal");
+
+    if(event.target == modal){
     modal.style.display = "none";
     }
-
+    console.log("utenfor klikk kjører")
+}
 
 
 

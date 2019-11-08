@@ -37,6 +37,10 @@
 		.ctcFooter_container.first{
 			margin-right: 10%;
 		}
+
+		.ctcIcon{
+			height: 25px;
+		}
 		
 		.contact_form{
 			height: 480px;
@@ -60,10 +64,6 @@
 		.ctcFooter_text{
 			font-size: 17px;
 			margin-bottom: 7px;
-		}
-		
-		.icon{
-			margin-bottom: 15px;
 		}
 
 		#map {
@@ -199,16 +199,15 @@
 			margin-left: 10%;
 			margin-right: 10%;
 		}
+
 		}
-		
-		
 	</style>
 </head>
 <body>
 
 		<div id="window">
 			<header>
-				<script>loadNavbar()</script>
+				<script>loadNavbar(); loadModal()</script>
 			</header>
 			
 			<iframe id = "map" src="https://snazzymaps.com/embed/195853"></iframe>
@@ -254,19 +253,19 @@
 			<!-- Custom footer for this page -->
 			<div id="ctcContainer">
 				<div class="ctcFooter_container first">
-					<img src="img/icons/clock.svg" alt="open_hours" class="icon">
+					<img src="img/icons/clock.svg" alt="open_hours" class="ctcIcon">
 					<div class="ctcFooter_text">Man - Fre</div>
 					<div class="ctcFooter_text">08:00 - 16:00</div>
 					<div class="ctcFooter_text">Lør</div>
 					<div class="ctcFooter_text">10:00 - 15:00</div>
 				</div>
 				<div class="ctcFooter_container">
-					<img src="img/icons/contact.svg" alt="contact" class="icon">
+					<img src="img/icons/contact.svg" alt="contact" class="ctcIcon">
 					<div class="ctcFooter_text">92 93 94 95</div>
 					<div class="ctcFooter_text">kontakt@gjomo.no</div>
 				</div>
 				<div class="ctcFooter_container">
-					<img src="img/icons/location.svg" alt="location" class="icon">
+					<img src="img/icons/location.svg" alt="location" class="ctcIcon">
 					<div class="ctcFooter_text">Kolbjørn Hejes vei 2B</div>
 					<div class="ctcFooter_text">7034, Trondheim</div>
 				</div>

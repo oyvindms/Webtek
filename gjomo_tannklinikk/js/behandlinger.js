@@ -1,9 +1,9 @@
 
     document.getElementById("bb1").onclick = function () {
-        location.href = "#b1";
+        location.href = "#b1Pic";
     };
      document.getElementById("bb2").onclick = function () {
-        location.href = "#b2";
+        location.href = "#b2Pic";
     };
 	 document.getElementById("bb3").onclick = function () {
 	        location.href = "#b3";

@@ -6,23 +6,24 @@
     <link rel = "stylesheet" href= "css/global.css">
     <link rel="stylesheet" href="css/about.css">
     <script src="js/reusableHTML.js"></script>
+
     <title>Om oss</title>
 </head>
 
 <body>
 
-    <div class = content>
+    <div class = contentOmOss>
 
         <header id="header">
             <script>
                     loadNavbar()
                     loadModal()
             </script>
-            <h1>OM OSS</h1>
+            <h1 class="headline">OM OSS</h1>
         </header>
 
         <div class="infoComp">
-            <p>Gjømo Tannklinikk AS ble grunnlagt i september 2019 av 5 studenter fra Industriell Design på NTNU i Trondheim. Vi er lokalisert i Gamlebyen i Trondheim, med kort avstand fra sentrum.</p>
+            <p>Gjømo Tannklinikk AS ble grunnlagt i september 2019 av 5 studenter fra Industriell Design på NTNU i Trondheim. Vi er lokalisert i Gamlebyen i Trondheim, med kort avstand fra sentrum. Gjennom flere iterasjoner har vi til slutt kommet frem til et konsept vi er fornøyde med og stolte av</p>
         </div>
 
         <img src="img/premises/stoler.jpg" class="premisesPic" alt="premPic1">
@@ -30,19 +31,28 @@
         <img src="img/premises/venterom.jpg" class="premisesPic" alt="premPic3">
 
 
-        <br><h2 id="hei">VÅRE ANSATTE</h2>
+
+
+
+
+
+
+        <br><h2 class="miniHeadline">VÅRE ANSATTE</h2>
 
             <div id="contentPersons">
 
                 <div class="person" id="greger">
-                    <img src="img/employees/greger.jpg" class="picture"  id="gregerPic" alt="Pic of Greger">
+                    <img src="img/employees/greger.jpg" class="picture"  id="gregerPic" alt="Pic of Greger" 
+                    onclick="modalPic()">    
 
                     <h3>Greger Gahre</h3>
-                    <h5>Tannpleier</h5>
-
-                    <div class = "infoPerson"  >
-                        <p>Greger qualified in 1997 from University of Gothenburg, Sweden. She has since worked as a general practitioner and her interests centre on cosmetic and preventive dentistry. </p>
+                    <h5>Tannhelsesekretær</h5>
+                    
+                    <div class="btn-container">
+                        <button id="toggle">Les mer</button>
                     </div>
+
+                    
                 </div>
 
                 <div class="person" id="jonas">
@@ -51,30 +61,23 @@
                     <h3>Jonas Selvikvåg</h3>
                     <h5>Tannlege</h5>
 
-                    <div class = "infoPerson">
-                        <p>Jonas is a highly experienced professional with over thirty year’s experience in dental practices across Surrey. She trained at Kings College, London and is committed to providing individualised patient care in a friendly and reassuring environment.</p>
-                    </div>
+                    
                 </div>
 
                 <div class=person  id="oyvind">
                     <img src="img/employees/oyvind.jpg" class="picture"  id="oyvindPic" alt="Pic of Øyvind">
 
                     <h3>Øyvind Strand</h3>
-                    <h5>Tannhelsesekretær</h5>
+                    <h5>Oralkiriug</h5>
 
-                    <div class = "infoPerson" >
-                        <p>Øyvind leads the team at Gjømo Tannklinikk and is responsible for the running of the Clinic. Øyvind enjoys practice management and is extremely passionate about delivering excellent patient care. She has had vast amount of experience in dentistry, both clinically and in the management of private, NHS and corporate sectors.</p>
-                    </div>
+                    
                 </div>
                 <div class=person id="markus">
                     <img src="img/employees/markus.jpg" class="picture"  id="markusPic" alt="Pic of Markus">
 
                     <h3>Markus Pettrém</h3>
-                    <h5>Tannlege</h5>
+                    <h5>Kjeveortoped</h5>
 
-                    <div class = "infoPerson" >
-                        <p>Markus is a former dental educator and vocational trainer employed by Oxford deanery, who for several years passed along his knowledge to colleagues seeking to refine their skills through formal training. Markus incorporates the latest technologies into his practice, including digital imaging for the accurate, safe diagnosis of dental conditions.</p>
-                    </div>
                 </div>
 
                 <div class=person  id="odd"> 
@@ -83,9 +86,7 @@
                     <h3>Ferdinand Steen-Johnsen</h3>
                     <h5>Sjefstannlege</h5>
 
-                    <div class = "infoPerson">
-                        <p>Ferdinand has been practicing dentistry for nearly 25 years. His excellent record of accomplishment in the areas of general, cosmetic, and implant dentistry make him a wonderful resource for patients seeking the utmost in dental care.</p>
-                    </div>
+                    
                 </div>
 
             </div>
@@ -93,6 +94,7 @@
         </div>
     </div>
 
+    <script src="js/about.js"></script>
     <script>loadFooter()</script>
 
 </body>

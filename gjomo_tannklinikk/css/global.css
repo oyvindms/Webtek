@@ -172,6 +172,9 @@ body{
 	float: left; 
 	width: 120%;
 	display: inline-block;
+	margin-left: 4%;
+	margin-bottom: 2%;
+	padding-top: 0;
 }
 
 .formElement #inquiry {
@@ -190,7 +193,8 @@ body{
 
 h1{
 	text-align: center;
-	padding-top: 2%;
+	padding: 1% 1%;
+	margin: 1.5% 1%;
 	color: #fff;
 }
 
@@ -206,7 +210,7 @@ h1{
 	position: sticky;
 	bottom: 5%;
 	float: right;
-	margin-right: 2%;
+
 }
 
 .button:hover{
@@ -227,8 +231,8 @@ h1{
 
 .modal-content{
 	background-color: #94E3D2;
-	margin: 5% auto;
-	height: 90%;
+	margin: 2% auto;
+	height: 94%;
 	width: 50%;
 	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
 	animation-name: modalopen;
@@ -251,32 +255,32 @@ h1{
 
 input, select{
 	background-color: #EAFFFB;
-	width: 80%;
+	width: 70%;
 	height: 10px;
 	padding: 1px 2px;
 	margin: 6px 0 8px 0;
 	border: 2px solid #94E3D2;
 	border-radius: 6px;
 	padding: 10px 0 10px 10px;
+	color: gray;
 }
-
 
 select {
 	height: 36px;
 	margin: 6px 0;
 	display: block;
-	color: #1C8D74;
 	padding: 10px 10px;
 	background-color: #EAFFFB;
 	-webkit-appearance: none;
 	border-radius: 6px;
 	border: 2px solid #94E3D2;
-	box-sizing: border-box,
+	box-sizing: border-box;
+	width: 72%;
 
 }
 
 textArea {
-	width: 80%;
+	width: 70%;
 	height: 114px;
 	margin-top: 4px;
 	border: 2px solid #94E3D2;
@@ -298,13 +302,42 @@ input[type=submit]{
 	border: 2px solid #94E3D2;
 	border-radius: 6px;
 	float: left;
+	padding: 0;
+	margin-left: 4%;
 }
 
-/* #textOver{
+#txtOver{
 	float: left;
-} */
+	width: 100%;
+}
 
 @keyframes modalopen{
 	from{opacity: 0}
 	to{opacity: 1}
+}
+
+@media screen and (max-width: 840px){
+	.modal-content{
+		background-color: #94E3D2;
+		margin: 7% auto;
+		height: 80%;
+		width: 50%;
+		box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+		animation-name: modalopen;
+		animation-duration: 0.4s;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 840px){
+	.modal-content{
+		background-color: #94E3D2;
+		margin: 7% auto;
+		height: 85%;
+		width: 70%;
+		box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+		animation-name: modalopen;
+		animation-duration: 0.4s;
+		overflow: hidden;
+	}
 }

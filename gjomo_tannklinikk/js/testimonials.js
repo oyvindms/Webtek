@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	.then(data=>{
 		let parser = new DOMParser();
 		let testimonials = parser.parseFromString(data, "application/xml");
-		console.log(testimonials);
 		buildSlider(testimonials);
 		Slider();
 	});

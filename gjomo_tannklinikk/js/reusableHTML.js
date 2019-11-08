@@ -331,6 +331,7 @@ function loadModal(){
 
                         var dropdown = document.createElement('select')
                         dropdown.setAttribute("name", "henvendelse")
+                        dropdown.setAttribute("class", "henhen")
                         henvendelse.appendChild(dropdown)
 
                             var opt1 = document.createElement('option')

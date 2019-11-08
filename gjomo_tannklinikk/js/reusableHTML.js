@@ -216,6 +216,7 @@ function loadModal(){
                     var h = document.createElement('H1')
                     var t = document.createTextNode("KONTAKT OSS")
                     h.appendChild(t)
+                    h.setAttribute("id", "header1")
                     fieldSet.appendChild(h)
 
                 var frm = document.createElement('form')
@@ -234,7 +235,7 @@ function loadModal(){
                         write.required = true
                         write.setAttribute("type", "text")
                         write.setAttribute("id", "fornavn")
-                        write.setAttribute("placeholder", "fornavn")
+                        write.setAttribute("placeholder", "Fornavn")
                         fname.appendChild(write)
 
                         console.log(write)

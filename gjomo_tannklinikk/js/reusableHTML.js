@@ -43,30 +43,38 @@ function loadNavbar(){
         navLinks.setAttribute('class', 'navLinks')
         navDiv.appendChild(navLinks)
 
-            const treatmentsLink = document.createElement('a');
-            treatmentsLink.setAttribute('href',"treatments.html");
-            treatmentsLink.innerText = "BEHANDLINGER";
-            navLinks.appendChild(treatmentsLink);
-            
-            const pricesLink = document.createElement('a');
-            pricesLink.setAttribute('href',"prices.html");
-            pricesLink.innerText = "PRISER";
-            navLinks.appendChild(pricesLink);
-            
-            const aboutLink = document.createElement('a');
-            aboutLink.setAttribute('href',"about.html");
-            aboutLink.innerText = "OM OSS";
-            navLinks.appendChild(aboutLink);
+            const faqLink = document.createElement('a');
+            faqLink.setAttribute('href',"faq.html");
+            faqLink.innerText = "FAQ";
+            navLinks.appendChild(faqLink);
 
             const contactLink = document.createElement('a');
             contactLink.setAttribute('href',"contact.html");
             contactLink.innerText = "KONTAKT";
             navLinks.appendChild(contactLink);
+
+            const aboutLink = document.createElement('a');
+            aboutLink.setAttribute('href',"about.html");
+            aboutLink.innerText = "OM OSS";
+            navLinks.appendChild(aboutLink);
+
+            const pricesLink = document.createElement('a');
+            pricesLink.setAttribute('href',"prices.html");
+            pricesLink.innerText = "PRISER";
+            navLinks.appendChild(pricesLink);
             
-            const faqLink = document.createElement('a');
-            faqLink.setAttribute('href',"faq.html");
-            faqLink.innerText = "FAQ";
-            navLinks.appendChild(faqLink);
+
+            const treatmentsLink = document.createElement('a');
+            treatmentsLink.setAttribute('href',"treatments.html");
+            treatmentsLink.innerText = "BEHANDLINGER";
+            navLinks.appendChild(treatmentsLink);
+            
+ 
+ 
+
+
+            
+
 }
 
 
@@ -188,6 +196,7 @@ function loadModal(){
     var modDiv = document.createElement('div')
     modDiv.setAttribute("id","myModal")
     modDiv.setAttribute("class", "modal")
+    modDiv.style.overflow = "hidden"
     body.appendChild(modDiv)
 
         var modCont = document.createElement('div')
@@ -195,6 +204,7 @@ function loadModal(){
         modDiv.appendChild(modCont)
 
             var fieldSet = document.createElement('fieldSet')
+            fieldSet.setAttribute("id", "modalBox")
             fieldSet.style.border = 'none'
             modCont.appendChild(fieldSet)
 
@@ -215,7 +225,8 @@ function loadModal(){
                 fieldSet.appendChild(frm)
 
                     var fname = document.createElement('div')
-                    fname.setAttribute("class", "Fornavn")
+                    fname.setAttribute("id", "Fornavn")
+                    fname.setAttribute("class", "formElement")
                     frm.appendChild(fname)
 
                         var name = document.createElement('LABEL')
@@ -238,7 +249,8 @@ function loadModal(){
                         
 
                     var ename = document.createElement('div')
-                    ename.setAttribute("class", "Etternavn")
+                    ename.setAttribute("id", "Etternavn")
+                    ename.setAttribute("class", "formElement")
                     frm.appendChild(ename)
 
                         var namelast = document.createElement('LABEL')
@@ -262,7 +274,8 @@ function loadModal(){
                         
 
                     var phone = document.createElement('div')
-                    phone.setAttribute("class", "Mobil")
+                    phone.setAttribute("id", "Mobil")
+                    phone.setAttribute("class", "formElement")
                     frm.appendChild(phone)
 
                         var tlf = document.createElement('LABEL')
@@ -290,7 +303,9 @@ function loadModal(){
                         
 
                     var email = document.createElement('div')
-                    email.setAttribute("class", "Epost")
+                    email.setAttribute("id", "Epost")
+                    email.setAttribute("class", "formElement")
+                    
                     frm.appendChild(email)
 
                         var epo = document.createElement('LABEL')
@@ -312,6 +327,8 @@ function loadModal(){
                         email.appendChild(br7)                        
 
                     var henvendelse = document.createElement('div')
+                    henvendelse.setAttribute("class", "formElement")
+
                     frm.appendChild(henvendelse)
 
                         var hen = document.createElement('LABEL')
@@ -321,7 +338,7 @@ function loadModal(){
 
                         var dropdown = document.createElement('select')
                         dropdown.setAttribute("name", "henvendelse")
-                        dropdown.setAttribute("class", "henhen")
+                        dropdown.setAttribute("id", "inquiry")
                         henvendelse.appendChild(dropdown)
 
                             var opt1 = document.createElement('option')
@@ -341,17 +358,20 @@ function loadModal(){
                         
 
                     var txt = document.createElement('div')
-                    txt.setAttribute("class", "Melding")
+                    txt.setAttribute("id", "message")
+                    txt.setAttribute("class", "formElement")
                     frm.appendChild(txt)
 
                         var ta = document.createElement('LABEL')
+                        ta.setAttribute("id", "txtOver")
+
                         var t = document.createTextNode("Melding")
                         ta.appendChild(t)
                         txt.appendChild(ta)
 
                         var write6 = document.createElement('textarea')
                         write6.required = true
-                        write6.setAttribute("id", "texten")
+                        write6.setAttribute("id", "textArea")
                         write6.setAttribute("placeholder", "Skriv din melding her...")
                         txt.appendChild(write6)
 
@@ -389,22 +409,21 @@ function loadModal(){
                 window.addEventListener("click", outsideClick);
 }
 
-
-
-
-
 //Function to open modal
 function openModal(event){
     var modal = document.getElementById("myModal");
-
-    modal.style.display = "block";
+    var body = document.querySelector("body")
+    body.style.overflow = "hidden"
+    modal.style.display = "block"
 }
  
 //Function to close modal
 function closeModal(event){
     var modal = document.getElementById("myModal");
-
     modal.style.display = "none";
+
+    var body = document.querySelector("body")
+    body.style.overflow = "scroll"
 }
 
 //Function to close modal if outside click
@@ -413,6 +432,9 @@ function outsideClick(event){
 
     if(event.target == modal){
     modal.style.display = "none";
+
+    var body = document.querySelector("body")
+    body.style.overflow = "scroll"
     }
 }
 

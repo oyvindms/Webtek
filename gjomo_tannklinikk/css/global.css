@@ -4,6 +4,7 @@
     weight: 100;
 }
 
+
 html, body{
 	height: 100%;
 	margin: 0;
@@ -15,6 +16,7 @@ body{
 .content {
 	min-height: 100%;
 }
+
 
 .header{
 	font-size: 60px;
@@ -50,6 +52,7 @@ body{
 .navbar a.active{
     border-bottom: 2px white solid;
 }
+
 
 .navbar #logoLink{
 	float: left;
@@ -91,6 +94,9 @@ body{
 	height: 25px;
 	margin-bottom: 15px;
 }
+
+
+
 
 
 /* Modal */
@@ -239,5 +245,3 @@ input[type=submit]{
 	from{opacity: 0}
 	to{opacity: 1}
 }
-
-

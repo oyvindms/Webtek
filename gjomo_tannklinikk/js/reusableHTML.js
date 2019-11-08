@@ -211,6 +211,7 @@ function loadModal(){
                     var closeButton = document.createElement('SPAN')
                     closeButton.setAttribute("class", "closeBtn")
                     closeButton.setAttribute("id", "closeBtn")
+                    closeButton.innerHTML = "x"
                     fieldSet.appendChild(closeButton)
 
                     var h = document.createElement('H1')
@@ -230,6 +231,8 @@ function loadModal(){
                         var n = document.createTextNode("Fornavn")
                         name.appendChild(n)
                         fname.appendChild(name)
+                        var br1 = document.createElement('br')
+                        fname.appendChild(br1)
 
                         var write = document.createElement('INPUT')
                         write.required = true
@@ -238,12 +241,13 @@ function loadModal(){
                         write.setAttribute("placeholder", "Fornavn")
                         fname.appendChild(write)
 
-                        console.log(write)
+                        var br2 = document.createElement('br')
+                        fname.appendChild(br2)
                         //Mangler her onfocus 
-                        // Missing <br>
+                        
 
                     var ename = document.createElement('div')
-                    fname.setAttribute("class", "Etternavn")
+                    ename.setAttribute("class", "Etternavn")
                     frm.appendChild(ename)
 
                         var namelast = document.createElement('LABEL')
@@ -251,6 +255,8 @@ function loadModal(){
                         namelast.appendChild(nl)
                         ename.appendChild(namelast)
 
+                        var br3 = document.createElement('br')
+                        ename.appendChild(br3)
                    
 
                         var write2 = document.createElement('INPUT')
@@ -258,13 +264,14 @@ function loadModal(){
                         write2.setAttribute("type", "text")
                         write2.setAttribute("id", "etternavn")
                         write2.setAttribute("placeholder", "Etternavn")
-                        fname.appendChild(write2)
-                        //Mangler her onfocus 
-                        // Missing <br>
-
+                        ename.appendChild(write2)
+                        
+                        var br4 = document.createElement('br')
+                        ename.appendChild(br4)
+                        
 
                     var phone = document.createElement('div')
-                    fname.setAttribute("class", "Mobil")
+                    phone.setAttribute("class", "Mobil")
                     frm.appendChild(phone)
 
                         var tlf = document.createElement('LABEL')
@@ -272,19 +279,28 @@ function loadModal(){
                         tlf.appendChild(t)
                         phone.appendChild(tlf)
 
+                        var br5 = document.createElement('br')
+                        phone.appendChild(br5)
+
                         var write3 = document.createElement('INPUT')
                         write3.required = true
                         write3.setAttribute("type", "tel")
                         write3.setAttribute("id", "Number")
                         write3.setAttribute("placeholder", "Nummer")
+                        write3.pattern = "[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"
+                        write3.value = "Number"
+                        write3.setAttribute("onfocus", "this.value =this.value == 'Number'?'':this.value;")
+                        console.log(write3.onfocus)
+
                         write3.maxLength = 11
-                        fname.appendChild(write3)
-                        //Mangler her onfocus 
-                        // Missing <br>
-                        // Missing required pattern
+                        phone.appendChild(write3)
+                        
+                        var br6 = document.createElement('br')
+                        phone.appendChild(br6)
+                        
 
                     var email = document.createElement('div')
-                    fname.setAttribute("class", "Epost")
+                    email.setAttribute("class", "Epost")
                     frm.appendChild(email)
 
                         var epo = document.createElement('LABEL')
@@ -292,14 +308,18 @@ function loadModal(){
                         epo.appendChild(e)
                         email.appendChild(epo)
 
+                        var br7 = document.createElement('br')
+                        email.appendChild(br7)
+
                         var write4 = document.createElement('INPUT')
                         write4.required = true
                         write4.setAttribute("type", "email")
                         write4.setAttribute("id", "epost")
                         write4.setAttribute("placeholder", "E-post")
-                        fname.appendChild(write4)
-                        //Mangler her onfocus 
-                        // Missing <br>
+                        email.appendChild(write4)
+                        
+                        var br7 = document.createElement('br')
+                        email.appendChild(br7)                        
 
                     var henvendelse = document.createElement('div')
                     frm.appendChild(henvendelse)
@@ -331,7 +351,7 @@ function loadModal(){
 
 
                     var txt = document.createElement('div')
-                    fname.setAttribute("class", "Melding")
+                    txt.setAttribute("class", "Melding")
                     frm.appendChild(txt)
 
                         var ta = document.createElement('LABEL')
@@ -348,18 +368,19 @@ function loadModal(){
                         // Missing <br>
 
                     var sub = document.createElement('div')
-                    fname.setAttribute("for", "Submit")
+                    sub.setAttribute("for", "Submit")
                     frm.appendChild(sub)
 
                         var write7 = document.createElement('INPUT')
-                        write7.setAttribute("type", "Submit")
-                        write7.setAttribute("value", "Send")
+                        write7.setAttribute("type", "submit")
+                        write7.setAttribute("value", "send")
                         write7.required = true
-                        write7.setAttribute("name", "submit")
-                        fname.appendChild(write7)
-                        // Missing <br>
+                        var br = document.createElement('br')
+                        write7.appendChild(br)
+                        sub.appendChild(write7)
 
-                        console.log(btn)
+                        
+
 
 
                         // Get modal element

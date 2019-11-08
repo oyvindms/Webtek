@@ -120,6 +120,11 @@ h1{
 	margin-bottom: 2%;
 }
 
+.Etternavn, .Epost{
+	float: right;
+}
+
+
 .henhen{
 	margin-bottom: 3%;
 }

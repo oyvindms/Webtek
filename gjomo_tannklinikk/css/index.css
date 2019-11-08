@@ -1,15 +1,20 @@
 /* CSS Document */
 
-body {
-	background-image: url("../img/background_images/background_img_color.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 0px 90px;
+#bg_img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+	position: absolute;
+}
+
+#bg_img img{
+	width: 100%;
 }
 
 #testimonials_bg{
 	width: 30%;
-	height: 200px;
+	min-height: 200px;
 	position: absolute;
 	margin-top: 150px;
 	margin-right: 40px;
@@ -79,3 +84,31 @@ body {
 div p{
 	margin-bottom: 0;
 }
+<<<<<<< HEAD
+=======
+
+
+@media screen and (max-width: 768px){
+	
+	#bg_img {
+		position: inherit;
+	}
+	
+	#testimonials_bg{
+		box-sizing: border-box;
+		width: 100%;
+		margin-top: 0;
+		margin-right: 0;
+		opacity: 1;
+		position: absolute;
+		padding: 20px 70px;
+	}
+	
+	#testimonials_container{
+		width: 75%;
+	}
+	
+#pictureSmilingGrid{
+	width: 100%;
+}
+>>>>>>> origin/master

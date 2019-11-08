@@ -211,6 +211,7 @@ function loadModal(){
                     fieldSet.appendChild(h)
 
                 var frm = document.createElement('form')
+                frm.setAttribute("class", "form1")
                 fieldSet.appendChild(frm)
 
                     var fname = document.createElement('div')
@@ -320,6 +321,7 @@ function loadModal(){
 
                         var dropdown = document.createElement('select')
                         dropdown.setAttribute("name", "henvendelse")
+                        dropdown.setAttribute("class", "henhen")
                         henvendelse.appendChild(dropdown)
 
                             var opt1 = document.createElement('option')

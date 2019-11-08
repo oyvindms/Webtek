@@ -167,7 +167,7 @@ body{
 
 
 /* Modal */
-form{
+.form1{
 	position: inherit;
 	color: #1C8D74;
 	font-family: arial;
@@ -179,6 +179,7 @@ form{
 h1{
 	text-align: center;
 	padding-top: 5%;
+	color: #fff;
 }
 
 .Etternavn, .Fornavn, .Mobil, .Epost{
@@ -186,7 +187,14 @@ h1{
 	margin-bottom: 2%;
 }
 
+.Etternavn, .Epost{
+	float: right;
+}
 
+
+.henhen{
+	margin-bottom: 3%;
+}
 
 .Melding{
 	width: 100%;

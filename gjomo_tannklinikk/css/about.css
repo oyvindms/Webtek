@@ -9,8 +9,8 @@
 	padding-bottom: 10px;
 }
 
-h2{
-	position: relative;
+#hei{
+	margin-left: 44%;
 }
 
 .infoComp{
@@ -20,13 +20,22 @@ h2{
 .person{
 	width: 27%;
 	margin: auto;
-	padding-top: 3%;
+	margin-top: 5%;
+	/*background: linear-gradient(#94E3D2, white 60%);
+  	padding: 2% 2% 2% 2%;
+  	border-radius: 20% 20% 0 0;*/
 }
 .picture{
 	position: relative;
 	border-radius: 50%;
 	width: 60%;
+	transition: transform 0.5s;
 }
+
+.picture:hover{
+	transform: scale(1.2);
+}
+
 .premisesPic{
 	display: flex;
 	flex-wrap: wrap;
@@ -41,6 +50,10 @@ h2{
 	padding-right: 10%;
 	padding-left: 10%;
 	text-align: center;
+	vertical-align: center;
+}
+.infoPerson{
+	text-align: justify;
 }
 
 

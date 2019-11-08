@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 function buildCategoriList(x) {
 	
-	let Categories = x.getElementsByTagName("Kategori")
+	let Categories = x.getElementsByTagName("Categori")
 	let priceOverview = document.getElementById("Treatments")
 	
 	for(let i=0;i<Categories.length;i++){
@@ -27,7 +27,7 @@ function buildCategoriList(x) {
 		let treatmentHeader = document.createElement("h3")
 		let categoriName = Categories[i].getAttribute("type")
 		treatmentHeader.innerHTML = categoriName
-		let serviceList = Categories[i].getElementsByTagName("Tjeneste")
+		let serviceList = Categories[i].getElementsByTagName("Service")
 		let div = document.createElement("div")
 		div.classList.add("categoriContainer")
 		
@@ -35,7 +35,7 @@ function buildCategoriList(x) {
 			
 			
 			let li = document.createElement("li")
-			let price = serviceList[i].getAttribute("Pris")
+			let price = serviceList[i].getAttribute("Price")
 			let service = serviceList[i].firstChild.nodeValue
 			let serviceSpan = document.createElement("span")
 			let priceSpan = document.createElement("span")

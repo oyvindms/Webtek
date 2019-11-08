@@ -58,7 +58,7 @@ function setClass(els, className, fnName) {
 }
 
 function filterSearch() {
-    var input = document.getElementById("FAQ_search_bar");
+	var input = document.getElementById("FAQ_search_bar");
     var filter = input.value.toUpperCase();
     var ul = document.getElementById("FAQ_list");
     var faq = ul.getElementsByClassName("faqElement");

@@ -66,3 +66,7 @@ body {
 div p{
 	margin-bottom: 0;
 }
+
+#pictureSmilingGrid{
+	width: 100%;
+}

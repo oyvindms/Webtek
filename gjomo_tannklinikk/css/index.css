@@ -8,13 +8,15 @@ body {
 }
 
 #testimonials_bg{
-	width: 35%;
-	height: 120%;
+	margin-top: 13%;
+	margin-right: 4%;
+	width: 27%;
+	height: 25%;
 	position: absolute;
 	right: 0;
 	background-color: rgba(148,227,210,1.0);
-	opacity: 0.8;
-	filter: blur(10px);
+	opacity: 0.7;
+	filter: blur(2px);
 }
 
 #testimonials_container {

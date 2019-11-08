@@ -1,5 +1,41 @@
 @charset "utf-8";
 /* CSS Document */
+/*video styling*/
+
+#myVideo {
+ /* position: fixed;
+  right: 0;
+  bottom: 0;*/
+  min-width: 100%;
+  min-height: 100%;
+	 -o-filter: blur(10px);
+    filter: opacity(50%);
+    object-fit: cover;
+    /*transform: scale(1.04);*/
+}
+
+/* Add some content at the bottom of the video/page */
+/*.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}*/
+
+/*faq styling*/
+
+
+#faqContainer {
+	box-shadow: 2px 2px lightgrey;
+	padding: 0 5% 5%;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	background: rgba(255,255,255,0.75);
+}
 
 		#FAQ_search_div{
 			text-align: center;

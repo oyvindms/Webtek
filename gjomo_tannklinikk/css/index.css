@@ -5,7 +5,6 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-	position: absolute;
 }
 
 #bg_img img{
@@ -20,6 +19,7 @@
 	margin-right: 40px;
 	padding-right: 30px;
 	right: 0;
+	top: 20%;
 	background-color: rgba(148,227,210,1.0);
 	opacity: 0.9;
 }
@@ -85,6 +85,19 @@ div p{
 	margin-bottom: 0;
 }
 
+#aboutUs{
+	margin: 0 15%;
+}
+
+#aboutUs h2{
+	font-size: 40px;
+}
+
+#txtAboutUs{
+	font-size: 18px;
+	line-height: 1.4;
+}
+
 
 @media screen and (max-width: 768px){
 	
@@ -106,6 +119,7 @@ div p{
 		width: 75%;
 	}
 	
-#pictureSmilingGrid{
-	width: 100%;
+	#pictureSmilingGrid{
+		width: 100%;
+	}
 }

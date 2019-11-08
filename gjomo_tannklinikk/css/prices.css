@@ -8,45 +8,46 @@
 		#Treatments {
 			width: 60%;
 			margin: auto;
-			
-		
 		}
+
 		h3 {
 			font-size: 30px;
 			margin-bottom: 15px;
 		}
-		
-	
 			ul.services {
 			padding: 0;
 			line-height: 2;
 			margin-top: 0;
-			margin-bottom: 7%;
+			/* margin-bottom: 7%; */
 		}
+		
 		ul.services li {
 			display: table;
 			font-size: 22px;
 		}
+
 		ul.services li span {
 			display:     table-cell;
 		}
+
 		ul.services li span:first-child {
 		  position: relative;
-			overflow: hidden;            /* Don't go underneath the price */
+			overflow: hidden;            
 		}
-		ul.services li span:first-child:after { /* dashes */
+
+		ul.services li span:first-child:after { 
 			content:        "";
 			position:       absolute;
-			bottom:         0.7em;       /* Set as you want */       
-			margin-left:    0.5em;       /* Keep same for the next span's left padding */
+			bottom:         0.7em;       
 			width:          100%;
 			border-bottom:  1px solid #000;
 			border-bottom-color: #1c8d74;
 		}
+
 		ul.services li span + span {
 			text-align:     right;
-			width:          1%;          /* Trick it */
-			vertical-align: bottom;      /* Keep Price text bottom-aligned */
+			width:          1%;          
+			vertical-align: bottom;      
 			padding-left:   0.5em;
 			white-space:nowrap;
 		}

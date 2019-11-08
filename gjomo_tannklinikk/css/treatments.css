@@ -5,9 +5,10 @@
 .TreatText{
 	width: 50%;
 	padding-left: 25%;
-	padding-right: 25%;
+	padding-right: 25%;	
 	text-align: left;
 	color: #1C8D74;
+	line-height: 150%;
 }
 
 .TreatHead{
@@ -32,9 +33,17 @@
 	color: grey;
 }
 
+.header1{
+		position: absolute; 
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		font-size: 200%;
+}
 hr{
 	border-top: 1px solid #CAEAE3;
-	width: 130%;
+	width: 140%;
 }
 
 .line{
@@ -47,8 +56,18 @@ hr{
 	list-style: none;
 	position: fixed;
 	top: 24%;
-	padding-left: 0%;
+	padding-left: 2%;
 }
+
+.TreatPic{
+	max-width: 50%;
+	padding-left: 25%;
+	padding-right: 25%;
+	
+
+}
+
+
 
 @media  screen and (max-width: 768px){
 

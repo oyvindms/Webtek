@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href= "css/global.css">
+    <link rel = "stylesheet" href= "css/index.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="js/reusableHTML.js"></script>
     <title>Hjem</title>
@@ -11,8 +12,12 @@
 <body>
 	<div class="content">
 		<header>
-			<script>loadNavbar()</script>
+			<script>loadNavbar(); loadModal()</script>
 		</header>
+		
+		<div id="testimonials_container">
+			<img src="img/icons/quotes.svg" alt="quotes">
+		</div>
 
 		<script src = "js/testimonials.js"></script>
 	</div>

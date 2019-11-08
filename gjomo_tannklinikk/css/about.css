@@ -1,24 +1,18 @@
-body{
-	background-color: white;
-	color: #1C8D74;
-	font-family: big John Pro regular;
-	font-size: 16px;
-	padding-top: 10%;
-	text-align: center;
+#email-icon {
+	margin-left: -2px;
+}
+#postnummer {
+	margin-left: 30px;
 }
 
-h1{
-	font-size: 50px;
+.tid {
+	padding-bottom: 10px;
 }
-h3{
-	font-size: 30px;
-	margin-bottom: 2%;
-	margin-top: 5%;
-}
-h5{
-	font-size: 16px;
-	margin: 0;
-}
+
+.bilde{
+	position: relative;
+	border-radius: 50%;
+	width: 60%;
 
 #infoBedrift{
 	padding-right: 10%;

@@ -11,7 +11,7 @@
 <body>
 
   <button id="modalBtn" class="button">
-    <img src="img/checkmark_white.svg" id="pic">
+    <img src="img/checkmark_white.svg" id="pic1">
   </button>
 
   <div id="myModal" class="modal">
@@ -20,15 +20,15 @@
     <div class="modal-content">
       <fieldset style="border:none;">
         <span class="closeBtn" id="closeBtn">&times;</span>
-          <h1>KONTAKT OSS</h1>
+          <h1 id="h1">KONTAKT OSS</h1>
           <form>
         <div class="Fornavn">
             <label>Fornavn</label><br>
-            <input type="text" id="Fornavn" value="Name" onfocus="this.value =this.value == 'Name'?'':this.value;"  required><br>
+            <input type="text" id="Fornavn" placeholder="Fornavn" required><br>
           </div>
           <div class="Etternavn">
             <label>Etternavn</label><br>
-            <input type="text" value="Name" onfocus="this.value =this.value == 'Name'?'':this.value;"  required><br>
+            <input type="text" placeholder="Etternavn" required><br>
           </div>
           <div class="Mobil">
             <label>Mobil</label><br>
@@ -58,10 +58,8 @@
     </fieldset>
         
     </div>
-
 </div>
-
-  <script src="main.js"></script>
+<script src = "js/reusableHTML.js"></script>
 </body>
 </html>
 

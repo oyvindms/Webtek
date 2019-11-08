@@ -6,45 +6,82 @@ function loadNavbar(){
 
     var navDiv = document.createElement('div')
     navDiv.setAttribute('class', 'navbar')
+    navDiv.style.height = "90px"
     header.appendChild(navDiv)
 
-    var logoLink = document.createElement('a');
-    logoLink.setAttribute("href", "index.html")
-    logoLink.setAttribute('id',"logoLink")
+        var logoLink = document.createElement('a');
+        logoLink.setAttribute("href", "index.html")
+        logoLink.setAttribute('id',"logoLink")
 
-    var logo = document.createElement('img');
-    logo.setAttribute("src", "img/icons/logo.svg")
-    logo.setAttribute("alt", "Gjømo logo")
-    logo.setAttribute("id", "gjomoLogo")
-    
+        var logo = document.createElement('img');
+        logo.setAttribute("src", "img/icons/logo.svg")
+        logo.setAttribute("alt", "Gjømo logo")
+        logo.setAttribute("id", "gjomoLogo")
+        
+        logoLink.appendChild(logo)
 
-    logoLink.appendChild(logo)
-    navDiv.appendChild(logoLink)
+        navDiv.appendChild(logoLink)
 
-    const treatmentsLink = document.createElement('a');
-    treatmentsLink.setAttribute('href',"treatments.html");
-    treatmentsLink.innerText = "BEHANDLINGER";
-    navDiv.appendChild(treatmentsLink);
-    
-    const pricesLink = document.createElement('a');
-    pricesLink.setAttribute('href',"prices.html");
-    pricesLink.innerText = "PRISER";
-    navDiv.appendChild(pricesLink);
-    
-    const aboutLink = document.createElement('a');
-    aboutLink.setAttribute('href',"about.html");
-    aboutLink.innerText = "OM OSS";
-    navDiv.appendChild(aboutLink);
+        var burger = document.createElement("div")
+        burger.setAttribute("class", "burger")
+        burger.addEventListener("click", showBurger)
+        navDiv.appendChild(burger)
 
-    const contactLink = document.createElement('a');
-    contactLink.setAttribute('href',"contact.html");
-    contactLink.innerText = "KONTAKT";
-    navDiv.appendChild(contactLink);
-    
-    const faqLink = document.createElement('a');
-    faqLink.setAttribute('href',"faq.html");
-    faqLink.innerText = "FAQ";
-    navDiv.appendChild(faqLink);
+            var line1 = document.createElement("div")
+            line1.setAttribute("class", "line1")
+            burger.appendChild(line1)
+
+            var line2 = document.createElement("div")
+            line2.setAttribute("class", "line2")
+            burger.appendChild(line2)
+
+            var line3 = document.createElement("div")
+            line3.setAttribute("class", "line3")
+            burger.appendChild(line3)
+
+        const navLinks = document.createElement('div')
+        navLinks.setAttribute('class', 'navLinks')
+        navDiv.appendChild(navLinks)
+
+            const treatmentsLink = document.createElement('a');
+            treatmentsLink.setAttribute('href',"treatments.html");
+            treatmentsLink.innerText = "BEHANDLINGER";
+            navLinks.appendChild(treatmentsLink);
+            
+            const pricesLink = document.createElement('a');
+            pricesLink.setAttribute('href',"prices.html");
+            pricesLink.innerText = "PRISER";
+            navLinks.appendChild(pricesLink);
+            
+            const aboutLink = document.createElement('a');
+            aboutLink.setAttribute('href',"about.html");
+            aboutLink.innerText = "OM OSS";
+            navLinks.appendChild(aboutLink);
+
+            const contactLink = document.createElement('a');
+            contactLink.setAttribute('href',"contact.html");
+            contactLink.innerText = "KONTAKT";
+            navLinks.appendChild(contactLink);
+            
+            const faqLink = document.createElement('a');
+            faqLink.setAttribute('href',"faq.html");
+            faqLink.innerText = "FAQ";
+            navLinks.appendChild(faqLink);
+}
+
+
+const showBurger = (event) => {
+    console.log("shoburger kjører")
+
+    var navbar = document.querySelector(".navbar")
+
+    if(navbar.style.height === "90px"){
+        navbar.style.height = "60%"
+    }
+    else{
+        navbar.style.height = "90px"
+    }
+        
 }
 
 /* This function dynamicly writes out the footer as html for all pages that laod the script. */
@@ -130,59 +167,12 @@ function loadFooter(){
             container3.appendChild(container3_text2)
 }
 
-/* Modal js */
-/* 
-// Get modal element
-var modal = document.getElementById("myModal");
-// Get open modal button
-var modalBtn = document.getElementById("modalBtn");
-// Get close button
-var closeBtn = document.getElementById("closeBtn");
-
-// Listen for open click
-    modalBtn.addEventListener('click', openModal);
-
-// Listen for close click
-    closeBtn.addEventListener("click", closeModal);
-
-// Listen for outside click
-window.addEventListener("click", outsideClick);
-
-//Function to open modal
-function openModal(){
-    
-	modal.style.display = "block";
-}
- 
-//Function to close modal
-function closeModal(){
-	modal.style.display = "none";
-}
-
-//Function to close modal if outside click
-function outsideClick(e){
-	if(e.target == modal){
-	modal.style.display = "none";
-	}
-}
-
-var modalDiv = document.createElement('div')
-modalDiv.setAttribute("id", "modalDiv")
-
-
-
-modalDiv.innerText
- 
-console.log(modalDiv)
- */
-
 
 
 /* This function dynamicly writes out the contact form/modal as html for all pages that laod the script. */
 function loadModal(){
 
     var body = document.querySelector('body')
-    console.log("modal loaded")
 
     var btn = document.createElement('BUTTON')
 
@@ -290,7 +280,6 @@ function loadModal(){
                         write3.pattern = "[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"
                         write3.value = "Number"
                         write3.setAttribute("onfocus", "this.value =this.value == 'Number'?'':this.value;")
-                        console.log(write3.onfocus)
 
                         write3.maxLength = 11
                         phone.appendChild(write3)
@@ -347,8 +336,7 @@ function loadModal(){
                             opt3.setAttribute("value", "Konsultasjon2")
                             opt3.innerText = "Konsultasjon"
                             dropdown.appendChild(opt3)
-                        // Missing <br>
-
+                        
 
                     var txt = document.createElement('div')
                     txt.setAttribute("class", "Melding")
@@ -364,8 +352,6 @@ function loadModal(){
                         write6.setAttribute("id", "texten")
                         write6.setAttribute("placeholder", "Skriv din melding her...")
                         txt.appendChild(write6)
-                        //Mangler her onfocus 
-                        // Missing <br>
 
                     var sub = document.createElement('div')
                     sub.setAttribute("for", "Submit")
@@ -385,7 +371,6 @@ function loadModal(){
 
                         // Get modal element
   /*               var modal = document.getElementById("myModal");
-                console.log(modal) */
 
                 // Get open modal button
                 var modalBtn = document.getElementById("modalBtn");
@@ -411,7 +396,6 @@ function openModal(event){
     var modal = document.getElementById("myModal");
 
     modal.style.display = "block";
-    console.log("Åpne modal kjører")
 }
  
 //Function to close modal
@@ -419,7 +403,6 @@ function closeModal(event){
     var modal = document.getElementById("myModal");
 
     modal.style.display = "none";
-    console.log("Lukke modal kjører")
 }
 
 //Function to close modal if outside click
@@ -429,7 +412,6 @@ function outsideClick(event){
     if(event.target == modal){
     modal.style.display = "none";
     }
-    console.log("utenfor klikk kjører")
 }
 
 

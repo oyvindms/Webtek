@@ -7,7 +7,7 @@ form{
 	padding: 2% 10% 10% 10%;
 }
 
-h{
+h1{
 	text-align: center;
 	padding-top: 5%;
 	color: #94E3D2;
@@ -139,6 +139,25 @@ input[type=submit]{
 	to{opacity: 1}
 }
 
-
-
-
+@media only screen and (max-width: 1390px) {
+	.modal-content{
+	height: 60%;
+	width: 100%;
+	background-color: #80D3C1;
+	color: white;
+	line-height: 1.5;
+	font-size: 14px;
+	margin: auto;
+	padding-left: 25px;
+	padding-top: 30px;
+	border-radius: 0px 0px 0px 0px;
+	border: 3px solid #72CEBA;
+	position:static;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+	.Etternavn, .Fornavn, .Mobil, .Epost{
+	text-align: center;
+}
+}

@@ -4,9 +4,9 @@
     weight: 100;
 }
 @font-face{
-    font-family: bigJohnRegular;
-    src : url(font/BigJohnPRO-Regular.otf);
-    weight: 100;
+    font-family: bigJohnBold;
+    src : url(font/BigJohnPRO-Bold.otf);
+    weight: 800;
 }
 
 html, body{

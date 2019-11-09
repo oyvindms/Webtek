@@ -29,7 +29,7 @@ function buildCategoriList(x) {
 		let serviceList = Categories[i].getElementsByTagName("Service")
 		let div = document.createElement("div")
 		div.classList.add("categoriContainer")
-		div.setAttribute("id", "categoriConainer"+String(i))
+		
 		
 		for (let i=0;i<serviceList.length;i++){
 			

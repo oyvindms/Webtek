@@ -30,7 +30,7 @@ h3{
 }
 
 h5{
-	margin: 5%;
+	margin: 0;
 	vertical-align: center;
 	font-size: 16px;
 }
@@ -83,25 +83,40 @@ h5{
 
 
 .myByttons{
-  cursor:pointer;
-  border:none;
-  padding:8px;
-  background: #94E3D260;
-  font-weight: 100;
-  color: #1C8D74;
-  font-family: bigjohnregular;
-  border-radius: 10%;
-  transition: 0.4s ease 0s;
+	cursor:pointer;
+	border:none;
+	padding:8px;
+	background: #94E3D260;
+	font-weight: 100;
+	color: #1C8D74;
+	font-family: bigjohnregular;
+	border-radius: 10%;
+	transition: 0.4s ease 0s;
+	animation-name: modalopen;
+	animation-duration: 1s;
+
 }
 .myByttons:hover {
 	background: #94E3D2;
   	color: white;
 }
+.myByttons:focus{ 
+	outline: 0;
+}
 
 #moreG, #moreJ, #moreO, #moreM, #moreF{
 	display:none;
+	animation-name: modalopen;
+	animation-duration: 1s;
 }
 
+
+@media screen and (max-width: 1257px){
+	h5{
+		margin: 5%;
+		padding-top: 5%;
+	}
+}
 
 
 @media screen and (max-width: 840px){
@@ -114,7 +129,6 @@ h5{
 	.person{
 		position: relative;
 		width: 40vw;
-		position: center;
 	}
 	.picture{
 		padding-top: 3vh;

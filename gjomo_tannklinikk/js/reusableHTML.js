@@ -440,9 +440,11 @@ window.onload = function (){
         loadNavbar()
     }
     else{
-        loadFooter()
         loadNavbar()
         loadModal()
+        loadFooter()
+        
+      
     }
 }
 

@@ -55,8 +55,10 @@
 #picPrices {
 	width: 100vw;
 	max-width: 100%;
+	min-height: 100%;
 	margin-bottom: -200px;
 	margin-top: 200px;
+	object-fit: fit;
 
 }
 

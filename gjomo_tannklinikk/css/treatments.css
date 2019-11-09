@@ -8,8 +8,14 @@
 	padding-right: 25%;	
 	text-align: left;
 	color: #1C8D74;
-	line-height: 150%;
+	line-height: 200%;
 }
+
+.image{
+	position: relative;
+	width: 100%;
+}
+
 
 .TreatHead{
 	color: #1C8D74;
@@ -33,9 +39,9 @@
 	color: grey;
 }
 
-.header1{
+#header1, #header2, #header3, #header4, #header5, #header6, #header7{
 		position: absolute; 
-		top: 55%;
+		top: 40%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		color: #fff;

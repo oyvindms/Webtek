@@ -71,7 +71,7 @@ function Slider(){
 			slides[slideIndex-1].classList.replace("slideIn","slideOut");
 			slides[slideIndex-1].nextElementSibling.classList.replace("fadeIn","fadeOut");
 			slides[slideIndex].classList.add("slideIn");
-			slides[slideIndex].nextElementSibling.classList.add("fadeIn");
+			slides[slideIndex].nextElementSibling.classList.add("fadeIn");			
 		}
 		
 		slideIndex++;
@@ -80,5 +80,5 @@ function Slider(){
 			slideIndex = 2;
 		}
 
-	setTimeout(Slider, 7000); // Change image every 5 seconds
+	setTimeout(Slider, 3000); // Change image every 5 seconds
 }

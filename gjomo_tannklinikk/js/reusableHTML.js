@@ -68,13 +68,7 @@ function loadNavbar(){
             treatmentsLink.setAttribute('href',"treatments.html");
             treatmentsLink.innerText = "BEHANDLINGER";
             navLinks.appendChild(treatmentsLink);
-            
- 
- 
-
-
-            
-
+        
 }
 
 
@@ -437,6 +431,23 @@ function outsideClick(event){
     body.style.overflow = "scroll"
     }
 }
+
+window.onload = function (){
+    var htmlName = window.location.pathname;
+    var htmlName = htmlName.split("/").pop();
+
+    if(htmlName == 'contact.html'){
+        loadNavbar()
+    }
+    else{
+        loadNavbar()
+        loadModal()
+        loadFooter()
+        
+      
+    }
+}
+
 
 
 

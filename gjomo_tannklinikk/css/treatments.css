@@ -29,20 +29,21 @@
 	padding-left: 24%;
 }
 
-#bb1, #bb2, #bb3, #bb4, #bb5, #bb6, #bb7{
+.bb{
 	padding: 1%;
 	width: 150%;
 	color: #1C8D74;
 }
 
-#bb1:hover, #bb2:hover, #bb3:hover, #bb4:hover, #bb5:hover, #bb6:hover, #bb7:hover{
+.bb:hover{
 	color: grey;
 }
 
-#header1, #header2, #header3, #header4, #header5, #header6, #header7{
+.header1{
 		position: absolute; 
 		top: 40%;
 		left: 50%;
+		z-index: 0.5;
 		transform: translate(-50%, -50%);
 		color: #fff;
 		font-size: 200%;

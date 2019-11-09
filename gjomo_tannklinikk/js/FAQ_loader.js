@@ -1,3 +1,5 @@
+
+//Fetches FAQ data from XML-document and runs the functions buildFAQ() and accordion()
 document.addEventListener('DOMContentLoaded', ()=>{
 	//fetch the data as soon as the page has loaded
 	let url = "XML/FAQ_data.xml";
@@ -6,12 +8,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	.then(data=>{
 		let parser = new DOMParser();
 		let xml = parser.parseFromString(data, "application/xml");
-		console.log(xml);
 		buildFAQ(xml);
 		accordion();
 	});
 })
-        
+   
+//Takes the data from FAQ_data.xml and appends it to faq.html in a structured manner
 function buildFAQ(x){
 	let list = document.getElementById('FAQ_list');
 	let FAQs = x.getElementsByTagName('FAQs');
@@ -34,6 +36,7 @@ function buildFAQ(x){
 	}
 }
 
+//Either shows or hides the answer to the clicked question in FAQ, and hides all others (in practice only one is displayed at a time)
 function accordion(){
 	var acc = document.getElementsByClassName("question");
 	var panel = document.getElementsByClassName("answer");
@@ -51,12 +54,14 @@ function accordion(){
 	}
 }
 
+//Used in previous function to hide the answer and change PLUS icon to MINUS by removing class "active" and "show" respectively
 function setClass(els, className, fnName) {
     for (var i = 0; i < els.length; i++) {
         els[i].classList[fnName](className);
     }
 }
 
+//takes the value of the search field, checks it against the text from each question in the FAQ, and removes the question from the list if it does not contain the text from the search field
 function filterSearch() {
 	var input = document.getElementById("FAQ_search_bar");
     var filter = input.value.toUpperCase();

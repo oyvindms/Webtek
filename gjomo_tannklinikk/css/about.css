@@ -21,7 +21,8 @@
 
 
 .miniHeadline{
-	margin-left: 43%;
+	position: relative;
+	text-align: center;
 	color: #1C8D74;
 	font-weight: 100;
 	font-size: 26px;
@@ -71,14 +72,13 @@
 	text-align: justify;
 }
 
-
-
 #toggle{
-	  cursor:pointer;
-	  border:none;
-	  padding:8px;
-	  background: white;
-	  color: #1C8D74;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  background:#1C8D74;
+  font-family:cursive;
+  box-sizing:border-box;
 }
 
 

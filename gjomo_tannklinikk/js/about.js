@@ -3,11 +3,19 @@ var txtJ = document.getElementById("moreJ");
 var txtO = document.getElementById("moreO");
 var txtM = document.getElementById("moreM");
 var txtF = document.getElementById("moreF");
+var btnTextG = document.getElementById("myButtonG")
+var btnTextJ = document.getElementById("myButtonJ")
+var btnTextO = document.getElementById("myButtonO")
+var btnTextM = document.getElementById("myButtonM")
+var btnTextF = document.getElementById("myButtonF")
 
+
+/*  Lager 5 funksjoner til hver "Les mer"-knapp som åpner infotekstene til personenen, 
+    samtidig som den lukker en annen infotekst som eventuelt er åpen.  */
 
 function showMoreG(){
   var text = document.getElementById("moreG");
-  var btnText = document.getElementById("myButton");
+  var btnText = document.getElementById("myButtonG");
 
   if (text.style.display === "inline"){
     text.style.display = "none";
@@ -20,6 +28,10 @@ function showMoreG(){
     txtO.style.display = "none";
     txtM.style.display = "none";
     txtF.style.display = "none";
+    btnTextJ.innerHTML = "Les mer";
+    btnTextO.innerHTML = "Les mer";
+    btnTextM.innerHTML = "Les mer";
+    btnTextF.innerHTML = "Les mer";
   }
 }
 
@@ -38,6 +50,10 @@ function showMoreJ(){
     txtO.style.display = "none";
     txtM.style.display = "none";
     txtF.style.display = "none";
+    btnTextG.innerHTML = "Les mer";
+    btnTextO.innerHTML = "Les mer";
+    btnTextM.innerHTML = "Les mer";
+    btnTextF.innerHTML = "Les mer";
   }
 }
 
@@ -56,6 +72,10 @@ function showMoreO(){
     txtJ.style.display = "none";
     txtM.style.display = "none";
     txtF.style.display = "none";
+    btnTextG.innerHTML = "Les mer";
+    btnTextJ.innerHTML = "Les mer";
+    btnTextM.innerHTML = "Les mer";
+    btnTextF.innerHTML = "Les mer";
   }
 }
 
@@ -74,6 +94,10 @@ function showMoreM(){
     txtJ.style.display = "none";
     txtO.style.display = "none";
     txtF.style.display = "none";
+    btnTextG.innerHTML = "Les mer";
+    btnTextJ.innerHTML = "Les mer";
+    btnTextO.innerHTML = "Les mer";
+    btnTextF.innerHTML = "Les mer";
   }
 }
 
@@ -92,5 +116,9 @@ function showMoreF(){
     txtJ.style.display = "none";
     txtO.style.display = "none";
     txtM.style.display = "none";
+    btnTextG.innerHTML = "Les mer";
+    btnTextJ.innerHTML = "Les mer";
+    btnTextM.innerHTML = "Les mer";
+    btnTextO.innerHTML = "Les mer";
   }
 }

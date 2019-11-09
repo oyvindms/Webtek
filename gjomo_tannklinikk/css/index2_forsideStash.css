@@ -19,12 +19,11 @@
 	font-weight: 100;
 }
 
-
 .miniHeadline{
-	margin-left: 43%;
 	color: #1C8D74;
 	font-weight: 100;
 	font-size: 26px;
+	text-align: center;
 }
 
 .infoComp{
@@ -32,24 +31,25 @@
 }
 
 .person{
-	width: 27%;
+	flex: 10%;
 	margin: auto;
 	margin-top: 5%;
-	/*background: linear-gradient(#94E3D2, white 60%);
-  	padding: 2% 2% 2% 2%;
-  	border-radius: 20% 20% 0 0;*/
 }
+
 .picture{
 	position: relative;
 	border-radius: 50%;
 	width: 80%;
 	transition: transform 0.5s;
 	padding-bottom: 5%;
+	filter: grayscale();
 }
 
 .picture:hover{
-	transform: scale(1.2);
+/*	transform: scale(1.2);*/
+	filter: grayscale(0);
 }
+
 
 .premisesPic{
 	display: flex;
@@ -61,31 +61,21 @@
 
 #contentPersons{
 	display: flex;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
 	padding-right: 10%;
 	padding-left: 10%;
 	text-align: center;
 	vertical-align: center;
-	
 }
+
 .infoPerson{
 	text-align: justify;
 }
 
-#toggle{
+/*#toggle{
 	  cursor:pointer;
 	  border:none;
 	  padding:8px;
 	  background: white;
 	  color: #1C8D74;
-}
-
-#pictureSmilingGrid{
-	width: 100%;
-}
-
-@media only screen and (max-width: 768px){
-	.person{
-		width: 60%;
-	}
-}
+}*/

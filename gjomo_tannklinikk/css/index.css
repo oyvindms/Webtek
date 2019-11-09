@@ -103,10 +103,21 @@ div p{
 
 #txtAboutUs p:last-child{
 	text-align: center;
+	color: #1C8D74;
+	margin-top: 40px;
 }
 
 .person h5{
 	text-transform: uppercase;
+}
+
+#employees{
+	margin-bottom: 50px;
+}
+
+
+#pictureSmilingGrid{
+	width: 100%;
 }
 
 @media screen and (max-width: 1080px){
@@ -116,6 +127,27 @@ div p{
 		width: 32%;
 	}
 	
+}
+
+@media screen and (max-width: 840px){
+	#contentPersons{
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	
+	.person{
+		position: relative;
+		flex: 50%;
+	}
+	
+	.picture{
+		padding-top: 3vh;
+	}
+	
+	h3{
+		padding-top: 4%;
+	}
 }
 
 @media screen and (max-width: 768px){

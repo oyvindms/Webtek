@@ -3,7 +3,11 @@
     src : url(font/BigJohnPRO-Regular.otf);
     weight: 100;
 }
-
+@font-face{
+    font-family: bigJohnRegular;
+    src : url(font/BigJohnPRO-Regular.otf);
+    weight: 100;
+}
 
 html, body{
 	height: 100%;

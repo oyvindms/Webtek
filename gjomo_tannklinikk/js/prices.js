@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		let xml = parser.parseFromString(data, "application/xml");
 		//console.log(xml);
 		buildCategoriList(xml)
-		
 	});
 })
 
@@ -30,9 +29,9 @@ function buildCategoriList(x) {
 		let serviceList = Categories[i].getElementsByTagName("Service")
 		let div = document.createElement("div")
 		div.classList.add("categoriContainer")
+		div.setAttribute("id", "categoriConainer"+String(i))
 		
 		for (let i=0;i<serviceList.length;i++){
-			
 			
 			let li = document.createElement("li")
 			let price = serviceList[i].getAttribute("Price")
@@ -45,7 +44,6 @@ function buildCategoriList(x) {
 			priceSpan.textContent = "kr " + price
 			priceSpan.classList.add("priceElement")
 			
-			
 			li.appendChild(serviceSpan)
 			li.appendChild(priceSpan)
 			
@@ -53,35 +51,6 @@ function buildCategoriList(x) {
 			div.appendChild(treatmentHeader)
 			div.appendChild(ul)
 			priceOverview.appendChild(div)
-			
-			
 		}
-		
 	}
-	
 }
-
-
-
-/*        
-function buildFAQ(x){
-	let list = document.getElementById('FAQ_list');
-	let FAQs = x.getElementsByTagName('FAQs');
-	for(let i=0; i<FAQs.length; i++){
-		let faq = document.createElement("div");
-		faq.classList.add("faqElement");
-		let question = document.createElement("button");
-		let p = document.createElement("p");
-		question.classList.add("question");
-		let answer = document.createElement("div");
-		answer.classList.add("answer");
-		let questionVal = FAQs[i].childNodes[1].childNodes[0].nodeValue;
-		let answerVal = FAQs[i].childNodes[3].childNodes[0].nodeValue;
-		p.textContent = questionVal;
-		answer.textContent = answerVal;
-		question.appendChild(p);
-		faq.appendChild(question);
-		faq.appendChild(answer);
-		list.appendChild(faq);
-	}
-}*/

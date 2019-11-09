@@ -1,3 +1,4 @@
+//Fetches testimonial data from XML-document and runs the functions buildSlider() and Slider()
 document.addEventListener('DOMContentLoaded', ()=>{
 	//fetch the data as soon as the page has loaded
 	let url = "XML/testimonials_data.xml";
@@ -10,7 +11,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		Slider();
 	});
 })
-        
+
+//Takes the data from testimonials_data.xml and appends it to index.html in a structured manner
 function buildSlider(x){
 	let t_container = document.getElementById('testimonials_container');
 	let testimonials = x.getElementsByTagName('testimonial');
@@ -32,11 +34,11 @@ function buildSlider(x){
 	}
 }
 
-	
+//sets variables used in Slider()
 var slideIndex = 0;
 var slides = document.getElementsByClassName("t_q_init");
 
-	
+//Function runs every 7 seconds, and based on the testimonial currently displayed, it adds class "slideOut" and "fadeOut" to these elements, class "slideIn" and "fadeIn" to the next elements, and removes said classes from the elements previously displayed
 function Slider(){
 		if(slideIndex == 0){
 			slides[slideIndex].classList.add("slideIn");
@@ -80,5 +82,5 @@ function Slider(){
 			slideIndex = 2;
 		}
 
-	setTimeout(Slider, 3000); // Change image every 5 seconds
+	setTimeout(Slider, 7000); //Change image every 7 seconds
 }

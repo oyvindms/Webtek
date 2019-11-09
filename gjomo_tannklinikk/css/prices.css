@@ -52,6 +52,16 @@
 			white-space:nowrap;
 		}
 
+#picPrices {
+	width: 100vw;
+	max-width: 100%;
+	min-height: 100%;
+	margin-bottom: -200px;
+	margin-top: 200px;
+	object-fit: fit;
+
+}
+
 @media screen and (max-width: 685px){
 
 	ul.services li span:first-child:after { 
@@ -85,5 +95,6 @@
 		text-overflow: ellipsis;
 		max-width: 200px;
 	}
-
 }
+
+

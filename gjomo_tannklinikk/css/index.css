@@ -1,5 +1,8 @@
 /* CSS Document */
 
+content{
+	overflow: hidden;
+}
 #bg_img {
     display: inline-block;
     max-height: 600px;
@@ -13,7 +16,7 @@
 
 #testimonials_bg{
 	width: 30%;
-	min-height: 220px;
+	min-height: 250px;
 	position: absolute;
 	margin-top: 130px;
 	margin-right: 40px;
@@ -109,24 +112,171 @@ div p{
 
 .person h5{
 	text-transform: uppercase;
+
 }
 
 #employees{
 	margin-bottom: 50px;
 }
 
+#topTreatments{
+	width: 98vw;
+	background-color: #1C8D74;
+	padding: 1%;
+	overflow: hidden;
+}
+
+#topTreatments h2{
+	color: white;
+}
+
+#contentTreatments{
+	display: flex;
+	/*flex-wrap: wrap;*/
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.topTreatment{
+	color: white;
+	flex: 33%;
+	padding: 4% 0;
+	margin: 2% 0;
+	text-align: center;
+	font-size: 140%;
+	text-transform: uppercase;
+}
+
+.topTreatment:nth-child(2){
+	border-left: 3px solid white;
+	border-right: 3px solid white;
+}
+
+.topTreatment a{
+	color: white;
+	text-decoration: none;
+}
+
+.topTreatment a:hover{
+	color: rgba(148,227,210,1.0);
+	cursor: pointer;
+}
 
 #pictureSmilingGrid{
 	width: 100%;
+	margin-bottom: -100px;
+
 }
 
+
+#frontpageStash {
+	color: #1C8D74;
+}
+
+.tid {
+	padding-bottom: 10px;
+}
+
+.contentOmOss{
+	color: #1C8D74;
+}
+
+.headline{
+	color: #1C8D74;
+	font-size: 60px;
+	font-weight: 100;
+}
+
+.miniHeadline{
+	color: #1C8D74;
+	font-weight: 100;
+	font-size: 26px;
+	text-align: center;
+}
+
+.infoComp{
+	padding: 2% 10% 2% 10%;
+}
+
+.person{
+	flex: 10%;
+	margin: auto;
+	margin-top: 5%;
+}
+
+.picture{
+	position: relative;
+	border-radius: 50%;
+	width: 80%;
+	transition: transform 0.5s;
+	padding-bottom: 5%;
+	filter: grayscale();
+}
+
+.overlay{
+	background-color: rgba(28,141,116,1.00);
+	z-index: 200;
+}
+
+.picture:hover{
+/*	transform: scale(1.2);*/
+	filter: grayscale(0);
+}
+
+
+.premisesPic{
+	display: flex;
+	flex-wrap: wrap;
+	width: 33.33%;
+	float: left;
+	padding-bottom: 10%;
+}
+
+#contentPersons{
+	display: flex;
+	/*flex-wrap: wrap;*/
+	padding-right: 10%;
+	padding-left: 10%;
+	text-align: center;
+	vertical-align: center;
+}
+
+.infoPerson{
+	text-align: justify;
+}
+
+/*#toggle{
+	  cursor:pointer;
+	  border:none;
+	  padding:8px;
+	  background: white;
+	  color: #1C8D74;
+}*/
+
 @media screen and (max-width: 1080px){
-	
 	#testimonials_bg{
 		margin-right: 0;
 		width: 32%;
+	}	
+}
+
+@media screen and (max-width: 1000px){
+
+	#contentPersons{
+		display: flex;
+		flex-wrap: wrap;
 	}
-	
+
+	.person h5{
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.person{
+		position: relative;
+		flex: 50%;
+	}
+
 }
 
 @media screen and (max-width: 840px){
@@ -148,6 +298,10 @@ div p{
 	h3{
 		padding-top: 4%;
 	}
+
+	#contentTreatments{
+		font-size: 13px;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -158,6 +312,22 @@ div p{
 	
 	#testimonials_bg{
 		display: none;
+	}	
+
+	#contentTreatments{
+		font-size: 11px;
+		padding: 0;
 	}
-	
+}
+
+@media screen and (max-width: 450px){
+	.person{
+		position: relative;
+		flex: 100%;
+	}
+
+	#aboutUs h2{
+		font-size: 30px;
+		font-family: bigJohnBold;
+	}
 }

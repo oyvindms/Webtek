@@ -1,5 +1,6 @@
 
-/* This function dynamicly writes out the navbar as html for all pages that load the script. */
+/* Denne funksjonen henter først ut posisjonen til 'header' i html dokumentet der scriptet blir lastet. Deretter 
+bygger den opp hele navbaren, både på desktop og til mindre skjermer, slik at alle navbarene blir like. */
 function loadNavbar(){
 
     var header = document.querySelector('header')
@@ -71,10 +72,8 @@ function loadNavbar(){
         
 }
 
-
+/* showBurger kontrollerer om burgermenyen skal være åpen eller lukket på mindre skjermer. */
 const showBurger = (event) => {
-    console.log("shoburger kjører")
-
     var navbar = document.querySelector(".navbar")
 
     if(navbar.style.height === "90px"){
@@ -86,10 +85,8 @@ const showBurger = (event) => {
         
 }
 
-/* This function dynamicly writes out the footer as html for all pages that laod the script. */
+/* Lager en footer på samme måte som navbar ved å lage html-elementer som knyttes ved hjelp av appendchild. */
 function loadFooter(){
-
-    /* Deciding location of footer and adding needed divs. */   
 
     var body = document.querySelector('body')
 
@@ -119,7 +116,7 @@ function loadFooter(){
             
             var container1_text3 = document.createElement('div')
             container1_text3.setAttribute("class", "footer_text")
-            container1_text3.innerText = "Lør      " /* Same length as the "mon-fre" without uneccesary css.*/
+            container1_text3.innerText = "Lør      "
             container1_text3.setAttribute("id", "saturday")
             container1.appendChild(container1_text3)
 
@@ -171,7 +168,8 @@ function loadFooter(){
 
 
 
-/* This function dynamicly writes out the contact form/modal as html for all pages that laod the script. */
+/* loadModal bygger hele modalen i det html-dokumentet scriptet blir lastet inn på. Modalen har i tillegg noen knapper
+som utløser funksjonene som ligger under denne. De er knyttet til funksjonen ved hjelp av lyttere. */
 function loadModal(){
 
     var body = document.querySelector('body')
@@ -180,6 +178,8 @@ function loadModal(){
 
     btn.setAttribute("id", "modalBtn")
     btn.setAttribute("class", "button")
+
+    /* Lytter for å åpne modalen */
     btn.addEventListener('click', openModal)
 
     var modalIcon = document.createElement('img')
@@ -381,14 +381,14 @@ function loadModal(){
                         sub.appendChild(write7)
 
 
-                // Listen for close click
+                /* Lytter for lukkefunksjonen */
                 closeBtn.addEventListener("click", closeModal);
 
-                // Listen for outside click
+                /* Lytter for lukking dersom brukeren klikker utenfor modalen. */
                 window.addEventListener("click", outsideClick);
 }
 
-/*Funksjon som åpner modalen*/
+/*Funksjon som åpner modalen og forsikrer at brukeren ikke kan scrolle når modalen er åpen.*/
 function openModal(event){
     var modal = document.getElementById("myModal");
     var body = document.querySelector("body")
@@ -396,7 +396,7 @@ function openModal(event){
     modal.style.display = "block"
 }
  
-/*Funksjon som lukker modalen*/
+/*Funksjon som lukker modalen med 'X' knappen.*/
 function closeModal(event){
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
@@ -417,9 +417,12 @@ function outsideClick(event){
     }
 }
 
-window.onload = function (){
+
+/* Denne onload funksjonen laster inn alle elementene på sidene der alle skal lastes inn. (Alle utenom kontakt
+    siden der vi har en spesialtilpasset footer og kontaktskjema) */
+window.onload = (function (){
     var htmlName = window.location.pathname;
-    var htmlName = htmlName.split("/").pop();
+    htmlName = htmlName.split("/").pop();
 
     if(htmlName == 'contact.html'){
         loadNavbar()
@@ -428,10 +431,8 @@ window.onload = function (){
         loadNavbar()
         loadModal()
         loadFooter()
-        
-      
     }
-}
+})  
 
 
 

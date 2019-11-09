@@ -1,20 +1,25 @@
 /* CSS Document */
 
-body {
-	background-image: url("../img/background_images/background_img_color.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 0px 90px;
+#bg_img {
+    display: inline-block;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bg_img img{
+	width: 100%;
 }
 
 #testimonials_bg{
 	width: 30%;
-	height: 200px;
+	min-height: 200px;
 	position: absolute;
 	margin-top: 150px;
 	margin-right: 40px;
 	padding-right: 30px;
 	right: 0;
+	top: 20%;
 	background-color: rgba(148,227,210,1.0);
 	opacity: 0.9;
 }
@@ -78,4 +83,39 @@ body {
 
 div p{
 	margin-bottom: 0;
+}
+
+#aboutUs{
+	margin: 0 15%;
+}
+
+#aboutUs h2{
+	font-size: 40px;
+}
+
+#txtAboutUs{
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+
+@media screen and (max-width: 768px){
+	
+	#bg_img {
+		position: inherit;
+	}
+	
+	#testimonials_bg{
+		box-sizing: border-box;
+		width: 100%;
+		margin-top: 0;
+		margin-right: 0;
+		opacity: 1;
+		padding: 20px 70px;
+	}
+	
+	#testimonials_container{
+		width: 75%;
+	}
+	
 }

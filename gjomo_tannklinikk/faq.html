@@ -10,22 +10,32 @@
 </head>
 	
 <body>
+	
 	<div class = "content">
 		<header>
 			<script>loadNavbar(); loadModal()</script>
 		</header>
 		
-		<h1 class="header">FAQ</h1>
-		
-		<div id="FAQ_search_div">
-			<form>
-				<input type="search" id="FAQ_search_bar" placeholder="SØK" onKeyUp="filterSearch()" autocomplete="off">
-			</form>
+		<div id="videoBackground">
+		<video autoplay muted loop id="myVideo">
+  		<source src="img/background_images/dental_video.mp4" type="video/mp4">
+		<img src="img/background_images/video_moment_placeholder.jpg" title="Your browser does not support the <video> tag" />
+		</video>
+	
 		</div>
-		
-		<div id="FAQ_content">
-			<ul id="FAQ_list">
-			</ul>
+		<div id=faqContainer>
+			<h1 class="header">FAQ</h1>
+
+			<div id="FAQ_search_div">
+				<form>
+					<input type="search" id="FAQ_search_bar" placeholder="SØK" onKeyUp="filterSearch()" autocomplete="off">
+				</form>
+			</div>
+
+			<div id="FAQ_content">
+				<ul id="FAQ_list">
+				</ul>
+			</div>
 		</div>
 		<script>loadFooter()</script>
 		<script src="js/FAQ_loader.js"></script>

@@ -19,6 +19,10 @@
 	font-weight: 100;
 }
 
+p{
+	font-size: 20px;
+}
+
 h3{
 	padding-top: 11%;
 	height: 5vh;
@@ -83,19 +87,16 @@ h5{
   border:none;
   padding:8px;
   background: #94E3D260;
-  font-family:cursive;
+  font-weight: 100;
+  font-family: bigjohnregular;
   border-radius: 10%;
-  transition: all 0.4s ease 0s;
+  transition: 0.4s ease 0s;
 }
 #myButton:hover {
-background: #94E3D2;
-transition: all 0.4s ease 0s;
+	background: #94E3D2;
 }
 
-#moreJ{
-	display:none;
-}
-#moreG{
+#more{
 	display:none;
 }
 
@@ -112,5 +113,24 @@ transition: all 0.4s ease 0s;
 		position: relative;
 		width: 40vw;
 		position: center;
+	}
+	.picture{
+		padding-top: 3vh;
+	}
+	h3{
+		padding-top: 4%;
+	}
+	.picture:hover{
+	transform: scale(1.1);
+	}
+	#prem1{
+		display: none;
+	}
+	#prem3{
+		display: none;
+	}
+	.premisesPic{
+		position: relative;
+		width: 100vw;
 	}
 }

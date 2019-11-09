@@ -23,12 +23,12 @@
         </header>
 
         <div class="infoComp">
-            <p>Gjømo Tannklinikk AS ble grunnlagt i september 2019 av 5 studenter fra Industriell Design på NTNU i Trondheim. Vi er lokalisert i Gamlebyen i Trondheim, med kort avstand fra sentrum. Gjennom flere iterasjoner har vi til slutt kommet frem til et konsept vi er fornøyde med og stolte av</p>
+            <p>Gjømo Tannklinikk AS ble grunnlagt i september 2019 av 5 studenter fra Industriell Design på NTNU i Trondheim. Vi er lokalisert i Gamlebyen i Trondheim, med kort avstand fra sentrum. Gjennom flere iterasjoner har vi til slutt kommet frem til et konsept vi er fornøyde med og stolte av.</p>
         </div>
 
-        <img src="img/premises/stoler.jpg" class="premisesPic" alt="premPic1">
-        <img src="img/premises/samarbeid.jpg" class="premisesPic" alt="premPic2">
-        <img src="img/premises/venterom.jpg" class="premisesPic" alt="premPic3">
+        <img src="img/premises/stoler.jpg" id="prem1" class="premisesPic" alt="premPic1">
+        <img src="img/premises/samarbeid.jpg" id="prem2" class="premisesPic" alt="premPic2">
+        <img src="img/premises/venterom.jpg" id="prem3" class="premisesPic" alt="premPic3">
 
         <br><h2 class="miniHeadline">VÅRE ANSATTE</h2>
 
@@ -42,10 +42,10 @@
                     <h5>Tannhelsesekretær</h5>
 
                 <p>
-                    <span id = moreG>Greger qualified in 1997 from University of Gothenburg, Sweden. She has since worked as a general practitioner and her interests centre on cosmetic and preventive dentistry. </span>
+                    <span id = "more">Greger qualified in 1997 from University of Gothenburg, Sweden. She has since worked as a general practitioner and her interests centre on cosmetic and preventive dentistry. </span>
                 </p>
 
-                    <button type="button" id="myButton" onclick="showMoreG()">Les mer</button>
+                    <button type="button" id="myButton" onclick="showMore()">Les mer</button>
                     
                 </div>
 
@@ -55,11 +55,7 @@
                     <h3>Jonas Selvikvåg</h3>
                     <h5>Tannlege</h5>
 
-                <p>
-                    <span id = moreJ>Jonas is a highly experienced professional with over thirty year’s experience in dental practices across Surrey. She trained at Kings College, London and is committed to providing individualised patient care in a friendly and reassuring environment.</span>
-                </p>
-
-                    <button type="button" id="myButton" onclick="showMoreJ()">Les mer</button>
+                    <button type="button" id="myButton" onclick="showMore()">Les mer</button>
 
                     
                 </div>
@@ -70,6 +66,8 @@
                     <h3>Øyvind Strand</h3>
                     <h5>Oralkiriug</h5>
 
+                    <button type="button" id="myButton" onclick="showMore()">Les mer</button>
+
                     
                 </div>
                 <div class="person" id="markus">
@@ -78,6 +76,8 @@
                     <h3>Markus Pettrém</h3>
                     <h5>Kjeveortoped</h5>
 
+                    <button type="button" id="myButton" onclick="showMore()">Les mer</button>
+
                 </div>
 
                 <div class="person"  id="odd"> 
@@ -85,6 +85,8 @@
 
                     <h3>Ferdinand Steen-Johnsen</h3>
                     <h5>Sjefstannlege</h5>
+
+                    <button type="button" id="myButton" onclick="showMore()">Les mer</button>
 
                     
                 </div>

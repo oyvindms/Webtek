@@ -238,8 +238,7 @@ function loadModal(){
                         fname.appendChild(write)
 
                         var br2 = document.createElement('br')
-                        fname.appendChild(br2)
-                        //Mangler her onfocus 
+                        fname.appendChild(br2) 
                         
 
                     var ename = document.createElement('div')
@@ -381,20 +380,6 @@ function loadModal(){
                         write7.appendChild(br)
                         sub.appendChild(write7)
 
-                        
-
-
-
-                        // Get modal element
-  /*               var modal = document.getElementById("myModal");
-
-                // Get open modal button
-                var modalBtn = document.getElementById("modalBtn");
-                // Get close button
-                var closeBtn = document.getElementById("closeBtn");
-
-        /*         // Listen for open click
-                modal.addEventListener("click", openModal); */
 
                 // Listen for close click
                 closeBtn.addEventListener("click", closeModal);
@@ -403,7 +388,7 @@ function loadModal(){
                 window.addEventListener("click", outsideClick);
 }
 
-//Function to open modal
+/*Funksjon som åpner modalen*/
 function openModal(event){
     var modal = document.getElementById("myModal");
     var body = document.querySelector("body")
@@ -411,7 +396,7 @@ function openModal(event){
     modal.style.display = "block"
 }
  
-//Function to close modal
+/*Funksjon som lukker modalen*/
 function closeModal(event){
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
@@ -420,7 +405,7 @@ function closeModal(event){
     body.style.overflow = "scroll"
 }
 
-//Function to close modal if outside click
+/*Funksjon som lukker modalen ved å trykke utenfor selve modalen*/
 function outsideClick(event){
     var modal = document.getElementById("myModal");
 

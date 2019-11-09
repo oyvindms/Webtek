@@ -115,6 +115,47 @@ div p{
 	margin-bottom: 50px;
 }
 
+#topTreatments{
+	width: 100%;
+	background-color: #1C8D74;
+	padding: 1%;
+}
+
+#topTreatments h2{
+	color: white;
+}
+
+#contentTreatments{
+	display: flex;
+	/*flex-wrap: wrap;*/
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.topTreatment{
+	color: white;
+	flex: 33%;
+	padding: 4% 0;
+	margin: 2% 0;
+	text-align: center;
+	font-size: 140%;
+	text-transform: uppercase;
+}
+
+.topTreatment:nth-child(2){
+	border-left: 3px solid white;
+	border-right: 3px solid white;
+}
+
+.topTreatment a{
+	color: white;
+	text-decoration: none;
+}
+
+.topTreatment a:hover{
+	color: rgba(148,227,210,1.0);
+	cursor: pointer;
+}
 
 #pictureSmilingGrid{
 	width: 100%;

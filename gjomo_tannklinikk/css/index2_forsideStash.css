@@ -45,6 +45,11 @@
 	filter: grayscale();
 }
 
+.overlay{
+	background-color: rgba(28,141,116,1.00);
+	z-index: 200;
+}
+
 .picture:hover{
 /*	transform: scale(1.2);*/
 	filter: grayscale(0);

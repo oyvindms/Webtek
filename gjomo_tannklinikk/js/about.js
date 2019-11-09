@@ -1,30 +1,12 @@
-/*
-var pp = 0;
-function showMore(){
-  if (!pp){
-    document.getElementById("more").style.display = "inline";
-    document.getElementById("dots").style.display = "none";
-    document.getElementById("myButton").style.display = "les mindre";
-    pp = 1;
-  }
-  else{
-    document.getElementById("more").style.display = "none";
-    document.getElementById("dots").style.display = "inline";
-    document.getElementById("myButton").style.display = "les mer";
-    pp = 0;
-  }
-}*/
-
-
-function showMore(){
-  var text = document.getElementById("more");
+function showMoreG(){
+  var text = document.getElementById("moreG");
   var btnText = document.getElementById("myButton");
 
   console.log("HEII")
 
-  if (text.style.display === "none"){
+  if (text.style.display === "inline"){
     text.style.display = "none";
-    btnText.innerHTML = "Les mindre";
+    btnText.innerHTML = "Les mer";
   }
   else{
     text.style.display = "inline";
@@ -32,20 +14,18 @@ function showMore(){
   }
 }
 
+function showMoreJ(){
+  var text = document.getElementById("moreJ");
+  var btnText = document.getElementById("myButton");
 
+  console.log("HEII")
 
-/*function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
+  if (text.style.display === "inline"){
+    text.style.display = "none";
+    btnText.innerHTML = "Les mer";
   }
-}*/
+  else{
+    text.style.display = "inline";
+    btnText.innerHTML = "Les mindre";
+  }
+}

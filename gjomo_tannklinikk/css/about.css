@@ -82,18 +82,23 @@ h5{
   cursor:pointer;
   border:none;
   padding:8px;
-  background: #94E3D280;
+  background: #94E3D260;
   font-family:cursive;
-  box-sizing:border-box;
   border-radius: 10%;
+  transition: all 0.4s ease 0s;
 }
-#myButton:hover{
-	background: #94E3D2;
+#myButton:hover {
+background: #94E3D2;
+transition: all 0.4s ease 0s;
 }
 
-#more{
+#moreJ{
 	display:none;
 }
+#moreG{
+	display:none;
+}
+
 
 
 @media screen and (max-width: 840px){

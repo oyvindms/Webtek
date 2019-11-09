@@ -100,6 +100,9 @@ h5{
 	background: #94E3D2;
   	color: white;
 }
+.myByttons:focus{ 
+	outline: 0;
+}
 
 #moreG, #moreJ, #moreO, #moreM, #moreF{
 	display:none;
@@ -108,7 +111,7 @@ h5{
 }
 
 
-@media screen and (max-width: 1238px){
+@media screen and (max-width: 1257px){
 	h5{
 		margin: 5%;
 		padding-top: 5%;
@@ -126,7 +129,6 @@ h5{
 	.person{
 		position: relative;
 		width: 40vw;
-		position: center;
 	}
 	.picture{
 		padding-top: 3vh;

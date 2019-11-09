@@ -10,6 +10,9 @@ var btnTextM = document.getElementById("myButtonM")
 var btnTextF = document.getElementById("myButtonF")
 
 
+/*  Lager 5 funksjoner til hver "Les mer"-knapp som åpner infotekstene til personenen, 
+    samtidig som den lukker en annen infotekst som eventuelt er åpen.  */
+
 function showMoreG(){
   var text = document.getElementById("moreG");
   var btnText = document.getElementById("myButtonG");

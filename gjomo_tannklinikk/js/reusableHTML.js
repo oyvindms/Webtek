@@ -432,9 +432,9 @@ function outsideClick(event){
     }
 }
 
-window.onload = function (){
+window.onload = (function (){
     var htmlName = window.location.pathname;
-    var htmlName = htmlName.split("/").pop();
+    htmlName = htmlName.split("/").pop();
 
     if(htmlName == 'contact.html'){
         loadNavbar()
@@ -443,10 +443,8 @@ window.onload = function (){
         loadNavbar()
         loadModal()
         loadFooter()
-        
-      
     }
-}
+})
 
 
 

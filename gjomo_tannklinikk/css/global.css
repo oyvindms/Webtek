@@ -221,6 +221,10 @@ h1{
 
 }
 
+.button:focus{
+	outline: 0;
+}
+
 .button:hover{
 	background: #333;
 }

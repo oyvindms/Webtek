@@ -1,5 +1,5 @@
 
-    document.getElementById("bb1").onclick = function () {
+    document.getElementById("bb1").onclick = function () {				/*	Ved å trykke på behandlingen på sidebaren, hentet med ID, linkes jeg opp til rikitg behandling med hjelp av ID*/
         location.href = "#b1Pic";
     };
      document.getElementById("bb2").onclick = function () {

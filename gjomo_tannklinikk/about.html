@@ -23,12 +23,12 @@
         </header>
 
         <div class="infoComp">
-            <p>Gjømo Tannklinikk AS ble grunnlagt i september 2019 av 5 studenter fra Industriell Design på NTNU i Trondheim. Vi er lokalisert i Gamlebyen i Trondheim, med kort avstand fra sentrum. Gjennom flere iterasjoner har vi til slutt kommet frem til et konsept vi er fornøyde med og stolte av</p>
+            <p>Gjømo Tannklinikk AS ble grunnlagt i september 2019 av 5 studenter fra Industriell Design på NTNU i Trondheim. Vi er lokalisert i Gamlebyen i Trondheim, med kort avstand fra sentrum. Gjennom flere iterasjoner har vi til slutt kommet frem til et konsept vi er fornøyde med og stolte av.</p>
         </div>
 
-        <img src="img/premises/stoler.jpg" class="premisesPic" alt="premPic1">
-        <img src="img/premises/samarbeid.jpg" class="premisesPic" alt="premPic2">
-        <img src="img/premises/venterom.jpg" class="premisesPic" alt="premPic3">
+        <img src="img/premises/stoler.jpg" id="prem1" class="premisesPic" alt="premPic1">
+        <img src="img/premises/samarbeid.jpg" id="prem2" class="premisesPic" alt="premPic2">
+        <img src="img/premises/venterom.jpg" id="prem3" class="premisesPic" alt="premPic3">
 
         <br><h2 class="miniHeadline">VÅRE ANSATTE</h2>
 
@@ -41,14 +41,11 @@
                     <h3>Greger Gahre</h3>
                     <h5>Tannhelsesekretær</h5>
 
+                <p>
+                    <span id = "more">Greger qualified in 1997 from University of Gothenburg, Sweden. She has since worked as a general practitioner and her interests centre on cosmetic and preventive dentistry. </span>
+                </p>
 
-
-
-
-                    <div class="btn-container">
-                        <button id="toggle">Les mer</button>
-                    </div>
-
+                    <button type="button" id="myButton" onclick="showMore()">Les mer</button>
                     
                 </div>
 
@@ -58,30 +55,38 @@
                     <h3>Jonas Selvikvåg</h3>
                     <h5>Tannlege</h5>
 
+                    <button type="button" id="myButton" onclick="showMore()">Les mer</button>
+
                     
                 </div>
 
-                <div class=person  id="oyvind">
+                <div class="person"  id="oyvind">
                     <img src="img/employees/oyvind.jpg" class="picture"  id="oyvindPic" alt="Pic of Øyvind">
 
                     <h3>Øyvind Strand</h3>
                     <h5>Oralkiriug</h5>
 
+                    <button type="button" id="myButton" onclick="showMore()">Les mer</button>
+
                     
                 </div>
-                <div class=person id="markus">
+                <div class="person" id="markus">
                     <img src="img/employees/markus.jpg" class="picture"  id="markusPic" alt="Pic of Markus">
 
                     <h3>Markus Pettrém</h3>
                     <h5>Kjeveortoped</h5>
 
+                    <button type="button" id="myButton" onclick="showMore()">Les mer</button>
+
                 </div>
 
-                <div class=person  id="odd"> 
+                <div class="person"  id="odd"> 
                     <img src="img/employees/odd.jpg" class="picture" id="oddPic" alt="Pic of Odd">
 
                     <h3>Ferdinand Steen-Johnsen</h3>
                     <h5>Sjefstannlege</h5>
+
+                    <button type="button" id="myButton" onclick="showMore()">Les mer</button>
 
                     
                 </div>

@@ -6,17 +6,17 @@
         location.href = "#b2Pic";
     };
 	 document.getElementById("bb3").onclick = function () {
-	        location.href = "#b3";
+	        location.href = "#b3Pic";
 	    };
 	 document.getElementById("bb4").onclick = function () {
-	        location.href = "#b4";
+	        location.href = "#b4Pic";
 	    };
 	 document.getElementById("bb5").onclick = function () {
-	        location.href = "#b5";
+	        location.href = "#b5Pic";
 	    };
 	 document.getElementById("bb6").onclick = function () {
-	        location.href = "#b6";
+	        location.href = "#b6Pic";
 	    };
 	 document.getElementById("bb7").onclick = function () {
-	        location.href = "#b7";
+	        location.href = "#b7Pic";
 	    };

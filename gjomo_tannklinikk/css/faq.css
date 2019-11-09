@@ -4,10 +4,11 @@
 
 #myVideo {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
     filter: opacity(50%);
     object-fit: cover;
 	margin-bottom: -104px;
+	overflow: hidden;
 	
 }
 

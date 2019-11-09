@@ -8,8 +8,14 @@
 	padding-right: 25%;	
 	text-align: left;
 	color: #1C8D74;
-	line-height: 150%;
+	line-height: 200%;
 }
+
+.image{
+	position: relative;
+	width: 100%;
+}
+
 
 .TreatHead{
 	color: #1C8D74;
@@ -33,9 +39,9 @@
 	color: grey;
 }
 
-.header1{
+#header1, #header2, #header3, #header4, #header5, #header6, #header7{
 		position: absolute; 
-		top: 55%;
+		top: 40%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		color: #fff;
@@ -67,11 +73,46 @@ hr{
 
 }
 
-
+@media  screen and (max-width: 1200px){
+	hr{
+		border-top: 1px solid #CAEAE3;
+		width: 100%;
+	}
+	
+	.line{
+		position: relative;
+		left: -20%;
+	
+	}
+	.sidebar{
+		text-align: left;
+		list-style: none;
+		position: fixed;
+		top: 24%;
+		padding-left: 2%;
+		font-size: 70%;
+	}
+}
 
 @media  screen and (max-width: 768px){
 
 	.sidebar{
 		display: none;
 	}
+	.TreatText{
+		width: 75%;
+		padding-left: 12%;
+		padding-right: 12%;	
+		text-align: left;
+		color: #1C8D74;
+		line-height: 200%;
+	}
+	.TreatPic{
+		max-width: 75%;
+		padding-left: 12%;
+		padding-right: 12%;
+		
+	
+	}
+
 }

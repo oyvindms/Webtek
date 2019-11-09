@@ -21,7 +21,6 @@ body{
 	min-height: 100%;
 }
 
-
 .header{
 	font-size: 60px;
 	font-weight: 100;
@@ -135,6 +134,7 @@ body{
 		z-index: 2;
 		margin-bottom: 30px;
 		color: white;
+		float: left;
 	}
 }
 

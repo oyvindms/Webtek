@@ -88,12 +88,14 @@ h5{
   padding:8px;
   background: #94E3D260;
   font-weight: 100;
+  color: #1C8D74;
   font-family: bigjohnregular;
   border-radius: 10%;
   transition: 0.4s ease 0s;
 }
 .myByttons:hover {
 	background: #94E3D2;
+  	color: white;
 }
 
 #moreG, #moreJ, #moreO, #moreM, #moreF{

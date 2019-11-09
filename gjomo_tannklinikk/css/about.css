@@ -82,7 +82,7 @@ h5{
 }
 
 
-#myButton{
+.myByttons{
   cursor:pointer;
   border:none;
   padding:8px;
@@ -92,11 +92,11 @@ h5{
   border-radius: 10%;
   transition: 0.4s ease 0s;
 }
-#myButton:hover {
+.myByttons:hover {
 	background: #94E3D2;
 }
 
-#more{
+#moreG, #moreJ, #moreO, #moreM, #moreF{
 	display:none;
 }
 

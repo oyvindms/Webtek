@@ -50,9 +50,13 @@ h5{
 }
 
 .person{
-	width: 27%;
 	margin: auto;
 	margin-top: 5%;
+	
+	position: relative;
+	width: 30vw;
+	flex: 10%;
+	
 }
 .picture{
 	position: relative;
@@ -76,7 +80,7 @@ h5{
 
 #contentPersons{
 	display: flex;
-	/*flex-wrap: wrap;*/
+	flex-wrap: wrap;
 	padding-right: 10%;
 	padding-left: 10%;
 	text-align: center;
@@ -115,18 +119,33 @@ h5{
 
 @media screen and (max-width: 1257px){
 	h5{
-		margin: 5%;
+		
 		padding-top: 5%;
 	}
 }
 
+@media screen and (max-width: 1230px){
+	.person{
+		position: relative;
+		width: 30vw;
+		flex: 25%;
+	}
 
-@media screen and (max-width: 840px){
+	#odd{
+		padding: 0 30vw;
+	}
+}
+
+@media screen and (max-width: 965px){
+	#odd{
+		padding: 0 10vw;
+	}
 	#contentPersons{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
 		vertical-align: center;
+		text-align: center;
 	}
 	.person{
 		position: relative;

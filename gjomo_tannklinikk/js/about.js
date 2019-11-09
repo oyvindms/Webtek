@@ -16,10 +16,10 @@ function showMoreG(){
   else{
     text.style.display = "inline";
     btnText.innerHTML = "Les mindre";
-    txtJ.style.display = "none"
-    txtO.style.display = "none"
-    txtM.style.display = "none"
-    txtF.style.display = "none"
+    txtJ.style.display = "none";
+    txtO.style.display = "none";
+    txtM.style.display = "none";
+    txtF.style.display = "none";
   }
 }
 
@@ -34,10 +34,10 @@ function showMoreJ(){
   else{
     text.style.display = "inline";
     btnText.innerHTML = "Les mindre";
-    txtG.style.display = "none"
-    txtO.style.display = "none"
-    txtM.style.display = "none"
-    txtF.style.display = "none"
+    txtG.style.display = "none";
+    txtO.style.display = "none";
+    txtM.style.display = "none";
+    txtF.style.display = "none";
   }
 }
 
@@ -52,10 +52,10 @@ function showMoreO(){
   else{
     text.style.display = "inline";
     btnText.innerHTML = "Les mindre";
-    txtG.style.display = "none"
-    txtJ.style.display = "none"
-    txtM.style.display = "none"
-    txtF.style.display = "none"
+    txtG.style.display = "none";
+    txtJ.style.display = "none";
+    txtM.style.display = "none";
+    txtF.style.display = "none";
   }
 }
 
@@ -70,10 +70,10 @@ function showMoreM(){
   else{
     text.style.display = "inline";
     btnText.innerHTML = "Les mindre";
-    txtG.style.display = "none"
-    txtJ.style.display = "none"
-    txtO.style.display = "none"
-    txtF.style.display = "none"
+    txtG.style.display = "none";
+    txtJ.style.display = "none";
+    txtO.style.display = "none";
+    txtF.style.display = "none";
   }
 }
 
@@ -88,9 +88,9 @@ function showMoreF(){
   else{
     text.style.display = "inline";
     btnText.innerHTML = "Les mindre";
-    txtG.style.display = "none"
-    txtJ.style.display = "none"
-    txtO.style.display = "none"
-    txtM.style.display = "none"
+    txtG.style.display = "none";
+    txtJ.style.display = "none";
+    txtO.style.display = "none";
+    txtM.style.display = "none";
   }
 }

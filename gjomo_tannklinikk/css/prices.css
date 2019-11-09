@@ -14,7 +14,8 @@
 			font-size: 30px;
 			margin-bottom: 15px;
 		}
-			ul.services {
+		
+		ul.services {
 			padding: 0;
 			line-height: 2;
 			margin-top: 0;
@@ -50,3 +51,39 @@
 			padding-left:   0.5em;
 			white-space:nowrap;
 		}
+
+@media screen and (max-width: 685px){
+
+	ul.services li span:first-child:after { 
+		content:        "";
+		position:       absolute;
+		bottom:         0.7em;       
+		width:          100%;
+		border-bottom:  1px solid #000;
+		border-bottom-color: #1c8d74;
+	}
+
+	#Treatments{
+		width: 90vw;
+	}
+
+	.serviceElement{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 460px){
+
+	ul.services li span:first-child:after {
+		visibility: hidden;
+	}
+
+	.serviceElement{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 200px;
+	}
+
+}

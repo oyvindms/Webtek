@@ -206,7 +206,7 @@ function loadModal(){
                     var closeButton = document.createElement('SPAN')
                     closeButton.setAttribute("class", "closeBtn")
                     closeButton.setAttribute("id", "closeBtn")
-                    closeButton.innerHTML = "x"
+                    closeButton.innerHTML = "&times;"
                     fieldSet.appendChild(closeButton)
 
                     var h = document.createElement('H1')
@@ -375,7 +375,7 @@ function loadModal(){
 
                         var write7 = document.createElement('INPUT')
                         write7.setAttribute("type", "submit")
-                        write7.setAttribute("value", "send")
+                        write7.setAttribute("value", "Send")
                         write7.required = true
                         var br = document.createElement('br')
                         write7.appendChild(br)

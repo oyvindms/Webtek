@@ -1,5 +1,6 @@
 // JavaScript Document
 
+ //Fetches FAQ data from XML-document and runs the functions buildCategoriList()
 document.addEventListener('DOMContentLoaded', ()=>{
 	//fetch the data as soon as the page has loaded
 	let url = "XML/Prices_data.xml";
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	});
 })
 
-
+//Lager prislisten ved å hente data fra XML-en
 function buildCategoriList(x) {
 	
 	let Categories = x.getElementsByTagName("Categori")

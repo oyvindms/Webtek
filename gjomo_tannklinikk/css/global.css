@@ -207,7 +207,7 @@ h1{
 
 .button{
 	background: #1C8D74;
-	padding: 2em 2em;
+	
 	color: #fff;
 	border: 0;
 	height: 70px;
@@ -217,7 +217,9 @@ h1{
 	position: sticky;
 	bottom: 5vh;
 	float: right;
-	margin-right: 3%;
+	margin-right: 3%;	
+	
+	
 
 }
 

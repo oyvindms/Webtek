@@ -42,3 +42,18 @@
 #plan{
 	margin: auto;
 }
+
+#brukerTest {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#diagram {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	}
+

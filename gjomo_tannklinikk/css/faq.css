@@ -115,7 +115,7 @@
 		
 		.question:before{
 			content:"";
-			background: url("../img/icons/PLUS.svg");
+			background: url("../img/icons/PLUS.png");
 			width: 25px;
 			height: 25px;
 			display: block;
@@ -126,7 +126,7 @@
 
 		.active:before {
 			content:"";
-			background: url("../img/icons/MINUS.svg");
+			background: url("../img/icons/MINUS.png");
 			width: 25px;
 			height: 25px;
 			display: block;

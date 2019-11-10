@@ -15,7 +15,7 @@ function loadNavbar(){
         logoLink.setAttribute('id',"logoLink")
 
         var logo = document.createElement('img');
-        logo.setAttribute("src", "img/icons/logo.svg")
+        logo.setAttribute("src", "img/icons/logo.png")
         logo.setAttribute("alt", "Gjømo logo")
         logo.setAttribute("id", "gjomoLogo")
         
@@ -99,7 +99,7 @@ function loadFooter(){
         footer.appendChild(container1)
             
             var icon1 = document.createElement('img');
-            icon1.setAttribute("src", "img/icons/clock.svg")
+            icon1.setAttribute("src", "img/icons/clock.png")
             icon1.setAttribute("alt", "open_hours")
             icon1.setAttribute("class", "footerIcon")
             container1.appendChild(icon1)
@@ -130,7 +130,7 @@ function loadFooter(){
         footer.appendChild(container2)
 
             var icon2 = document.createElement('img');
-            icon2.setAttribute("src", "img/icons/contact.svg")
+            icon2.setAttribute("src", "img/icons/contact.png")
             icon2.setAttribute("alt", "contact")
             icon2.setAttribute("class", "footerIcon")
             container2.appendChild(icon2)
@@ -150,7 +150,7 @@ function loadFooter(){
         footer.appendChild(container3)
     
             var icon3 = document.createElement('img');
-            icon3.setAttribute("src", "img/icons/location.svg")
+            icon3.setAttribute("src", "img/icons/location.png")
             icon3.setAttribute("alt", "location")
             icon3.setAttribute("class", "footerIcon")
             container3.appendChild(icon3)
@@ -183,7 +183,8 @@ function loadModal(){
     btn.addEventListener('click', openModal)
 
     var modalIcon = document.createElement('img')
-    modalIcon.setAttribute("src", "img/checkmark_white.svg")
+    modalIcon.setAttribute("src", "img/icons/checkmark_white.png")
+    modalIcon.setAttribute("id","checkmark")
     btn.appendChild(modalIcon)  
     body.appendChild(btn)
 

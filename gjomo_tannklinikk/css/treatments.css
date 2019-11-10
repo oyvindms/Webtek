@@ -53,7 +53,7 @@ hr{
 	position: fixed;
 	top: 24%;
 	padding-left: 2%;
-	cursor: default;
+	cursor: pointer;
 }
 
 .TreatPic{

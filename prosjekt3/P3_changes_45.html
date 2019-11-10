@@ -28,12 +28,55 @@
 
         <div class="question-box">
           <h2>Forandringer vi har gjort</h2>
-            
-        </div>
+          <b>Globale</b>
+          <p>Alle de globale elementene har vi valgt å lage dynamisk i javascript. På denne måten kan vi enkelt laste de inn på alle sidene uten å måtte bruke unødvendig mye plass i html-dokumentene. I tillegg så kan disse elementene enkelt styles ved hjelp av den globale css filen “global.css”. Dette hjalp oss under utviklingen av nettsiden fordi vi kunne endre på footeren, menyen og modalen på ét sted i stedet for inne i hvert enkelt html dokument. </p>
+          <p>Som sagt i P2 så er alle sidene på nettstedet tilgjengelig via menyen som ligger øverst på hver side. Det er også mulig å bestille en time ved hjelp av modalen på alle sidene ettersom at dette var en funksjon vi trodde brukere ønsket å ha lett tilgjengelig. Hele nettstedet er responsivt for nettleservinduer helt ned til 450px. Menyen endrer seg til å bli en hamburgermeny rundt tablet-størrelse og forsikrer at alle funksjonene til menyen blir ivaretatt. Det samme gjelder for modalen og footeren dere både funksjon og informasjon er tilgjengelig på mindre nettleservinduer.</p>
+          <b>Menyen</b>
+          <p>Vi valgte å ha mindre avstand mellom meny-lenkene og å ta vekk understrekene under menyalternativene. Etter visuelltesting tok vi en beslutning for å la menyalternativene flyte mot høyre for at det skulle være et klarere skille mellom logoen til bedriften og lenkene brukeren kunne trykke på. Overskriftene på alle sidene var klare og tydelige nok til at dette ble ansett som en unødvendig tilføyning.</p>
+          <b>Hamburgermenyen</b>
+          <p>Et tiltak for å forsikre at alle funksjonalitetene på siden ble bevart når skjermstørrelsen minker. Her har vi valgt å legge menyalternativene i omvendt rekkefølge. Grunnen til dette er at at brukere som åpner skjermen på en liten device har enklere tilgang med tommelen til de sidene som er viktigst/mest besøkt. i.e (behandlinger, priser osv...)</p>
+          <b>Modal</b>
+          <p>Vi endret både ikonet på modalen og økte høyden og mellomrommet på siden for at den skulle bli mer tydelig. Fargen gjorde vi mørkere for at den skulle skille seg fra både footeren og menyen.</p>
+          <b>Footer</b>
+          <p>Vi minsket høyden til 200px ettersom innholdet i footeren ikke ble påvirket og at det ville ta mindre plass på hver side. Vi midtstilte teksten og ikonene i stedet for at den skulle være justert mot venstre. Fargen endret vi til den samme som menyen for å bringe mer kontinuitet på sidene.</p>
+          <b>Forside</b>
+          <p>I planen fra P2 ble følgende struktur for forsiden beskrevet:</p>
+          <ol>
+            <li>Stort bilde med quotes (testimonials) som skiftes ut automatisk</li>
+            <li>Informasjon om behandlinger som tilby</li>
+            <li>Oversikt over ansatte</li>
+            <li>Tekst om GJØMO Tannklinikk</li>
+          </ol>
 
-        <div class="question-box">
+          <p>Rekkefølgen på informasjonen er endret, da vi mener den nye strukturen er mer logisk. Innholdet er som planlagt. Den nye strukturen er:</p>
+          <ol>
+              <li>Stort bilde med testimonials</li>
+              <li>Tekst om GJØMO Tannklinikk</li>
+              <li>Informasjon om behandlinger som tilbys</li>
+              <li>Oversikt over ansatte</li>
+            </ol>
+
+            <p>Kosmetiske endringer til blant annet testimonial-boksen er gjort for å skape et bedre helhetsinntrykk av siden.</p>
+            <p>Vi bestemte oss for å kun vise tre faste behandlinger istedenfor slider med ulike behandlinger på hjemskjermen, som beskrevet i P2. Vi mente dette var en tilstrekkelig løsning her.</p>
+            <b>Behandlinger</b>
+            <p> <i>HTML:</i> For å tydelig skille de ulike behandlingene valgte vi å sette inn bilder over hver behandling. Disse bildene samsvarer med de ulike behandlingene, noe som åpner for en visuell interaksjon med bruker. Bildene er samme bredde som teksten (50% av skjerm), igjen for å tydeliggjøre skillet mellom behandlingene, men det var også det som fungerte best grafisk. På hvert av bildene er det lagt en grønn boks over ved hjelp av Adobe-Indesign og fikset på boksens gjennomsiktighet. Dette for at bildene skal samsvare med sidens grønne tema. </p>
+            <p><i>Javascript:</i> For å fikse meny-baren på siden slik at den funker som den skal (linke navnet på behandlingen til riktig informasjon) har vi brukt javascript.  </p>
+            <b>Priser</b>
+            <p>Priser siden er, i stor grad identisk til det som var planlagt. Eneste endring er at vi la til en bildeserie nederst på siden, for skape større dynamikk på siden, og for å opprettholde kontinuitet med de andre sidene. Det ble benyttet XML-dokument med javascript som hentet ut informasjon derfra, dette for å enkelt kunne tilføre endringer i senere situasjoner. </p>
+            <b>Om oss</b>
+            <p><i>HTML + CSS:</i> Lagt til tre bilder under informasjon om bedriften og stylet disse med “display: flex”. Når skjermen blir smalere vises kun ett av bildene. Under innholdet til “Våre ansatte” er det lagt til knapper som er stylet slik at det er intuitivt at de skal trykkes på. Hvis man hovrer over bildene, vil de forstørres slik at man får et klarere bilde av personen.</p>
+            <p><i>Javascript:</i> Her ble de største endringene gjort under “Om oss”. Her ble det lagt til interaktive knapper som viser tekst under bildene til “Våre ansatte”. Teksten er i utgangspunktet skjult, men når du trykker på “Les mer” under bildene, kommer personens respektive tekst opp og knappens tekst endres til “Les mindre”. Trykker du på “Les mindre” forsvinner teksten igjen. Hvis du trykker på “Les mer” på en annen person mens en annen persons tekst er oppe, vil denne teksten forsvinne og “Les mindre” blir gjort om til “Les mer”. Dette ble gjort for å skape større dynamikk på nettsiden og å fjerne unødvendige forstyrrelser for å skape et renere uttrykk på siden.</p>
+            <b>Kontakt</b>
+            <p>Siden er i stor grad lik som vi planla med noen visuelle endringer. Kontaktskjema har fått grå skrift i stedet for farget ettersom at det gikk i ett med bakgrunnen av skjema. Footeren er også skjøvet litt mer mot høyre i likhet med navigasjonsmenyen. Siden har også blitt responsiv med skjema som fyller en større del av skjermen ved mindre nettleserstørrelser.</p>
+            <b>FAQ</b>
+            <p>Oppsettet av selve FAQ-listen er mer eller mindre helt som planlagt i P2. Den største synlige endringen på siden er at vi valgte å inkludere en video som bakgrunn, da den virket litt tom og lite dynamisk uten dette tilskuddet.
+              </p>
+          </div>
+
+
+                <div class="question-box">
           <h2>Oppdatert filstruktur</h2>
-          <img src="img/Skjermbilde 2019-11-09 kl. 15.34.14.png" alt="Filstruktur">
+          <img src="img/Skjermbilde 2019-11-09 kl. 15.34.14.png" alt="Filstruktur" id = "structure">
             
         </div>
 

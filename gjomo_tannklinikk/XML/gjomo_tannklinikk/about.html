@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href= "css/global.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="js/reusableHTML.js"></script>
+
+    <title>Om oss</title>
+</head>
+
+<body>
+
+    <div class = "contentOmOss">
+
+        <header id="header">
+        </header>
+        <h1 class="header">Om oss</h1>
+        <div class="infoComp">
+            <p>Gjømo Tannklinikk AS ble grunnlagt i september 2019 av 5 studenter fra Industriell Design på NTNU i Trondheim. Vi er lokalisert i Gamlebyen i Trondheim, med kort avstand fra sentrum. Gjennom flere iterasjoner har vi til slutt kommet frem til et konsept vi er fornøyde med og stolte av.</p>
+        </div>
+
+        <img src="img/premises/stoler.jpg" id="prem1" class="premisesPic" alt="premPic1">
+        <img src="img/premises/samarbeid.jpg" id="prem2" class="premisesPic" alt="premPic2">
+        <img src="img/premises/venterom.jpg" id="prem3" class="premisesPic" alt="premPic3">
+
+        <br><h2 class="miniHeadline">VÅRE ANSATTE</h2>
+
+        <div id="contentPersons">
+
+            <div class="person" id="greger">
+                <img src="img/employees/greger.jpg" class="picture"  id="gregerPic" alt="Pic of Greger" 
+                onclick="modalPic()">    
+
+                <h3>Greger Gahre</h3>
+                <h5>TANNHELSESEKRETÆR</h5>
+
+            <p>
+                <span id = "moreG">Greger qualified in 1997 from University of Gothenburg, Sweden. He has since worked as a general practitioner and her interests centre on cosmetic and preventive dentistry. </span>
+            </p>
+
+                <button type="button" class="myByttons" id="myButtonG" onclick="showMoreG()">Les mer</button>
+                
+            </div>
+
+            <div class="person" id="jonas">
+                <img src="img/employees/jonas.jpg" class="picture"  id="jonasPic" alt="Pic of Jonas">
+
+                <h3>Jonas Selvikvåg</h3>
+                <h5>TANNLEGE</h5>
+
+                <p>
+                    <span id = "moreJ">Jonas is a highly experienced professional with over thirty year’s experience in dental practices across Surrey. He trained at Kings College, London and is committed to providing individualised patient care in a friendly and reassuring environment. </span>
+                </p>
+
+                <button type="button" class="myByttons" id="myButtonJ" onclick="showMoreJ()">Les mer</button>
+
+                
+            </div>
+
+            <div class="person"  id="oyvind">
+                <img src="img/employees/oyvind.jpg" class="picture"  id="oyvindPic" alt="Pic of Øyvind">
+
+                <h3>Øyvind Strand</h3>
+                <h5>ORALKIRURG</h5>
+
+                <p>
+                    <span id = "moreO">Øyvind leads the team at Gjømo Tannklinikk and is responsible for the running of the Clinic. Øyvind enjoys practice management and is extremely passionate about delivering excellent patient care. He has had vast amount of experience in dentistry, both clinically and in the management of private, NHS and corporate sectors. </span>
+                </p>
+
+                <button type="button" class="myByttons" id="myButtonO" onclick="showMoreO()">Les mer</button>
+
+                
+            </div>
+            <div class="person" id="markus">
+                <img src="img/employees/markus.jpg" class="picture"  id="markusPic" alt="Pic of Markus">
+
+                <h3>Markus Pettrém</h3>
+                <h5>KJEVEORTOPED</h5>
+
+                <p>
+                    <span id = "moreM">Markus is a former dental educator and vocational trainer employed by Oxford deanery, who for several years passed along his knowledge to colleagues seeking to refine their skills through formal training.  </span>
+                </p>
+
+                <button type="button" class="myByttons" id="myButtonM" onclick="showMoreM()">Les mer</button>
+
+            </div>
+
+            <div class="person"  id="odd"> 
+                <img src="img/employees/odd.jpg" class="picture" id="oddPic" alt="Pic of Odd">
+
+                <h3>Ferdinand Steen-Johnsen</h3>
+                <h5>SJEFSTANNLEGE</h5>
+
+                <p>
+                    <span id = "moreF">Ferdinand has been practicing dentistry for nearly 25 years. His excellent record of accomplishment in the areas of general, cosmetic, and implant dentistry make him a wonderful resource for patients seeking the utmost in dental care. </span>
+                </p>
+
+                <button type="button" class="myByttons" id="myButtonF" onclick="showMoreF()">Les mer</button>
+
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/about.js"></script>
+</body>
+</html>

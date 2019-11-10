@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="css/global.css">
+	<link rel ="stylesheet" href="css/contact.css">
+	<script src="js/reusableHTML.js"></script>
+    <title>Kontakt</title>
+	
+</head>
+<body>
+
+		<div id="window">
+			<header>
+			</header>
+			
+			<iframe id = "map" class = "shadow-map"src="https://snazzymaps.com/embed/195853"></iframe>
+			
+			<div class="contact_form">
+				<h1 id = "contactHeader" class = "header">BESTILL TIME</h1>
+				<div id = "formWrapper">
+					<form action="" method="post" autocomplete="off">
+						<span>
+							<div class = "labels">Navn</div> <br>
+							<input type="text" name="fulltNavn" placeholder="Navn Navnesen" required>
+						</span>
+						<br>
+						<span>
+								<div class = "labels">Mobil</div><br>
+							<input type="tel" name="gsm" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" maxlength="11" placeholder="92939495">
+						</span>
+						<br>
+						<span>
+								<div class = "labels">Epost</div><br>
+							<input type="email" name="epost" placeholder="eksempel@gmail.com" required>
+						</span>
+						<br>
+						<span>
+								<div class = "labels">Hva gjelder din henvendelse?</div><br>
+						<select name="henvendelse">
+						<option value="time">Bestille time</option>
+						<option value="konsultasjon01">Konsultasjon</option>
+						<option value="konsultasjon02">Konsultasjon</option>
+						</select>
+						</span>
+						<span>
+								<div class = "labels">Melding</div>
+								<br>
+						<textarea cols="40" rows="10" placeholder="Skriv din melding her..."></textarea>
+						</span>
+						<br>
+						<span>
+							<input id = "submit" class="submit" type="submit" name="send" value="SEND">
+						</span>
+					</form>
+				</div>
+			</div>
+			
+			<!-- Custom footer for this page -->
+			<div id = "ctcFooter">
+				<div id="ctcContainer">
+					<div class="ctcFooter_container first">
+						<img src="img/icons/clock.svg" alt="open_hours" class="ctcIcon">
+						<div class="ctcFooter_text">Man - Fre</div>
+						<div class="ctcFooter_text">08:00 - 16:00</div>
+						<div class="ctcFooter_text">Lør</div>
+						<div class="ctcFooter_text">10:00 - 15:00</div>
+					</div>
+					<div class="ctcFooter_container">
+						<img src="img/icons/contact.svg" alt="contact" class="ctcIcon">
+						<div class="ctcFooter_text">92 93 94 95</div>
+						<div class="ctcFooter_text">kontakt@gjomo.no</div>
+					</div>
+					<div class="ctcFooter_container">
+						<img src="img/icons/location.svg" alt="location" class="ctcIcon">
+						<div class="ctcFooter_text">Kolbjørn Hejes vei 2B</div>
+						<div class="ctcFooter_text">7034, Trondheim</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

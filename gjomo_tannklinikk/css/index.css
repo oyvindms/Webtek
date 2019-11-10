@@ -248,6 +248,11 @@ div p{
 		margin-right: 0;
 		width: 32%;
 	}	
+
+	.t_q_init{
+		font-size: 19px;
+	}
+
 }
 
 @media screen and (max-width: 1000px){

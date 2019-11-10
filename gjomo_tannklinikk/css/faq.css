@@ -115,8 +115,8 @@
 		.active:before {
 			content:"";
 			background: url("../img/icons/MINUS.svg");
-			width: 10px;
-			height: 5px;
+			width: 25px;
+			height: 25px;
 			display: block;
 			position: relative;
 			bottom: -17px;

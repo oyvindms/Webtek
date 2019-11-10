@@ -85,9 +85,9 @@ body{
 }
 
 /* Mobile screens */
-
 @media  screen and (max-width: 787px), only screen and (max-device-width:787px){
 
+	/* Takk til https://www.youtube.com/watch?v=gXkqy0b4M5g for noe kode og inspirasjon. */
 	.burger div{
 		margin-top: 20px;
 		margin-right: 40px;
@@ -171,6 +171,7 @@ body{
 }
 
 /* Modal */
+/* Takk til  https://www.youtube.com/watch?v=KjQ8uvAt9kQ  for inspirasjon og noe kode.*/
 
 #modalBox{
 	margin-bottom: 20%;

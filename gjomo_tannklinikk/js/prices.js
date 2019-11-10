@@ -55,3 +55,5 @@ function buildCategoriList(x) {
 		}
 	}
 }
+
+// Litt cred til: https://www.youtube.com/watch?v=MDAWie2Sicc&fbclid=IwAR0VyJ7iPdF9fOvSjIDqN98qclnvmhAfRrCu2lJSYE0l17945z5PIxA_CFQ

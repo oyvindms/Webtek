@@ -68,7 +68,7 @@ body{
 
 .burger{
 	float: right;
-	margin: 25px;
+	margin: 27px;
 }
 
 .burger div{
@@ -345,15 +345,14 @@ input[type=submit]{
 	}
 }
 
-@media screen and (max-width: 840px){
-	.modal-content{
-		background-color: #94E3D2;
-		margin: 7% auto;
-		height: 85%;
-		width: 70%;
-		box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
-		animation-name: modalopen;
-		animation-duration: 0.4s;
+@media screen and (max-width: 450px){
+	.footer_text{
+		white-space: nowrap;
 		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 100px;
+		text-align: center;
 	}
 }
+
+

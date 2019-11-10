@@ -219,7 +219,6 @@ div p{
 }
 
 .picture:hover{
-/*	transform: scale(1.2);*/
 	filter: grayscale(0);
 }
 
@@ -234,7 +233,6 @@ div p{
 
 #contentPersons{
 	display: flex;
-	/*flex-wrap: wrap;*/
 	padding-right: 10%;
 	padding-left: 10%;
 	text-align: center;
@@ -244,14 +242,6 @@ div p{
 .infoPerson{
 	text-align: justify;
 }
-
-/*#toggle{
-	  cursor:pointer;
-	  border:none;
-	  padding:8px;
-	  background: white;
-	  color: #1C8D74;
-}*/
 
 @media screen and (max-width: 1080px){
 	#testimonials_bg{
@@ -327,12 +317,12 @@ div p{
 	}
 
 	#aboutUs h2{
-		font-size: 30px;
+		font-size: 20px;
 		font-family: bigJohnBold;
 	}
 
-	h2{
-		overflow: hidden;
-		font-size: 20;
+	#contentTreatments{
+		font-size: 8px;
+		padding: 0;
 	}
 }

@@ -86,7 +86,7 @@ body{
 
 /* Mobile screens */
 
-@media  screen and (max-width: 768px), only screen and (max-device-width:768px){
+@media  screen and (max-width: 787px), only screen and (max-device-width:787px){
 
 	.burger div{
 		margin-top: 20px;

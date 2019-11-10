@@ -36,7 +36,7 @@
 #faqContainer {
 	box-shadow: 2px 2px lightgrey;
 	padding: 0 5% 5%;
-	margin-top: 2.5%;
+	margin-top: 9%;
 	position: absolute;
     top: 50%;
     left: 50%;
@@ -139,6 +139,20 @@
 		}
 		
 		@media only screen and (max-width: 768px) {
+
+/* 			#footer{
+				margin-top: 5vh;
+			}
+/*  */
+			.content{
+				margin-bottom: -40vh;
+			}
+			#faqContainer{
+				position: relative;
+				margin-top: -37vh;
+/* 				margin-bottom: 20vh;
+ */			}
+
 			#FAQ_search_bar{
 				width: 100%;
 				border-radius: 0px;
@@ -152,6 +166,6 @@
 			}
 			.question:before{
 				bottom:-21px;
-			}
+			} */
 		}
 		

@@ -86,7 +86,7 @@ body{
 
 /* Mobile screens */
 
-@media  screen and (max-width: 768px){
+@media  screen and (max-width: 768px), only screen and (max-device-width:768px){
 
 	.burger div{
 		margin-top: 20px;
@@ -175,8 +175,7 @@ body{
 	margin-bottom: 20%;
 }
 
-.formElement{
-	float: left; 
+.formElement{ 
 	width: 120%;
 	display: inline-block;
 	margin-left: 4%;
@@ -332,7 +331,7 @@ input[type=submit]{
 	to{opacity: 1}
 }
 
-@media screen and (max-width: 840px){
+@media screen and (max-width: 840px), only screen and (max-device-width:840px){
 	.modal-content{
 		background-color: #94E3D2;
 		margin: 7% auto;
@@ -345,7 +344,7 @@ input[type=submit]{
 	}
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px), only screen and (max-device-width:450px){
 	.footer_text{
 		white-space: nowrap;
 		overflow: hidden;

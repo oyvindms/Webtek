@@ -20,18 +20,6 @@
 	
 }
 
-/* Add some content at the bottom of the video/page */
-/*.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}*/
-
-/*faq styling*/
-
 
 #faqContainer {
 	box-shadow: 2px 2px lightgrey;
@@ -115,7 +103,7 @@
 		
 		.question:before{
 			content:"";
-			background: url("../img/icons/PLUS.png");
+			background: url("../img/icons/PLUS.svg");
 			width: 25px;
 			height: 25px;
 			display: block;
@@ -126,7 +114,7 @@
 
 		.active:before {
 			content:"";
-			background: url("../img/icons/MINUS.png");
+			background: url("../img/icons/MINUS.svg");
 			width: 10px;
 			height: 5px;
 			display: block;

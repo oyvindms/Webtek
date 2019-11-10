@@ -330,4 +330,9 @@ div p{
 		font-size: 30px;
 		font-family: bigJohnBold;
 	}
+
+	h2{
+		overflow: hidden;
+		font-size: 20;
+	}
 }

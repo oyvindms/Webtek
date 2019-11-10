@@ -285,7 +285,6 @@ function loadModal(){
                         write3.setAttribute("type", "tel")
                         write3.setAttribute("id", "Number")
                         write3.setAttribute("placeholder", "Nummer")
-                        write3.pattern = "[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"
                         write3.value = "Number"
                         write3.setAttribute("onfocus", "this.value =this.value == 'Number'?'':this.value;")
 

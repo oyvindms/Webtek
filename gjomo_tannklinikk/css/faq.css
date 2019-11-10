@@ -2,10 +2,6 @@
 /* CSS Document */
 /*video styling*/
 
-#videoBackground {
-	/*margin-top: 200px;*/
-}
-
 #myVideo {
 	overflow: hidden;
 	position: relative;
@@ -154,6 +150,5 @@
 			}
 			.question:before{
 				bottom:-21px;
-			} */
+			} 
 		}
-		

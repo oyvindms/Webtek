@@ -236,6 +236,7 @@ function loadModal(){
                         write.setAttribute("type", "text")
                         write.setAttribute("id", "fornavn")
                         write.setAttribute("placeholder", "Fornavn")
+                        write.setAttribute("pattern", "[a-zA-Z]+")
                         fname.appendChild(write)
 
                         var br2 = document.createElement('br')
@@ -346,7 +347,7 @@ function loadModal(){
 
                             var opt3 = document.createElement('option')
                             opt3.setAttribute("value", "Konsultasjon2")
-                            opt3.innerText = "Konsultasjon"
+                            opt3.innerText = "Annet"
                             dropdown.appendChild(opt3)
                         
 

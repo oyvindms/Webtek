@@ -7,7 +7,7 @@
 	<link rel ="stylesheet" href="css/contact.css">
 	<script src="js/reusableHTML.js"></script>
 	<link rel="shortcut icon" type='image/x-icon' href="img/icons/favicon.png"/>
-	<title>Om oss</title>
+
     <title>Kontakt</title>
 	
 </head>
@@ -17,42 +17,42 @@
 			<header>
 			</header>
 			
-			<iframe id = "map" class = "shadow-map"src="https://snazzymaps.com/embed/195853"></iframe>
+			<iframe id = "map" class = "shadow-map" src="https://snazzymaps.com/embed/195853"></iframe>
 			
 			<div class="contact_form">
 				<h1 id = "contactHeader" class = "header">BESTILL TIME</h1>
 				<div id = "formWrapper">
 					<!-- Velger GET her ettersom at man ikke blir hevet ut av siden, ville valgt post dersom det var en faktisk nettside. -->
-					<form action="" method="GET" autocomplete="off">
-						<span>
+					<form method="GET" autocomplete="off">
+						<div class="inputBox">
 							<div class = "labels">Navn</div> <br>
 							<input type="text" name="fulltNavn" placeholder="Navn Navnesen" required pattern = "[a-zA-ZæøåÆØÅ ]+">
-						</span>
-						<br>
-						<span>
+						</div>
+						
+						<div class="inputBox">
 								<div class = "labels">Mobil</div><br>
 							<input type="tel" name="gsm" pattern="[0-9]{8}" placeholder="01234567">
-						</span>
-						<br>
-						<span>
+						</div>
+						
+						<div class="inputBox">
 								<div class = "labels">Epost</div><br>
 							<input type="email" name="epost" placeholder="eksempel@gmail.com" required>
-						</span>
-						<br>
-						<span>
+						</div>
+						
+						<div class="inputBox">
 								<div class = "labels">Hva gjelder din henvendelse?</div><br>
 						<select name="henvendelse">
 						<option value="time">Bestille time</option>
 						<option value="konsultasjon01">Konsultasjon</option>
 						<option value="konsultasjon02">Annet</option>
 						</select>
-						</span>
-						<span>
+						</div>
+						<div class="inputBox">
 								<div class = "labels">Melding</div>
 								<br>
 						<textarea cols="40" rows="10" placeholder="Skriv din melding her..."></textarea>
-						</span>
-						<br>
+						</div>
+						
 						<span>
 							<input id = "submit" class="submit" type="submit" name="send" value="SEND">
 						</span>

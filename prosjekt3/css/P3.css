@@ -2,7 +2,6 @@
 	line-height: 1.5;
 }
 .body{
-	/*background-color: #d0e0eb;*/
 	width: auto;
 	margin-left: 200px; 
 	margin-right: 200px;
@@ -12,6 +11,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 60%;
+	overflow-x: hidden;
 }
 
 #title-box {
@@ -47,5 +47,7 @@
 }
 
 #structure{
-	text-align: center;
+position: static;
+margin-left: 20vw;
+
 }

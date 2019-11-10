@@ -215,6 +215,7 @@ function loadModal(){
                     h.setAttribute("id", "header1")
                     fieldSet.appendChild(h)
 
+/*                 Velger GET her ettersom at man ikke blir hevet ut av siden, ville valgt post dersom det var en faktisk nettside.*/  
                 var frm = document.createElement('form')
                 frm.setAttribute("class", "form1")
                 fieldSet.appendChild(frm)
@@ -236,7 +237,7 @@ function loadModal(){
                         write.setAttribute("type", "text")
                         write.setAttribute("id", "fornavn")
                         write.setAttribute("placeholder", "Fornavn")
-                        write.setAttribute("pattern", "[a-zA-Z]+")
+                        write.setAttribute("pattern", "[a-zA-ZæøåÆØÅ]+")
                         fname.appendChild(write)
 
                         var br2 = document.createElement('br')
@@ -262,6 +263,7 @@ function loadModal(){
                         write2.setAttribute("type", "text")
                         write2.setAttribute("id", "etternavn")
                         write2.setAttribute("placeholder", "Etternavn")
+                        write2.setAttribute("pattern", "[a-zA-ZæøåÆØÅ]+")
                         ename.appendChild(write2)
                         
                         var br4 = document.createElement('br')
